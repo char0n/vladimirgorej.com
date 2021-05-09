@@ -1,0 +1,19 @@
+ul.social-buttons {
+    display: inline-block;
+}
+
+ul.social-buttons li a {
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #000;
+    background-color: #fff;
+    border-radius: 100%;
+    outline: 0;
+}
