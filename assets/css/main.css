@@ -23,3 +23,7 @@ ul.social-buttons li a {
     height: 30vh;
     object-fit: contain;
 }
+
+.github-fork-ribbon:before {
+    background-color: rgb(33,37,41);
+}
