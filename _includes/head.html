@@ -1,0 +1,55 @@
+<head prefix="og: https://ogp.me/ns# profile: http://ogp.me/ns/profile#">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  {%- seo -%}
+  <meta name="keywords" content="{{ site.keywords }}" />
+  <!-- external styles -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+    crossorigin="anonymous">
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    rel="preload"
+    as="style"
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+    crossorigin="anonymous"
+   onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous" />
+  </noscript>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+    rel="preload"
+    as="style"
+    integrity="sha384-R1YHNrXeEniyCWFPaeU6FPn6fbr866YytGK2aZ3vVF3zQKIgUza8LYJ0HdOZ3FJI"
+    crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css"
+      rel="stylesheet"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous" />
+  </noscript>
+  <!-- internal styles -->
+  <link href="{{ 'assets/css/main.css' | absolute_url }}" rel="stylesheet" />
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | absolute_url }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | absolute_url }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | absolute_url }}" />
+  <link rel="manifest" href="{{ 'site.webmanifest' | absolute_url }}" />
+
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  {% contentblock custom-meta %}
+</head>

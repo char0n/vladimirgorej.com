@@ -1,0 +1,303 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+permalink: /
+image:
+    path: https://vladimirgorej.com/assets/img/vladimir-gorej.jpg
+    width: 319
+    height: 342
+---
+
+{% contentfor custom-meta %}
+<meta property="og:type" content="profile" />
+<meta property="profile:first_name" content="{{ site.author.first_name }}" />
+<meta property="profile:last_name" content="{{ site.author.last_name }}" />
+<meta property="profile:gender" content="male" />
+<meta property="profile:username" content="{{ site.github_username }}" />
+{% endcontentfor %}
+
+<div class="row mb-5">
+  <div class="col-0 col-lg-1"></div>
+  <div class="col-12 col-lg-10">
+    <article class="card bg-light border-secondary mt-3 mb-3 p-1">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img class="card-img img-fluid rounded-circle" src="{{ 'assets/img/vladimir-gorej.jpg' | absolute_url }} " alt="Vladimír Gorej" width="319" height="342" />
+        </div>
+        <div class="col-md-10">
+          <div class="card-body">
+            <h2 class="h5 card-title">Vladimír Gorej, <small class="text-muted">aka <abbr title="Nickname">char0n</abbr></small></h2>
+            <p class="card-text">
+              Vladimír Gorej is a <a href="https://en.wikipedia.org/wiki/Prague">Prague</a> based <strong>software engineer</strong> with focus on Web & Mobile. Passionate with software/code quality, Functional and Reactive programming.
+              Vladimír is formerly Technical Team Lead of Oracle, Principal Software Engineer at Apiary and held other senior engineering and leading roles in international
+              companies like Ubiquiti Networks or SecurityScorecard.
+              He's active in OpenSource community for last 10 years and he currently utilizes his experience in this field in a role of OpenSource Software Engineer at SmartBear.
+              His favorite programming languages include <strong>JavaScript</strong>, <strong>Python</strong> and <strong>Elixir</strong>.
+            </p>
+          </div>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "@id": "https://vladimirgorej.com",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Prague",
+                "addressRegion": "Prague"
+              },
+              "workLocation": {
+                "@type": "PostalAddress",
+                "addressLocality": "Prague",
+                "addressRegion": "Prague"
+              },
+              "taxID": "05284503",
+              "email": "mailto:vladimir.gorej@gmail.com",
+              "image": "https://vladimirgorej.com/assets/img/vladimir-gorej.jpg",
+              "jobTitle": "Software Engineer",
+              "name": "Vladimír Gorej",
+              "alternateName": "char0n",
+              "givenName": "Vladimír",
+              "familyName": "Gorej",
+              "url": "https://vladimirgorej.com"
+            }
+          </script>
+        </div>
+      </div>
+    </article>
+  </div>
+  <div class="col-0 col-lg-1"></div>
+</div>
+
+<section class="mb-5">
+  <header class="mb-2 mb-md-3">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="h5 text-uppercase">Articles</h2>
+      </div>
+      <div class="col-6 text-end">
+        <a href="https://www.linkedin.com/today/author/vladimirgorej">
+          <small>More articles <i class="fas fa-arrow-right"></i></small>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+
+    <div class="col">
+      <article class="card">
+        <img loading="lazy" src="https://media-exp1.licdn.com/dms/image/C4D12AQHW41125fKGbg/article-cover_image-shrink_423_752/0/1615132805293?e=1626307200&v=beta&t=sTT7LJU8R0xfMDpYDiZjLK8BzlQGIT9qfwoRhOwZ2SQ" class="card-img-top" alt="How to validate OpenAPI definitions in Swagger Editor using GitHub Actions" />
+        <div class="card-body">
+          <div class="card-title">
+            <h3 class="h5">How to validate OpenAPI definitions in Swagger Editor using GitHub Actions</h3>
+          </div>
+          <a href="https://www.linkedin.com/pulse/how-validate-openapi-definitions-swagger-editor-using-vladim%C3%ADr-gorej/" class="stretched-link btn btn-outline-dark">Read article</a>
+        </div>
+      </article>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          "author": { "@id": "https://vladimirgorej.com" },
+          "publisher": { "@id": "https://vladimirgorej.com" },
+          "image": "https://media-exp1.licdn.com/dms/image/C4D12AQHW41125fKGbg/article-cover_image-shrink_423_752/0/1615132805293?e=1626307200&v=beta&t=sTT7LJU8R0xfMDpYDiZjLK8BzlQGIT9qfwoRhOwZ2SQ",
+          "headline": "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions",
+          "datePublished": "2021-03-07",
+          "url": "https://www.linkedin.com/pulse/how-validate-openapi-definitions-swagger-editor-using-vladim%C3%ADr-gorej/"
+        }
+      </script>
+    </div>
+
+    <div class="col">
+      <article class="card">
+        <img loading="lazy" src="https://media-exp1.licdn.com/dms/image/C4D12AQHK_s_FE8kVwQ/article-cover_image-shrink_720_1280/0/1614265471653?e=1626307200&v=beta&t=rSHIa8u6CHVWs_1U78flGB0AEANqq7kvxzRS7vCjzaA" class="card-img-top" alt="How Swagger Adjust can help you build extensible React+Redux apps">
+        <div class="card-body">
+          <div class="card-title">
+            <h3 class="h5">How Swagger Adjust can help you build extensible React+Redux apps</h3>
+          </div>
+          <a href="https://www.linkedin.com/pulse/how-swagger-adjust-can-help-you-build-extensible-reactredux-gorej/" class="stretched-link btn btn-outline-dark">Read article</a>
+        </div>
+      </article>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          "author": { "@id": "https://vladimirgorej.com" },
+          "publisher": { "@id": "https://vladimirgorej.com" },
+          "image": "https://media-exp1.licdn.com/dms/image/C4D12AQHK_s_FE8kVwQ/article-cover_image-shrink_720_1280/0/1614265471653?e=1626307200&v=beta&t=rSHIa8u6CHVWs_1U78flGB0AEANqq7kvxzRS7vCjzaA",
+          "headline": "How Swagger Adjust can help you build extensible React+Redux apps",
+          "datePublished": "2021-02-25",
+          "url": "https://www.linkedin.com/pulse/how-swagger-adjust-can-help-you-build-extensible-reactredux-gorej/"
+        }
+      </script>
+    </div>
+
+    <div class="col">
+      <article class="card">
+        <img loading="lazy" src="assets/img/dependabot.jpg" class="card-img-top" alt="How to keep your npm dependencies up-to-date without wasting your time">
+        <div class="card-body">
+          <div class="card-title">
+            <h3 class="h5">How to keep your npm dependencies up-to-date without wasting your time</h3>
+          </div>
+          <a href="https://www.linkedin.com/pulse/how-keep-your-npm-dependencies-up-to-date-without-wasting-gorej/" class="stretched-link btn btn-outline-dark">Read article</a>
+        </div>
+      </article>
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "TechArticle",
+          "author": { "@id": "https://vladimirgorej.com" },
+          "publisher": { "@id": "https://vladimirgorej.com" },
+          "image": "https://vladimirgorej.com/assets/img/dependabot.jpg",
+          "headline": "How to keep your npm dependencies up-to-date without wasting your time",
+          "datePublished": "2020-12-15",
+          "url": "https://www.linkedin.com/pulse/how-keep-your-npm-dependencies-up-to-date-without-wasting-gorej/"
+        }
+      </script>
+    </div>
+
+  </div>
+</section>
+
+<section class="mb-5">
+  <header class="mb-2 mb-md-3">
+    <div class="row">
+      <div class="col-6">
+        <h2 class="h5 text-uppercase">Projects</h2>
+      </div>
+      <div class="col-6 text-end">
+        <a href="https://github.com/char0n?tab=repositories">
+          <small>More projects <i class="fas fa-arrow-right"></i></small>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="row mb-4">
+    <div class="col-12 col-md-8">
+      <div class="list-group">
+        <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h3 class="h5 mb-1"><i class="fab fa-github"></i> ramda-adjunct</h3>
+          </div>
+          <blockquote class="blockquote fs-6 mb-1">
+            Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.
+          </blockquote>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              "author": { "@id": "https://vladimirgorej.com" },
+              "name": "ramda-adjunct",
+              "abstract": "Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.",
+              "codeRepository": "https://github.com/char0n/ramda-adjunct"
+            }
+          </script>
+        </a>
+
+        <a href="https://github.com/char0n/ffmpeg-php" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h3 class="h5 mb-1"><i class="fab fa-github"></i> ffmpeg-php</h3>
+          </div>
+          <blockquote class="blockquote fs-6 mb-1">
+            FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.
+          </blockquote>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              "author": { "@id": "https://vladimirgorej.com" },
+              "name": "ffmpeg-php",
+              "abstract": "FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.",
+              "codeRepository": "https://github.com/char0n/ffmpeg-php"
+            }
+          </script>
+        </a>
+
+        <a href="https://github.com/char0n/json-api-merge" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h3 class="h5 mb-1"><i class="fab fa-github"></i> json-api-merge</h3>
+          </div>
+          <blockquote class="blockquote fs-6 mb-1">
+            JSON:API specific algorithm for merging included resources into original data.
+          </blockquote>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              "author": { "@id": "https://vladimirgorej.com" },
+              "name": "json-api-merge",
+              "abstract": "JSON:API specific algorithm for merging included resources into original data.",
+              "codeRepository": "https://github.com/char0n/json-api-merge"
+            }
+          </script>
+        </a>
+
+        <a href="https://github.com/char0n/qencode" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h3 class="h5 mb-1"><i class="fab fa-github"></i> qencode</h3>
+          </div>
+          <blockquote class="blockquote fs-6 mb-1">
+            Full featured video transcoding using the Qencode API that can be easily modified for your website or application.
+          </blockquote>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              "author": { "@id": "https://vladimirgorej.com" },
+              "name": "qencode",
+              "abstract": "Full featured video transcoding using the Qencode API that can be easily modified for your website or application.",
+              "codeRepository": "https://github.com/char0n/qencode"
+            }
+          </script>
+        </a>
+
+        <a href="https://github.com/char0n/http-request-in-editor" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h3 class="h5 mb-1"><i class="fab fa-github"></i> http-request-in-editor</h3>
+          </div>
+          <blockquote class="blockquote fs-6 mb-1">
+            Reference implementation of HTTP Request in Editor Specification.
+          </blockquote>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              "author": { "@id": "https://vladimirgorej.com" },
+              "name": "http-request-in-editor",
+              "abstract": "Reference implementation of HTTP Request in Editor Specification.",
+              "codeRepository": "https://github.com/char0n/http-request-in-editor"
+            }
+          </script>
+        </a>
+
+        <a href="https://github.com/char0n/swagger-adjust" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h3 class="h5 mb-1"><i class="fab fa-github"></i> swagger-adjust</h3>
+          </div>
+          <blockquote class="blockquote fs-6 mb-1">
+            Pluggable framework for creating extendable React+Redux applications.
+          </blockquote>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "SoftwareSourceCode",
+              "author": { "@id": "https://vladimirgorej.com" },
+              "name": "swagger-adjust",
+              "abstract": "Pluggable framework for creating extendable React+Redux applications.",
+              "codeRepository": "https://github.com/char0n/swagger-adjust"
+            }
+          </script>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4 mt-2 mt-md-0">
+      <a href="https://github.com/char0n">
+        <img loading="lazy" src="https://github-readme-stats.vercel.app/api?username=char0n&amp;show_icons=true" alt="GitHub status" class="img-fluid" width="494" height="194" />
+      </a>
+    </div>
+  </div>
+</section>
