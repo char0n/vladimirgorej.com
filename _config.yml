@@ -44,7 +44,6 @@ twitter:
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-contentblocks
 
 collections:
   posts:

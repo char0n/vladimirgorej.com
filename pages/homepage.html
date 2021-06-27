@@ -2,18 +2,21 @@
 layout: default
 permalink: /
 image:
-    path: assets/img/vladimir-gorej.jpg
-    width: 319
-    height: 342
+  path: assets/img/vladimir-gorej.jpg
+  width: 319
+  height: 342
+custom_metas:
+  - property: og:type
+    content: profile
+  - property: profile:first_name
+    content: Vladimír
+  - property: profile:last_name
+    content: Gorej
+  - property: profile:gender
+    content: male
+  - property: profile:username
+    content: char0n
 ---
-
-{% contentfor custom-meta %}
-<meta property="og:type" content="profile" />
-<meta property="profile:first_name" content="{{ site.author.first_name }}" />
-<meta property="profile:last_name" content="{{ site.author.last_name }}" />
-<meta property="profile:gender" content="male" />
-<meta property="profile:username" content="{{ site.github_username }}" />
-{% endcontentfor %}
 
 {%- include card.html -%}
 
