@@ -2,14 +2,27 @@
 layout: default
 ---
 
-<article>
+<article class="row">
 
-  <header class="post-header">
-    <h1>{{ page.title | escape }}</h1>
-  </header>
+  <div class="col-0 col-md-2"></div>
+  <div class="col-12 col-lg-8">
+    <div>
+      <div class="d-flex justify-content-center">
+        <figure class="figure">
+          <img src="{{ page.image.path | relative_url }}" width="{{ page.image.width }}" height="{{ page.image.height }}" class="figure-img rounded mx-auto d-block img-fluid" alt="{{ page.title | escape }}" />
+          <figcaption class="figure-caption text-center">Swagger Editor Validate - GitHub Action</figcaption>
+        </figure>
+      </div>
 
-  <div>
-    {{ content }}
+      <header class="post-header mt-3">
+        <h1 class="text-justify">{{ page.title | escape }}</h1>
+      </header>
+
+      <hr />
+
+      {{ content }}
+    </div>
   </div>
+  <div class="col-0 col-md-2"></div>
 
 </article>
