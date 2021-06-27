@@ -145,14 +145,14 @@ jobs:
 This is what you'll see if your OpenAPI definition validates **successfully**.
 
 <figure class="figure">
-  <img src="{{ "/assets/img/blog/swagger-editor-validate-success.png" | relative_url }}" width="1149" height="365" class="figure-img rounded mx-auto d-block img-fluid" alt="Successful validation" />
+  <img src="{{ '/assets/img/blog/swagger-editor-validate-success.png' | relative_url }}" width="1149" height="365" class="figure-img rounded mx-auto d-block img-fluid" alt="Successful validation" />
   <figcaption class="figure-caption text-center">Successful validation</figcaption>
 </figure>
 
 This is what you'll see if your OpenAPI definition contains **errors**.
 
 <figure class="figure">
-  <img src="{{ "/assets/img/blog/swagger-editor-validate-errors.png" | relative_url }}" width="1218" height="430" class="figure-img rounded mx-auto d-block img-fluid" alt="Failed validation" />
+  <img src="{{ '/assets/img/blog/swagger-editor-validate-errors.png' | relative_url }}" width="1218" height="430" class="figure-img rounded mx-auto d-block img-fluid" alt="Failed validation" />
   <figcaption class="figure-caption text-center">Failed validation</figcaption>
 </figure>
 
