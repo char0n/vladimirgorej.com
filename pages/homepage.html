@@ -1,11 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 permalink: /
 image:
-    path: https://vladimirgorej.com/assets/img/vladimir-gorej.jpg
+    path: assets/img/vladimir-gorej.jpg
     width: 319
     height: 342
 ---
@@ -18,57 +15,7 @@ image:
 <meta property="profile:username" content="{{ site.github_username }}" />
 {% endcontentfor %}
 
-<div class="row mb-5">
-  <div class="col-0 col-lg-1"></div>
-  <div class="col-12 col-lg-10">
-    <article class="card bg-light border-secondary mt-3 mb-3 p-1">
-      <div class="row g-0">
-        <div class="col-md-2">
-          <img class="card-img img-fluid rounded-circle" src="{{ 'assets/img/vladimir-gorej.jpg' | absolute_url }} " alt="Vladimír Gorej" width="319" height="342" />
-        </div>
-        <div class="col-md-10">
-          <div class="card-body">
-            <h2 class="h5 card-title">Vladimír Gorej, <small class="text-muted">aka <abbr title="Nickname">char0n</abbr></small></h2>
-            <p class="card-text">
-              Vladimír Gorej is a <a href="https://en.wikipedia.org/wiki/Prague">Prague</a> based <strong>software engineer</strong> with focus on Web & Mobile. Passionate with software/code quality, Functional and Reactive programming.
-              Vladimír is formerly Technical Team Lead of Oracle, Principal Software Engineer at Apiary and held other senior engineering and leading roles in international
-              companies like Ubiquiti Networks or SecurityScorecard.
-              He's active in OpenSource community for last 10 years and he currently utilizes his experience in this field in a role of OpenSource Software Engineer at SmartBear.
-              His favorite programming languages include <strong>JavaScript</strong>, <strong>Python</strong> and <strong>Elixir</strong>.
-            </p>
-          </div>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "https://vladimirgorej.com",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Prague",
-                "addressRegion": "Prague"
-              },
-              "workLocation": {
-                "@type": "PostalAddress",
-                "addressLocality": "Prague",
-                "addressRegion": "Prague"
-              },
-              "taxID": "05284503",
-              "email": "mailto:vladimir.gorej@gmail.com",
-              "image": "https://vladimirgorej.com/assets/img/vladimir-gorej.jpg",
-              "jobTitle": "Software Engineer",
-              "name": "Vladimír Gorej",
-              "alternateName": "char0n",
-              "givenName": "Vladimír",
-              "familyName": "Gorej",
-              "url": "https://vladimirgorej.com"
-            }
-          </script>
-        </div>
-      </div>
-    </article>
-  </div>
-  <div class="col-0 col-lg-1"></div>
-</div>
+{%- include card.html -%}
 
 <section class="mb-5">
   <header class="mb-2 mb-md-3">
@@ -168,7 +115,7 @@ image:
         <h2 class="h5 text-uppercase">Projects</h2>
       </div>
       <div class="col-6 text-end">
-        <a href="https://github.com/char0n?tab=repositories">
+        <a href="https://github.com/{{ site.github_username }}?tab=repositories">
           <small>More projects <i class="fas fa-arrow-right"></i></small>
         </a>
       </div>
@@ -295,8 +242,8 @@ image:
     </div>
 
     <div class="col-12 col-md-4 mt-2 mt-md-0">
-      <a href="https://github.com/char0n">
-        <img loading="lazy" src="https://github-readme-stats.vercel.app/api?username=char0n&amp;show_icons=true" alt="GitHub status" class="img-fluid" width="494" height="194" />
+      <a href="https://github.com/{{ site.github_username }}">
+        <img loading="lazy" src="https://github-readme-stats.vercel.app/api?username={{ site.github_username }}&amp;show_icons=true" alt="GitHub status" class="img-fluid" width="494" height="194" />
       </a>
     </div>
   </div>

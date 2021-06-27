@@ -1,8 +1,12 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2021-06-06 10:39:04 +0200
-categories: jekyll update
+title: "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions"
+description: "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions"
+date: 2021-03-07 10:39:04 +0200
+image:
+  path: assets/img/blog/swagger-editor-validate.png
+  width: 536
+  height: 188
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
