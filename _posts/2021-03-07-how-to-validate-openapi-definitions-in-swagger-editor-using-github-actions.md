@@ -7,6 +7,7 @@ image:
   path: assets/img/blog/swagger-editor-validate.png
   width: 536
   height: 188
+  caption: Swagger Editor Validate - GitHub Action
 ---
 
 The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs which
