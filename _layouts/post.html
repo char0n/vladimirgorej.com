@@ -22,6 +22,12 @@ layout: default
 
       {{ content }}
     </div>
+
+    <section>
+      {%- if site.disqus.shortname -%}
+        {%- include disqus_comments.html -%}
+      {%- endif -%}
+    </section>
   </div>
   <div class="col-0 col-md-2"></div>
 

@@ -40,6 +40,9 @@ twitter:
   username: "@vladimirgorej"
   card: summary
 
+disqus:
+  shortname: vladimirgorej
+
 # Build settings
 theme: minima
 plugins:
