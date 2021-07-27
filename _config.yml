@@ -47,6 +47,7 @@ disqus:
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 collections:
   posts:
