@@ -323,3 +323,24 @@ and plugins, and it does bring much more features than demonstrated in this arti
 I welcome you to consult our documentation to learn more.
 
 You can find all code demonstrated in this article in [Swagger Adjust GitHub repository](https://github.com/char0n/swagger-adjust).
+
+<div class="list-group mb-3">
+  <a href="https://github.com/char0n/swagger-adjust" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h3 class="h5 mb-1"><i class="fab fa-github"></i> swagger-adjust</h3>
+    </div>
+    <blockquote class="blockquote fs-6 mb-1">
+      Pluggable framework for creating extendable React+Redux applications.
+    </blockquote>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "author": { "@id": "https://vladimirgorej.com" },
+        "name": "swagger-adjust",
+        "abstract": "Pluggable framework for creating extendable React+Redux applications.",
+        "codeRepository": "https://github.com/char0n/swagger-adjust"
+      }
+    </script>
+  </a>
+</div>
