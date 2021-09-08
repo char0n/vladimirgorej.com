@@ -86,12 +86,12 @@ custom_metas:
 
     <div class="col">
       <article class="card">
-        <img loading="lazy" src="assets/img/dependabot.jpg" class="card-img-top" alt="How to keep your npm dependencies up-to-date without wasting your time">
+        <img loading="lazy" src="{{ 'assets/img/blog/taming-lerna.png' | relative_url }}" class="card-img-top" alt="Things I have learned while maintaining JavaScript monorepo with Lerna">
         <div class="card-body">
           <div class="card-title">
-            <h3 class="h5">How to keep your npm dependencies up-to-date without wasting your time</h3>
+            <h3 class="h5">Things I have learned while maintaining JavaScript monorepo with Lerna</h3>
           </div>
-          <a href="https://www.linkedin.com/pulse/how-keep-your-npm-dependencies-up-to-date-without-wasting-gorej/" class="stretched-link btn btn-outline-dark">Read article</a>
+          <a href="{{ 'blog/things-i-have-learned-maintaining-javascript-monorepo-with-lerna/' | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
         </div>
       </article>
       <script type="application/ld+json">
@@ -100,10 +100,10 @@ custom_metas:
           "@type": "TechArticle",
           "author": { "@id": "https://vladimirgorej.com" },
           "publisher": { "@id": "https://vladimirgorej.com" },
-          "image": "https://vladimirgorej.com/assets/img/dependabot.jpg",
-          "headline": "How to keep your npm dependencies up-to-date without wasting your time",
-          "datePublished": "2020-12-15",
-          "url": "https://www.linkedin.com/pulse/how-keep-your-npm-dependencies-up-to-date-without-wasting-gorej/"
+          "image": "{{ 'assets/img/blog/taming-lerna.png' | absoulte_url }}",
+          "headline": "Things I have learned while maintaining JavaScript monorepo with Lerna",
+          "datePublished": "2021-09-07",
+          "url": "{{ 'blog/things-i-have-learned-maintaining-javascript-monorepo-with-lerna/' | absolute_url }}"
         }
       </script>
     </div>
