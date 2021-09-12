@@ -36,78 +36,31 @@ custom_metas:
 
   <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
 
-    <div class="col">
-      <article class="card">
-        <img loading="lazy" src="{{ 'assets/img/blog/swagger-editor-validate.png' | relative_url }}" class="card-img-top" alt="How to validate OpenAPI definitions in Swagger Editor using GitHub Actions" />
-        <div class="card-body">
-          <div class="card-title">
-            <h3 class="h5">How to validate OpenAPI definitions in Swagger Editor using GitHub Actions</h3>
+    {% for post in site.posts %}
+      <div class="col">
+        <article class="card">
+          <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top" alt="{{ post.title }}" />
+          <div class="card-body">
+            <div class="card-title">
+              <h3 class="h5">{{ post.title }}</h3>
+            </div>
+            <a href="{{ post.url | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
           </div>
-          <a href="{{ 'blog/how-to-validate-openapi-definitions-in-swagger-editor-using-github-actions/' | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
-        </div>
-      </article>
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "TechArticle",
-          "author": { "@id": "https://vladimirgorej.com" },
-          "publisher": { "@id": "https://vladimirgorej.com" },
-          "image": "{{ 'assets/img/blog/swagger-editor-validate.png' | absolute_url }}",
-          "headline": "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions",
-          "datePublished": "2021-03-07",
-          "url": "{{ 'blog/how-to-validate-openapi-definitions-in-swagger-editor-using-github-actions/' | absolute_url }}"
-        }
-      </script>
-    </div>
-
-    <div class="col">
-      <article class="card">
-        <img loading="lazy" src="{{ 'assets/img/blog/swagger-adjust.png' | relative_url }}" class="card-img-top" alt="How Swagger Adjust can help you build extensible React+Redux apps">
-        <div class="card-body">
-          <div class="card-title">
-            <h3 class="h5">How Swagger Adjust can help you build extensible React+Redux apps</h3>
-          </div>
-          <a href="{{ 'blog/how-swagger-adjust-can-help-you-build-extensible-react-redux-apps/' | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
-        </div>
-      </article>
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "TechArticle",
-          "author": { "@id": "https://vladimirgorej.com" },
-          "publisher": { "@id": "https://vladimirgorej.com" },
-          "image": "{{ 'assets/img/blog/swagger-adjust.png' | absoulte_url }}",
-          "headline": "How Swagger Adjust can help you build extensible React+Redux apps",
-          "datePublished": "2021-02-25",
-          "url": "{{ 'blog/how-swagger-adjust-can-help-you-build-extensible-react-redux-apps/' | absolute_url }}"
-        }
-      </script>
-    </div>
-
-    <div class="col">
-      <article class="card">
-        <img loading="lazy" src="{{ 'assets/img/blog/taming-lerna.png' | relative_url }}" class="card-img-top" alt="Things I have learned while maintaining JavaScript monorepo with Lerna">
-        <div class="card-body">
-          <div class="card-title">
-            <h3 class="h5">Things I have learned while maintaining JavaScript monorepo with Lerna</h3>
-          </div>
-          <a href="{{ 'blog/things-i-have-learned-maintaining-javascript-monorepo-with-lerna/' | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
-        </div>
-      </article>
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "TechArticle",
-          "author": { "@id": "https://vladimirgorej.com" },
-          "publisher": { "@id": "https://vladimirgorej.com" },
-          "image": "{{ 'assets/img/blog/taming-lerna.png' | absoulte_url }}",
-          "headline": "Things I have learned while maintaining JavaScript monorepo with Lerna",
-          "datePublished": "2021-09-07",
-          "url": "{{ 'blog/things-i-have-learned-maintaining-javascript-monorepo-with-lerna/' | absolute_url }}"
-        }
-      </script>
-    </div>
-
+        </article>
+        <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "TechArticle",
+            "author": { "@id": "https://vladimirgorej.com" },
+            "publisher": { "@id": "https://vladimirgorej.com" },
+            "image": "{{ post.image.path | absolute_url }}",
+            "headline": "{{ post.title }}",
+            "datePublished": "{{ post.date | date_to_xmlschema }}",
+            "url": "{{ post.url | absolute_url }}"
+          }
+        </script>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
