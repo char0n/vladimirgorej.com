@@ -10,10 +10,69 @@ height: 342
 
 {%- include card.html -%}
 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a>
-  </li>
-  {% endfor %}
-</ul>
+<div class="text-center">
+  <a href="{{ '/feed.xml' | absolute_url }}" role="button" class="btn text-white btn-lg" style="background: #fd7e14">
+    <i class="fas fa-rss"></i> Vladimír's blog feed
+  </a>
+</div>
+
+{% for post in site.posts %}
+  {% capture year_of_current_post %}
+    {{ site.posts[forloop.index].date | date: "%Y" }}
+  {% endcapture %}
+
+  {% capture year_of_previous_post_in_set %}
+    {{ site.posts[forloop.index].date | date: "%Y" }}
+  {% endcapture %}
+
+  {% if forloop.first %}
+    <section>
+      <h2 class="mb-2 mb-md-3">{{ year_of_current_post }}</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+  {% endif %}
+
+  <div class="col">
+    <article class="card">
+      <div class="card-header"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B"}}</time></div>
+      <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top" alt="{{ post.title }}" />
+      <div class="card-body">
+        <div class="card-title">
+          <h3 class="h5">{{ post.title }}</h3>
+        </div>
+        <a href="{{ post.url | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
+      </div>
+    </article>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "author": { "@id": "https://vladimirgorej.com" },
+        "publisher": { "@id": "https://vladimirgorej.com" },
+        "image": "{{ post.image.path | absolute_url }}",
+        "headline": "{{ post.title }}",
+        "datePublished": "{{ post.date | date_to_xmlschema }}",
+        "url": "{{ post.url | absolute_url }}"
+      }
+    </script>
+  </div>
+
+  {% if forloop.last %}
+      </div>
+    </section>
+  {% else %}
+    {% if year_of_current_post != year_of_previous_post_in_set %}
+        </div>
+      </section>
+      <section>
+        <h2>{{ year_of_current_post }}</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+
+<p class="text-end">
+  <a href="https://www.linkedin.com/today/author/vladimirgorej">
+    <small>More articles on LinkedIn Pulse <i class="fas fa-arrow-right"></i></small>
+  </a>
+</p>
