@@ -16,6 +16,7 @@ layout: default
 
       <header class="post-header mt-3">
         <h1 class="text-justify">{{ page.title | escape }}</h1>
+        <span class="text-muted">Written on</span> <time class="text-muted" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
       </header>
 
       <hr />
