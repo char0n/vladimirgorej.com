@@ -26,7 +26,7 @@ If you're one of the people who write OpenAPI definition by hand in [Swagger Edi
 A couple of years ago, I worked with [Ubiquiti Inc](https://www.ui.com/). We were producing great wireless hardware solutions
 with embedded UIs. I was fortunate to have joined the company when a cross hardware configuration system
 called [UNMS](https://unms.com/) was being architected and developed. The backend part of the system consisted of a vast [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) layer that 
-The Frontend layer was consuming. We used a design-first approach to producing the API. The workflow of this 
+the Frontend layer was consuming. We used a design-first approach to producing the API. The workflow of this 
 [design-first approach](https://www.visual-paradigm.com/guide/development/code-first-vs-design-first) consisted of the following steps:
 
 - create changes in [OpenApi 2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) definition using Swagger Editor
