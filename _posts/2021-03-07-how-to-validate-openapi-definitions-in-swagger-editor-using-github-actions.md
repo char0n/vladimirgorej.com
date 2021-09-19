@@ -21,7 +21,7 @@ An OpenAPI definition can then be used by documentation generation tools to disp
 tools to generate servers and clients in various programming languages, testing tools, and many other use cases.
 
 I took the above description of what OpenAPI is directly from [its specification](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.1.0.md).
-If you're one of the people who write OpenAPI definition by hand in [Swagger Editor](https://editor.swagger.io/), this article was written just for yo.
+If you're one of the people who write OpenAPI definition by hand in [Swagger Editor](https://editor.swagger.io/), this article was written just for you.
 
 A couple of years ago, I worked with [Ubiquiti Inc](https://www.ui.com/). We were producing great wireless hardware solutions
 with embedded UIs. I was fortunate to have joined the company when a cross hardware configuration system
