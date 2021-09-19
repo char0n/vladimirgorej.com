@@ -10,15 +10,12 @@ image:
   caption: Swagger Editor Validate - GitHub Action
 ---
 
-The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs, 
-allowing both humans and computers to discover and understand the service's capabilities without
-access to source code, documentation, or network traffic inspection. 
-When properly defined, a consumer can understand and interact with the remote service with minimal implementation logic.
-
-The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs which,
-allows both humans and computers to discover and understand the service's capabilities without
-access to source code, documentation, or through network traffic inspection. When properly defined, 
-a consumer can understand and interact with the remote service with a minimal amount of implementation logic.
+<p class="lead">
+  The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs, 
+  allowing both humans and computers to discover and understand the service's capabilities without
+  access to source code, documentation, or network traffic inspection. 
+  When properly defined, a consumer can understand and interact with the remote service with minimal implementation logic.
+</p>
 
 An OpenAPI definition can then be used by documentation generation tools to display the API, code generation
 tools to generate servers and clients in various programming languages, testing tools, and many other use cases.
