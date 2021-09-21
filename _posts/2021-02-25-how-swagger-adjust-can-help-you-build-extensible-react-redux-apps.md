@@ -259,9 +259,9 @@ const TodoListEnhancerPlugin = (system) => {
     },
   };
 };
-{% endhighlight %}
 
 export default TodoListEnhancerPlugin;
+{% endhighlight %}
 
 The last thing we need to do is to register the todoListEnhancer plugin with the DI-Container.
 
