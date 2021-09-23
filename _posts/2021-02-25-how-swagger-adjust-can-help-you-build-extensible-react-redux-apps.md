@@ -58,7 +58,7 @@ Generally, the API of Swagger Adjust  is backward compatible with SwaggerUI.
 When I say “generally”, I mean it in a way that the default configuration of Swagger Adjust 
 is incompatible with SwaggerUI but can be adapted by configuration to be fully compatible.
 Swagger Adjust is a free and Open Source software. It comes with a dual license – Apache License Version 2.0 is used for original code fragments, 
-documentation fragments, and original ideas from SwaggerUI, and BSD 3-Clause License is used for everything else
+documentation fragments, and original ideas from SwaggerUI, and BSD 3-Clause License is used for everything else.
 
 To demonstrate Swagger Adjust power, I've built a [simple TodoList app](https://char0n.github.io/swagger-adjust/) composed of two plugins: 
 [todoList](https://github.com/char0n/swagger-adjust/tree/main/demo/src/todo-list) and [todoListEnhancer](https://github.com/char0n/swagger-adjust/tree/main/demo/src/todo-list-enhancer). todoList plugin has the basic functionality of displaying a list of TodoItems 
