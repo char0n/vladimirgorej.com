@@ -54,8 +54,8 @@ const telnetServiceEnabledLens = compose(telnetServiceLens, enabledLens);
 // -----
 
 const services = {
-sshService: { enabled: true },
-telnetService: { enabled: false },
+  sshService: { enabled: true },
+  telnetService: { enabled: false },
 };
 
 console.assert(view(sshServiceEnabledLens, services) === true);
