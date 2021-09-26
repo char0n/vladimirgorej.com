@@ -33,9 +33,6 @@ But that is a wrong assumption, as I found out myself. What I am about to show y
 Lenses are basically just ordinary functions, and as a regular function, they can be composed. 
 Lenses themselves are **compo-sable**. I call them **combined lenses**. Here is the code snipped that is self-explanatory.
 
-Lenses are basically just ordinary functions, and as an ordinary function, they can be composed. 
-Lenses themselves are **compo-sable**. I call them **combined lenses**. Here is the code snipped that is self-explanatory.
-
 {% highlight js linenos %}
 import { lensPath, compose, view } from 'ramda';
 
