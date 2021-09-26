@@ -11,7 +11,7 @@ image:
 ---
 
 <p class="lead">
-  If you are a fan of point-free functional programming in Javascript, then you will inevitably become a fan of <a href="https://ramdajs.com/">Ramda</a>.
+  If you are a fan of point-free functional programming in Javascript, you will inevitably become a fan of <a href="https://ramdajs.com/">Ramda</a>.
   Ramda is a functional library with an emphasis on immutability and side-effect-free functions.
 </p>
 
@@ -27,12 +27,14 @@ const prop1Lens = lensPath(['level1', 'level2', 'prop1']);
 console.assert(view(prop1Lens, complexObject) === 1);
 {% endhighlight %}
 
-As you can see, lenses are a pretty powerful concept. But as you went through the code,
-it seems that you are constrained to creating very specific lenses for very specific use-cases.
+As you can see, lenses are a pretty powerful concept. But as you went through the code, it seems that you are constrained to creating particular lenses for particular use-cases.
 But that is a wrong assumption, as I found out myself. What I am about to show you is not documented even in Ramda documentation or its recipes.
 
-Lenses themselves are **compo-sable**. Lenses are basically just ordinary functions, and as an ordinary function, they can be composed.
-I call them **combined lenses**. Here is the code snipped that is self-explanatory.
+Lenses are basically just ordinary functions, and as a regular function, they can be composed. 
+Lenses themselves are **compo-sable**. I call them **combined lenses**. Here is the code snipped that is self-explanatory.
+
+Lenses are basically just ordinary functions, and as an ordinary function, they can be composed. 
+Lenses themselves are **compo-sable**. I call them **combined lenses**. Here is the code snipped that is self-explanatory.
 
 {% highlight js linenos %}
 import { lensPath, compose, view } from 'ramda';
