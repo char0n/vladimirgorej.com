@@ -7,7 +7,7 @@ image:
   path: assets/img/blog/taming-lerna.png
   width: 467
   height: 335
-caption: Taming monorepos with Lerna and npm@7 workspaces
+  caption: Taming monorepos with Lerna and npm@7 workspaces
 ---
 
 <p class="lead">
