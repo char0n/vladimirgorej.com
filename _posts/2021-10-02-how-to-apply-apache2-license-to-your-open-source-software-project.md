@@ -257,10 +257,9 @@ version with text aligned to the left. As the justified version is the one you g
 
 ### License
 
-To apply the license to your software project, create a `LICENSE` file in the 
-top level of the source tree. Notice that the `LICENSE` file doesn't have any extension, but you
-can optionally name the file `LICENSE.txt` as well. Now copy the full Apache 2.0 license text from [https://www.apache.org/licenses/LICENSE-2.0.txt](https://www.apache.org/licenses/LICENSE-2.0.txt)
-into a LICENSE file. 
+To apply the license to your software project, create a `LICENSE` file in the source tree's top level.
+Now copy the full Apache 2.0 License text from [https://www.apache.org/licenses/LICENSE-2.0.txt](https://www.apache.org/licenses/LICENSE-2.0.txt) into a `LICENSE` file.
+Notice that the `LICENSE` file doesn't have any extension, but you can optionally name the file `LICENSE.txt` as well.
 
 **Do not modify** the license text. If you used a 3-Clause BSD License in the past,
 you usually downloaded the license template, changed it, and saved it as a `LICENSE` file.
@@ -291,7 +290,7 @@ very explicit about what the copyright notice template and additional boilerplat
 this copyright notice template directly in license text is IMHO an improper application of the license.
 
 My opinion is backed by the "**Reusable without rewording**" attribute of the Apache 2.0 License
-that I mentioned before. It's even backed by my experience in a big corporation - two years ago, I was working for one of the biggest tech companies in the world.
+I mentioned before. It's even backed by my experience in a big corporation - two years ago, I was working for one of the biggest tech companies in the world.
 The company had established an Open Source office with a Legal Department dealing with use of Open Source within the company.
 This Open Source office stipulated that for an Open Source project to be licensed under Apache 2.0 License, it is not required
 to have an explicit Apache 2.0 License text as part of the project. 
