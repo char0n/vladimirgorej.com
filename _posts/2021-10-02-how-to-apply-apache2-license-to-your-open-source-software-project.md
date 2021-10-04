@@ -293,7 +293,7 @@ This Open Source office stipulated that for an Open Source project to be license
 to have an explicit Apache 2.0 License text as part of the project. 
 It is absolutely sufficient if the Open Source project README file
 contains the name of the license, either "Apache 2.0 License" or its [SPDX identifier](https://spdx.org/licenses/Apache-2.0.html).
-Ideally, (but not required) canonical URL where the license can be obtained should be mentioned as well: `https://www.apache.org/licenses/LICENSE-2.0.txt`.
+Ideally, (but not required) canonical URL where the copy of the license can be obtained should be mentioned as well: `https://www.apache.org/licenses/LICENSE-2.0.txt`.
 This is just a legal opinion of one big tech company. Don't take this legal opinion as implied truth.
 
 ### Copyright notice
