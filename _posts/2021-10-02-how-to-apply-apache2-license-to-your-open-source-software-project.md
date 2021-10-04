@@ -278,7 +278,7 @@ a copyright notice on line 189:
 Copyright [yyyy] [name of copyright owner]
 {% endhighlight %}
 
-Actually, this copyright notice template and an additional boilerplate are part of the Apache 2.0 License appendix, which starts
+Actually, this is a copyright notice template and an additional boilerplate that are part of the Apache 2.0 License appendix, which starts
 at line 178 and explains how to apply the Apache License to individual source files instead
 of having one single `LICENSE` file in the top level of the source tree. The text in the appendix is
 very explicit about what the copyright notice template and additional boilerplate are for (use in source files). Changing
