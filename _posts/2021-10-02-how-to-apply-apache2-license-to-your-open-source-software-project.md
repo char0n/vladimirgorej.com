@@ -33,7 +33,8 @@ covers the differences nicely, but for completeness, let me mentioned them here 
   <dt class="col-sm-3">Reusable without rewording</dt>
   <dd class="col-sm-9">
     Apache License 2.0 can be easily used by other projects without any rewording in the license document itself.
-    It also means that it is sufficient to provide the canonical URL <code>https://www.apache.org/licenses/LICENSE-2.0.txt</code>, instead of the license text itself.
+    It also means that it should be sufficient to provide the canonical URL <code>https://www.apache.org/licenses/LICENSE-2.0.txt</code>, where
+    the copy of the license can be obtained, instead of the license text.
   </dd>
 </dl>
 
@@ -286,17 +287,20 @@ Copyright [yyyy] [name of copyright owner]
 Actually, this copyright notice template and an additional boilerplate are part of the Apache 2.0 License appendix, which starts
 at line 178 and explains how to apply the Apache License to individual source files instead
 of having one single `LICENSE` file in the top level of the source tree. The text in the appendix is
-very explicit about what the copyright notice template and additional boilerplate are for. Changing
+very explicit about what the copyright notice template and additional boilerplate are for (use in source files). Changing
 this copyright notice template directly in license text is IMHO an improper application of the license.
+The whole appendix (lines 178-201) can technically be omitted from the license, as it's outside the scope of "Section
+1 through 9", which forms the terms and conditions of the license.
 
 My opinion is backed by the "**Reusable without rewording**" attribute of the Apache 2.0 License
 I mentioned before. It's even backed by my experience in a big corporation - two years ago, I was working for one of the biggest tech companies in the world.
 The company had established an Open Source office with a Legal Department dealing with use of Open Source within the company.
 This Open Source office stipulated that for an Open Source project to be licensed under Apache 2.0 License, it is not required
 to have an explicit Apache 2.0 License text as part of the project. 
-The license itself doesn't require it. It is absolutely sufficient if the Open Source project README file
+It is absolutely sufficient if the Open Source project README file
 contains the name of the license, either "Apache 2.0 License" or its [SPDX identifier](https://spdx.org/licenses/Apache-2.0.html).
 Ideally, (but not required) canonical URL where the license can be obtained should be mentioned as well: `https://www.apache.org/licenses/LICENSE-2.0.txt`.
+This is just a legal opinion of one big tech company. Don't take this legal opinion as implied truth.
 
 ### Copyright notice
 
