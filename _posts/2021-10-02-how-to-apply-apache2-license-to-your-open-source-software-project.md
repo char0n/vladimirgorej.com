@@ -250,12 +250,6 @@ The justified version is the one you get by fetching `https://www.apache.org/lic
 The license has 201 lines of text and is composed of the header (lines 1-3),
 the terms and conditions (lines 5-176) and the appendix (lines 178-201).
 
-
-The license has 201 lines of text, and it's in what I call the **canonical form**.
-There are two variants of the Apache 2.0 license: justified version and
-version with text aligned to the left. As the justified version is the one you get by fetching
-`https://www.apache.org/licenses/LICENSE-2.0.txt`, I consider it the canonical one.
-
 ### License
 
 To apply the license to your software project, create a `LICENSE` file in the source tree's top level.
