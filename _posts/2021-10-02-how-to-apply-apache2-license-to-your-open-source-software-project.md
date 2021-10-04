@@ -356,7 +356,7 @@ Choose the appropriate Open Source license for the needs of your project.
 If you're deciding between BSD, MIT, and Apache 2.0, go for Apache 2.0 License. The license
 automatically grants patent rights. It's clear, explicit, and reusable without rewording. 
 To apply the license to your Open Source software project, create two files: `LICENSE` and `NOTICE`
-in the top level of the source tree. The license text that you fetched from `https://www.apache.org/licenses/LICENSE-2.0.txt`
+in the top level of the source tree. The copy of the license text that you obtained from `https://www.apache.org/licenses/LICENSE-2.0.txt`
 goes into the `LICENSE` file. Your copyright notice goes into the `NOTICE` file. Doing these
 two things makes the application of the Apache 2.0 License as explicit and clear as it can be.
 Sounds pretty easy, right?
