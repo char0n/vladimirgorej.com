@@ -4,7 +4,7 @@ title: "How to apply the Apache 2.0 License to your Open Source software project
 description: "Apache 2.0 License is one of the best licenses to use in your Open Source software project, but do you actually know how to properly apply it?"
 date: 2021-10-02 15:15:00 +0300
 image:
-  path: assets/img/blog/apache-logo.svg
+  path: assets/img/blog/apache-logo.png
   width: 250
   height: 250
   caption: This image was used from Apache Software Foundation press kit (TM)
