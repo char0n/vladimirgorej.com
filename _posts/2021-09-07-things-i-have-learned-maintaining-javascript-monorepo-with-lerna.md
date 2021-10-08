@@ -114,6 +114,15 @@ But the correct order of build should be:
 * package-a
 * package-c
 
+Proper order of execution can be achieved by defining each package explicitly and in the correct order 
+in the `workspaces` array of `package.json`. This array then needs to be maintained manually to reflect the monorepo topology.
+
+{% highlight json %}
+{
+  "workspaces": ["./packages/package-b", "./package/package-a", "./packages/package-c"]
+}
+{% endhighlight %}
+ 
 Because of this, **Lerna** still plays a significant role here.
 Lerna will determine which packages have **build** npm script defined, and then it determines the proper execution order.
 
