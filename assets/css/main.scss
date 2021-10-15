@@ -36,6 +36,20 @@ ul.social-buttons li a {
     object-fit: fill;
 }
 
+.card-title h3 {
+    min-height: 72px;
+    max-height: 72px;
+    height: 72px;
+}
+
+.text-truncate-3 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+}
+
 .github-fork-ribbon:before {
     background-color: rgb(33,37,41);
 }
