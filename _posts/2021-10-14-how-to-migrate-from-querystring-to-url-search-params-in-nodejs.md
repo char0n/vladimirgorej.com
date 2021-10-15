@@ -110,24 +110,26 @@ new URLSearchParams({ foo: 'bar', baz: ['qux', 'quux'], corge: '' }).toString();
 
 As we can see, what we got is a different result compared to *querystring*.
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">API</th>
-      <th scope="col">Result</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>querystring</td>
-      <td>foo=bar&baz=qux&baz=quux&corge=</td>
-    </tr>
-    <tr>
-      <td>URLSearchParams</td>
-      <td>foo=bar&baz=qux%2Cquux&corge=</td>
-    </tr>
-  </tbody>
-</table>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">API</th>
+        <th scope="col">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>querystring</td>
+        <td>foo=bar&baz=qux&baz=quux&corge=</td>
+      </tr>
+      <tr>
+        <td>URLSearchParams</td>
+        <td>foo=bar&baz=qux%2Cquux&corge=</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 <blockquote class="blockquote">
   <p>"Unlike <em>querystring</em> module, duplicate keys in the form of array values are not allowed. Arrays are stringified using array.toString(), which simply joins all array elements with commas."</p>
