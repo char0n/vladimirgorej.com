@@ -4,7 +4,7 @@ title: "Things I have learned while maintaining JavaScript monorepo with Lerna"
 description: "Monorepo management processes using Lerna and npm@7 workspaces"
 date: 2021-09-07 15:15:00 +0300
 image:
-  path: assets/img/blog/taming-lerna.png
+  path: assets/img/blog/taming-lerna.webp
   width: 467
   height: 335
   caption: Taming monorepos with Lerna and npm@7 workspaces

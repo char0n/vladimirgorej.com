@@ -4,7 +4,7 @@ title: "How to validate OpenAPI definitions in Swagger Editor using GitHub Actio
 description: "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions"
 date: 2021-03-07 10:39:04 +0200
 image:
-  path: assets/img/blog/swagger-editor-validate.png
+  path: assets/img/blog/swagger-editor-validate.webp
   width: 536
   height: 188
   caption: Swagger Editor Validate - GitHub Action
@@ -146,14 +146,14 @@ jobs:
 This is what you'll see if your OpenAPI definition validates **successfully**.
 
 <figure class="figure">
-  <img src="{{ '/assets/img/blog/swagger-editor-validate-success.png' | relative_url }}" width="1149" height="365" class="figure-img rounded mx-auto d-block img-fluid" alt="Successful validation" />
+  <img src="{{ '/assets/img/blog/swagger-editor-validate-success.webp' | relative_url }}" width="1149" height="365" class="figure-img rounded mx-auto d-block img-fluid" alt="Successful validation" />
   <figcaption class="figure-caption text-center">Successful validation</figcaption>
 </figure>
 
 This is what you'll see if your OpenAPI definition contains **errors**.
 
 <figure class="figure">
-  <img src="{{ '/assets/img/blog/swagger-editor-validate-errors.png' | relative_url }}" width="1218" height="430" class="figure-img rounded mx-auto d-block img-fluid" alt="Failed validation" />
+  <img src="{{ '/assets/img/blog/swagger-editor-validate-errors.webp' | relative_url }}" width="1218" height="430" class="figure-img rounded mx-auto d-block img-fluid" alt="Failed validation" />
   <figcaption class="figure-caption text-center">Failed validation</figcaption>
 </figure>
 

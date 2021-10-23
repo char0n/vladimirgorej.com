@@ -4,7 +4,7 @@ title: "How Swagger Adjust can help you build extensible React+Redux apps"
 description: "How Swagger Adjust can help you build extensible React+Redux apps"
 date: 2021-02-25 10:39:04 +0200
 image:
-  path: assets/img/blog/swagger-adjust.png
+  path: assets/img/blog/swagger-adjust.webp
   width: 496
   height: 288
   caption: Swagger Adjust
@@ -66,7 +66,7 @@ and adding a new one. todoListEnhancer adds additional functionality like comple
 batch operations on the entire TodoList.
 
 <figure class="figure d-block">
-  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-plugin.png' | relative_url }}" width="533" height="256" class="figure-img rounded mx-auto d-block img-fluid" alt="todoList plugin" />
+  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-plugin.webp' | relative_url }}" width="533" height="256" class="figure-img rounded mx-auto d-block img-fluid" alt="todoList plugin" />
   <figcaption class="figure-caption text-center">todoList plugin</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ todoList plugin looks like this when it renders. It contains AppBar, input for c
 items, and a list of already added todo items.
 
 <figure class="figure d-block clearfix">
-  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-plugin-dir-structure.png' | relative_url }}" width="230" height="242" class="float-md-end" alt="todoList plugin" />
+  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-plugin-dir-structure.webp' | relative_url }}" width="230" height="242" class="float-md-end" alt="todoList plugin" />
   <figcaption class="figure-caption">
     The directory structure of todoList plugin looks pretty standard. There is a components directory containing all the React Components.
     Redux-related code is concentrated in: actions.js, selectors.js, and reducers.js.
@@ -197,7 +197,7 @@ original todoList plugin and adds additional features. Enhancement doesn't happe
 plugin code modification but rather by its configuration. And this is where Swagger Adjust really shines.
 
 <figure class="figure d-block">
-  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-enhancer-plugin.png' | relative_url }}" width="533" height="256" class="figure-img rounded mx-auto d-block img-fluid" alt="todoListEnhancer plugin" />
+  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-enhancer-plugin.webp' | relative_url }}" width="533" height="256" class="figure-img rounded mx-auto d-block img-fluid" alt="todoListEnhancer plugin" />
   <figcaption class="figure-caption text-center">todoListEnhancer plugin</figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ Additionally, we're exposing the time formatting function to the plugin so that 
 could easily override how time is formatted.
 
 <figure class="figure d-block">
-  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-enhancer-plugin-dir-structure.png' | relative_url }}" width="252" height="202" class="figure-img rounded d-block img-fluid" alt="todoListEnhancer plugin directory structure" />
+  <img src="{{ '/assets/img/blog/swagger-adjust-todo-list-enhancer-plugin-dir-structure.webp' | relative_url }}" width="252" height="202" class="figure-img rounded d-block img-fluid" alt="todoListEnhancer plugin directory structure" />
 </figure>
 
 {% highlight javascript linenos %}

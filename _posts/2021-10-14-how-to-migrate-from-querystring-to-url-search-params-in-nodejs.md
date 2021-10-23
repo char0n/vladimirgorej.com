@@ -4,7 +4,7 @@ title: "How to migrate from querystring to URLSearchParams in Node.js"
 description: "Node.js marked the querystring as legacy API and recommends using URLSearchParams. But doesn't give us any clue how to actually migrate. This article fills this void and provides a migration guide."
 date: 2021-10-14 10:00:00 +0300
 image:
-  path: assets/img/blog/querystring-migration.jpeg
+  path: assets/img/blog/querystring-migration.webp
   width: 870
   height: 580
   caption: Photo by Maksim Shutov (@maksimshutov)

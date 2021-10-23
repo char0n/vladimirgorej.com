@@ -4,7 +4,7 @@ title: "Composing lenses in Ramda"
 description: "Ramda contains the implementation of one of my favorite functional concepts - functional lenses. Lenses are part of category theory and allow us to focus on a particular piece/path of a complex data object."
 date: 2017-01-04 10:00:00 +0200
 image:
-  path: assets/img/blog/composing-lenses-in-ramda.jpg
+  path: assets/img/blog/composing-lenses-in-ramda.webp
   width: 1280
   height: 720
   caption: Composing lenses in Ramda
