@@ -8,6 +8,7 @@ image:
   width: 870
   height: 580
   caption: Photo by Maksim Shutov (@maksimshutov)
+  object-fit: fill
 ---
 
 <p class="lead">

@@ -39,7 +39,7 @@ custom_metas:
     {% for post in site.posts limit:3 %}
       <div class="col">
         <article class="card">
-          <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top" alt="{{ post.title }}" />
+          <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top card-img-top--scale-down card-img-top--{{ post.image.object-fit }}" alt="{{ post.title }}" />
           <div class="card-body">
             <div class="card-title">
               <h3 class="h5 text-truncate-3">{{ post.title }}</h3>

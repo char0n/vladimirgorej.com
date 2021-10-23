@@ -29,7 +29,7 @@ image:
   <div class="col">
     <article class="card">
       <div class="card-header"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B"}}</time></div>
-      <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top" alt="{{ post.title }}" />
+      <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top card-img-top--scale-down{% if post.image.object-fit %}card-img-top--scale-down card-img-top--{{ post.image.object-fit }}{% endif %}" alt="{{ post.title }}" />
       <div class="card-body">
         <div class="card-title">
           <h3 class="h5 text-truncate-3">{{ post.title }}</h3>

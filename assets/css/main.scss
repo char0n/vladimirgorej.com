@@ -31,8 +31,15 @@ ul.social-buttons li a {
 }
 
 .card-img-top {
-    width: 100%;
-    height: 30vh;
+    height: 170px;
+    border-radius: 0;
+}
+
+.card-img-top--scale-down {
+    object-fit: scale-down;
+}
+
+.card-img-top--fill {
     object-fit: fill;
 }
 
