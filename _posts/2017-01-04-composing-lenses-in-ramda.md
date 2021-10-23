@@ -8,7 +8,7 @@ image:
   width: 1280
   height: 720
   caption: Composing lenses in Ramda
-  object-fit: fill
+  object-fit: cover
 ---
 
 <p class="lead">
