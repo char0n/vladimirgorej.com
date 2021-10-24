@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to apply the Apache 2.0 License to your Open Source software project"
-description: "Apache 2.0 License is one of the best licenses to use in your Open Source software project, but do you actually know how to properly apply it?"
+description: "Apache 2.0 License is one of the best OSS licenses to use in your Open Source software project, but do you actually know how to properly apply it? We'll go through all the common mistakes and show how to use the license correctly."
 date: 2021-10-02 15:15:00 +0300
 image:
   path: assets/img/blog/apache-logo.webp
@@ -11,11 +11,13 @@ image:
 ---
 
 <p class="lead">
-  I've always been a <span class="fst-italic">3-Clause BSD License</span> (AKA <i>New BSD License</i> or <span class="fst-italic">Modified BSD License</span>) guy.
-  As I've matured, my understanding of Open Source licensing has grown as well, and so have my requirements. When I start a new Open Source
-  project now, I just use <strong>Apache 2.0 license</strong>. I want to point out that I am not a lawyer, and I am certainly not your lawyer.
-  My legal opinions are based on research and lengthy conversations with legal departments of companies that I worked for.  
+Apache 2.0 License is one of the best OSS licenses to use in your Open Source software project, but do you actually know how to properly apply it? We'll go through all the common mistakes and show how to use the license correctly.
 </p>
+
+I've always been a <span class="fst-italic">3-Clause BSD License</span> (AKA <i>New BSD License</i> or <span class="fst-italic">Modified BSD License</span>) guy.
+As I've matured, my understanding of Open Source licensing has grown as well, and so have my requirements. When I start a new Open Source
+project now, I just use <strong>Apache 2.0 license</strong>. I want to point out that I am not a lawyer, and I am certainly not your lawyer.
+My legal opinions are based on research and lengthy conversations with legal departments of companies that I worked for.
 
 ### Why Apache 2.0 license?
 

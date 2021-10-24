@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Composing lenses in Ramda"
-description: "Ramda contains the implementation of one of my favorite functional concepts - functional lenses. Lenses are part of category theory and allow us to focus on a particular piece/path of a complex data object."
+description: "The lens is a first-class citizen (Function) that gives us access (focus) to the particular piece of the complex data structure. We'll look into the basic rules of lens composition."
 date: 2017-01-04 10:00:00 +0200
 image:
   path: assets/img/blog/composing-lenses-in-ramda.webp
@@ -12,9 +12,12 @@ image:
 ---
 
 <p class="lead">
-  If you are a fan of point-free functional programming in Javascript, you will inevitably become a fan of <a href="https://ramdajs.com/">Ramda</a>.
-  Ramda is a functional library with an emphasis on immutability and side-effect-free functions.
+  The lens is a first-class citizen (Function) that gives us access (focus) to the particular piece of the complex data structure.
+  We'll look into the basic rules of lens composition.
 </p>
+
+If you are a fan of point-free functional programming in Javascript, you will inevitably become a fan of <a href="https://ramdajs.com/">Ramda</a>.
+Ramda is a functional library with an emphasis on immutability and side-effect-free functions.
 
 Ramda contains the implementation of one of my favorite functional concepts - **functional lenses**.
 Lenses are part of category theory and allow us to focus on a particular piece/path of a complex data object.

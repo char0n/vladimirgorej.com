@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Swagger Adjust can help you build extensible React+Redux apps"
-description: "How Swagger Adjust can help you build extensible React+Redux apps"
+description: "Step by step guide to building React-Redux apps using pluggable architecture. Features are produced as plugins and are later composed to create the app. Plugins can be removed, added, or amended by other plugins."
 date: 2021-02-25 10:39:04 +0200
 image:
   path: assets/img/blog/swagger-adjust.webp
@@ -9,6 +9,10 @@ image:
   height: 288
   caption: Swagger Adjust
 ---
+
+<p class="lead">
+  Step by step guide to building React-Redux apps using pluggable architecture. Features are produced as plugins and are later composed to create the app. Plugins can be removed, added, or amended by other plugins.
+</p>
 
 More than four years ago, I worked on a backend project where I needed to render HTML
 documentation from [OpenApi 2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md) JSON document defining our REST API written in hapi.js. 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions"
-description: "How to validate OpenAPI definitions in Swagger Editor using GitHub Actions"
+description: "Building a GitHub Action workflow that uses Swagger Editor to validate an OpenAPI definition."
 date: 2021-03-07 10:39:04 +0200
 image:
   path: assets/img/blog/swagger-editor-validate.webp
@@ -11,11 +11,13 @@ image:
 ---
 
 <p class="lead">
-  The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs, 
-  allowing both humans and computers to discover and understand the service's capabilities without
-  access to source code, documentation, or network traffic inspection. 
-  When properly defined, a consumer can understand and interact with the remote service with minimal implementation logic.
+  Building a GitHub Action workflow that uses Swagger Editor to validate an OpenAPI definition.
 </p>
+
+The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to HTTP APIs,
+allowing both humans and computers to discover and understand the service's capabilities without
+access to source code, documentation, or network traffic inspection.
+When properly defined, a consumer can understand and interact with the remote service with minimal implementation logic.
 
 An OpenAPI definition can then be used by documentation generation tools to display the API, code generation
 tools to generate servers and clients in various programming languages, testing tools, and many other use cases.
