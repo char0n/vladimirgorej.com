@@ -4,14 +4,14 @@
     <article class="card bg-light border-secondary mt-3 mb-3 p-1">
       <div class="row g-0">
         <div class="col-md-2">
-          <img class="card-img img-fluid rounded-circle" src="{{ 'assets/img/vladimir-gorej.webp' | relative_url }} " alt="Vladimír Gorej" width="319" height="342" />
+          <img class="card-img img-fluid rounded-circle" src="{% link assets/img/vladimir-gorej.webp %} " alt="{{ site.author.name }}" width="319" height="342" />
         </div>
         <div class="col-md-10">
           <div class="card-body">
-            <h2 class="h5 card-title">Vladimír Gorej, <small>a.k.a. <abbr title="Nickname">char0n</abbr></small></h2>
+            <h2 class="h5 card-title">{{ site.author.name }}, <small>a.k.a. <abbr title="Nickname">char0n</abbr></small></h2>
             <p class="card-text">
-              Vladimír Gorej is a Prague based <strong>software engineer</strong> with focus on Web & Mobile. Passionate with software/code quality, Functional and Reactive programming.
-              Vladimír is formerly Technical Team Lead of Oracle, Principal Software Engineer at Apiary and held other senior engineering and leading roles in international
+              {{ site.author.name }} is a Prague based <strong>software engineer</strong> with focus on Web & Mobile. Passionate with software/code quality, Functional and Reactive programming.
+              {{ site.author.first_name }} is formerly Technical Team Lead of Oracle, Principal Software Engineer at Apiary and held other senior engineering and leading roles in international
               companies like Ubiquiti Networks or SecurityScorecard.
               He's active in OpenSource community for last 10 years and he currently utilizes his experience in this field in a role of OpenSource Software Engineer at SmartBear.
               His favorite programming languages include <strong>JavaScript</strong>, <strong>Python</strong> and <strong>Elixir</strong>.
@@ -21,7 +21,7 @@
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "@id": "https://vladimirgorej.com",
+              "@id": "{{ site.url }}",
               "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Prague",
@@ -33,14 +33,14 @@
                 "addressRegion": "Prague"
               },
               "taxID": "05284503",
-              "email": "mailto:vladimir.gorej@gmail.com",
-              "image": "https://vladimirgorej.com/assets/img/vladimir-gorej.webp",
+              "email": "mailto:{{ site.email }}",
+              "image": "{{ 'assets/img/vladimir-gorej.webp' | absolute_url }}",
               "jobTitle": "Software Engineer",
-              "name": "Vladimír Gorej",
+              "name": "{{ site.author.name }}",
               "alternateName": "char0n",
-              "givenName": "Vladimír",
-              "familyName": "Gorej",
-              "url": "https://vladimirgorej.com"
+              "givenName": "{{ site.author.first_name }}",
+              "familyName": "{{ site.author.last_name }}",
+              "url": "{{ site.url }}"
             }
           </script>
         </div>

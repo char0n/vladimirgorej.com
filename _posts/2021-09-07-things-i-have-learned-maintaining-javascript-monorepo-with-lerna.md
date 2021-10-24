@@ -186,7 +186,7 @@ All the examples mentioned in the article can be found in the following Lerna mo
       {
         "@context": "https://schema.org",
         "@type": "SoftwareSourceCode",
-        "author": { "@id": "https://vladimirgorej.com" },
+        "author": { "@id": "{{ site.url }}" },
         "name": "lerna-monorepo-taming",
         "abstract": "This monorepo implements current practices and conventions used while building monorepos using Lerna.",
         "codeRepository": "https://github.com/char0n/lerna-monorepo-taming"

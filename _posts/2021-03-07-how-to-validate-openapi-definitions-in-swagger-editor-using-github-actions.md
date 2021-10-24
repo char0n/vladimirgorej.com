@@ -76,7 +76,7 @@ against the technical design mentioned earlier with all its requirements. I call
       {
         "@context": "https://schema.org",
         "@type": "SoftwareSourceCode",
-        "author": { "@id": "https://vladimirgorej.com" },
+        "author": { "@id": "{{ site.url }}" },
         "name": "swagger-editor-validate",
         "abstract": "This GitHub Actions validates OpenAPI (OAS) definition file using Swagger Editor.",
         "codeRepository": "https://github.com/char0n/swagger-editor-validate"
@@ -148,14 +148,14 @@ jobs:
 This is what you'll see if your OpenAPI definition validates **successfully**.
 
 <figure class="figure">
-  <img src="{{ '/assets/img/blog/swagger-editor-validate-success.webp' | relative_url }}" width="1149" height="365" class="figure-img rounded mx-auto d-block img-fluid" alt="Successful validation" />
+  <img src="{% link assets/img/blog/swagger-editor-validate-success.webp %}" width="1149" height="365" class="figure-img rounded mx-auto d-block img-fluid" alt="Successful validation" />
   <figcaption class="figure-caption text-center">Successful validation</figcaption>
 </figure>
 
 This is what you'll see if your OpenAPI definition contains **errors**.
 
 <figure class="figure">
-  <img src="{{ '/assets/img/blog/swagger-editor-validate-errors.webp' | relative_url }}" width="1218" height="430" class="figure-img rounded mx-auto d-block img-fluid" alt="Failed validation" />
+  <img src="{% link assets/img/blog/swagger-editor-validate-errors.webp %}" width="1218" height="430" class="figure-img rounded mx-auto d-block img-fluid" alt="Failed validation" />
   <figcaption class="figure-caption text-center">Failed validation</figcaption>
 </figure>
 

@@ -84,7 +84,7 @@ Lens composition from **generic** lenses to **combined** lenses is one step furt
       {
         "@context": "https://schema.org",
         "@type": "SoftwareSourceCode",
-        "author": { "@id": "https://vladimirgorej.com" },
+        "author": { "@id": "{{ site.url }}" },
         "name": "ramda",
         "abstract": "Practical functional Javascript",
         "codeRepository": "https://github.com/ramda/ramda"
