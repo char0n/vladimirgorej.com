@@ -166,7 +166,7 @@ Or installed as a specific development dependency of a particular *monorepo* pac
 Before npm workspaces, to run a binary from one of the *monorepo* packages, we had to use the [link-parent-bin](https://www.npmjs.com/package/link-parent-bin)
 npm package to link top-level npm binaries to all *monorepo* packages. This is no longer required as npm supports this natively.
 
-### Closing words
+## Closing words
 
 Given all that has been written here, I think npm workspaces still doesn't replace Lerna. Instead,
 they just significantly simplified how we work with Lerna. Lerna still plays a significant part in
