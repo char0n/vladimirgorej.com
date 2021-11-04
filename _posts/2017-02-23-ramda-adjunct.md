@@ -23,7 +23,7 @@ Namely, my two most favorite [lodash](https://lodash.com/) and [Ramda](https://r
 
 While using these functional libraries, I found out that in every new project I was working on, 
 I tend to create the same set of aggregate functions that I missed either from lodash or Ramda.
-Let me demonstrate this in a code snippet...
+Let me demonstrate this in a code snippet:
 
 {% highlight javascript linenos %}
 const { isString, negate } = require('lodash/fp');
