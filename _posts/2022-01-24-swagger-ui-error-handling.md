@@ -69,7 +69,7 @@ tree in React developer tools:
 This plugin is solely responsible for error handling logic in SwaggerUI. Accepts a list of component
 names that should be protected by error boundaries.  
 
-It's public API looks like this:
+Its public API looks like this:
 
 {% highlight js linenos %}
 {
