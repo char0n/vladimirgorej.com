@@ -225,7 +225,7 @@ please read the source code of this component first.
 In prior releases of SwaggerUI, almost all components have been protected, and when thrown error,
 `Fallback` component was displayed. This changes with SwaggerUI v4.3.0. Only components defined
 by the `safe-render` plugin are now protected and display fallback. If a small component somewhere within
-SwaggerUI React component tree fails to render and throws an error. The error bubbles up to the closest
+SwaggerUI React component tree fails to render and throws an error, the error bubbles up to the closest
 error boundary, and that error boundary displays the `Fallback` component and invokes `componentDidCatch`.
 
 If you're interested in more technical details, here is the [PR](https://github.com/swagger-api/swagger-ui/pull/7761/files)
