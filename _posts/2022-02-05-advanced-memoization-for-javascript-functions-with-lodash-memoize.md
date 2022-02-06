@@ -168,7 +168,7 @@ const funcM = memoizeN(func, { comparators });
 
 console.dir(funcM(obj1, obj2, obj3)); // => {c: 3}
 console.dir(funcM(obj1, obj2, {c: 3})); // => {c: 3} (cache hit)
-console.dir(funcM(obj1, {b: 2}, obj3); // => {c: 3}
+console.dir(funcM(obj1, {b: 2}, obj3)); // => {c: 3}
 console.dir(funcM.cache.size); // => 2
 {% endhighlight %}
 
