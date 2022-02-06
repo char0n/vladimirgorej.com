@@ -244,7 +244,7 @@ If you prefer to use `memoizeN` as npm package,
 here is how to achieve that:
 
 {% highlight shell %}
- $ npm install gist:2e6c77d38cf00faacceaf37e46b76a32 --save-dev
+ $ npm install gist:2e6c77d38cf00faacceaf37e46b76a32 --save
 {% endhighlight %}
 
 This command will create the following entry inside your dependencies:
