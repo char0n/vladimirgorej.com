@@ -20,9 +20,9 @@
 
 title: Vladimír Gorej's Site
 email: vladimir.gorej@gmail.com
-tagline: Vladimír Gorej is a Prague based software engineer with focus on Web & Mobile.
-description: >- # this means to ignore newlines until "baseurl:"
-  Vladimír Gorej is a Prague based software engineer with focus on Web & Mobile.
+tagline: Vladimír Gorej is a Prague-based software engineer.
+description: >- # this means to ignore newlines until "keywords:"
+  Vladimír Gorej is a Prague-based software engineer.
   Passionate with software/code quality, Functional and Reactive programming.
 keywords: Vladimír, Gorej, personal, site, blog
 baseurl: "" # the subpath of your site, e.g. /blog
