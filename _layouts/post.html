@@ -31,6 +31,19 @@ layout: default
       {{ content }}
     </div>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "TechArticle",
+        "author": { "@id": "{{ site.url }}" },
+        "publisher": { "@id": "{{ site.url }}" },
+        "image": "{{ page.image.path | absolute_url }}",
+        "headline": "{{ page.title }}",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "url": "{{ page.url | absolute_url }}"
+      }
+    </script>
+
     <section>
       {%- if site.disqus.shortname -%}
         {%- include disqus_comments.html -%}
