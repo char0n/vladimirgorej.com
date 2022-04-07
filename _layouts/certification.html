@@ -34,6 +34,20 @@ layout: default
         </p>
       </object>
     </div>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "EducationalOccupationalCredential",
+        "educationalCredentialAwarded": "certificate",
+        "author": { "@id": "{{ site.url }}" },
+        "publisher": { "@id": "{{ site.url }}" },
+        "image": "{{ page.image.path | absolute_url }}",
+        "headline": "{{ page.title }}",
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        "url": "{{ page.url | absolute_url }}"
+      }
+    </script>
   </div>
   <div class="col-0 col-md-2"></div>
 
