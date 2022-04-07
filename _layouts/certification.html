@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% link pages/homepage.html %}">Home</a></li>
+    <li class="breadcrumb-item"><a href="{% link pages/certifications.html %}">Certifications & Trainings</a></li>
+  </ol>
+</nav>
+
+<article class="row">
+
+  <div class="col-0 col-md-2"></div>
+  <div class="col-12 col-lg-8">
+    <div>
+      <header class="post-header mt-3">
+        <h1 class="text-justify">{{ page.title | escape }}</h1>
+        <span class="text-muted">Certification achieved on</span> <time class="text-muted" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+      </header>
+
+      <hr />
+
+      <object
+          data="{{ page.pdf.path | relative_url }}"
+          type="application/pdf"
+          width="100%"
+          height="842"
+      >
+        <p>
+          Your browser does not support PDFs.
+          <a href="{{ page.pdf.path | absolute_url }}">Download the PDF</a>
+          .
+        </p>
+      </object>
+    </div>
+  </div>
+  <div class="col-0 col-md-2"></div>
+
+</article>

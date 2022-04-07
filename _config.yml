@@ -54,6 +54,9 @@ collections:
   posts:
     output: true
     permalink: /blog/:title/
+  certifications:
+    output: true
+    permalink: /certifications/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -65,6 +68,7 @@ collections:
 #
 exclude:
   - SECURITY.md
+  - .idea
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
