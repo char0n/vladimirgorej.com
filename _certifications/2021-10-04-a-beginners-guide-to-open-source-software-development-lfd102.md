@@ -13,5 +13,3 @@ image:
   caption: LFD102
   object-fit: cover
 ---
-
-certificate

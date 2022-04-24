@@ -13,5 +13,3 @@ image:
   caption: LFC101
   object-fit: cover
 ---
-
-certificate
