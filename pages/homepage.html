@@ -83,7 +83,7 @@ custom_metas:
     {% for certification in certifications limit:3 %}
     <div class="col">
       <article class="card">
-        <img loading="lazy" src="{{ certification.image.path | relative_url }}" class="card-img-top card-img-top--scale-down card-img-top--{{ certification.image.object-fit }}" alt="{{ certification.title }}" />
+        <img loading="lazy" src="{{ certification.image.path | relative_url }}" class="card-img-top card-img-top--{{ certification.image.object-fit }}" alt="{{ certification.title }}" />
         <div class="card-body">
           <div class="card-title">
             <h3 class="h5 text-truncate-3">{{ certification.title }}</h3>
