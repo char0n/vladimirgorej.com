@@ -8,8 +8,14 @@ pdf:
   path: assets/pdf/certifications/professional-scrum-master-psmI.pdf
 image:
   path: assets/img/certifications/professional-scrum-master-psmI.webp
-  width: 683
-  height: 354
+  width: 1044
+  height: 796
   caption: PSM I
-  object-fit: contain
+  object-fit: cover
 ---
+
+<br /> 
+
+<p class="lead text-center">
+  Scrum.org public profile: <a href="https://www.scrum.org/user/1019130">https://www.scrum.org/user/1019130</a> 
+</p>
