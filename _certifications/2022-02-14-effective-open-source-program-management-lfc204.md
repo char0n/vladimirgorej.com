@@ -10,6 +10,6 @@ image:
   path: assets/img/certifications/effective-open-source-program-management-lfc204.webp
   width: 800
   height: 620
-  caption: LFC203
+  caption: LFC204
   object-fit: cover
 ---
