@@ -17,6 +17,11 @@ image:
 
 {%- include card.html -%}
 
+<div class="text-center">
+  <a href="https://www.credly.com/users/vladimir-gorej/badges" role="button" class="btn text-white btn-lg" style="background: #fd7e14">
+    <i class="fas fa-certificate"></i> Vladimír's Credly badges
+  </a>
+</div>
 {% assign certifications = site.certifications | sort: "timestamp" | reverse %}
 {% for certification in certifications %}
   {% capture year_of_current_certification %}{{ certification.date | date: "%Y" }}{% endcapture %}
@@ -67,10 +72,3 @@ image:
     {% endif %}
   {% endif %}
 {% endfor %}
-
-
-<p class="text-end">
-  <a href="https://www.credly.com/users/vladimir-gorej/badges">
-    <small>More certifications on Credly <i class="fas fa-arrow-right"></i></small>
-  </a>
-</p>
