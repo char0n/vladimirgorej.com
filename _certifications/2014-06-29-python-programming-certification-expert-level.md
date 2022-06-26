@@ -8,8 +8,8 @@ pdf:
   path: assets/pdf/certifications/python-programming-certification-expert-level.pdf
 image:
   path: assets/img/certifications/python-programming-certification-expert-level.webp
-  width: 622
-  height: 291
+  width: 631
+  height: 297
   caption: "Python Programming Certification (Expert Level)"
   object-fit: fill
 ---
