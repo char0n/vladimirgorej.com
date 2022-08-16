@@ -17,9 +17,9 @@ image:
 <br /> 
 
 <p class="lead text-center">
-  I was part of <strong>ApiDOMinator</strong> team which was representing SmartBear
-  at 2022 Vista Global Hackathon and <strong>won</strong> <strong>BEST ENGINEERING</strong> category with 
-  following <strong>hack</strong>:
+  I was part of <strong>ApiDOMinator</strong> team, which was representing SmartBear
+  at the 2022 Vista Global Hackathon and <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with 
+  the following <strong>hack</strong>:
 </p>
 
 <div class="list-group">
