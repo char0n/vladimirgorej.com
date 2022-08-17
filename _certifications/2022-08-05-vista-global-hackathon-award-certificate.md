@@ -1,24 +1,23 @@
 ---
 layout: certification
-title: "2022 Vista Global Hackathon - Certificate of Participation"
-description: "2022 Vista Global Hackathon - Certificate of Participation"
-date: 2022-08-05 10:00:00 +0200
-timestamp: 1659686400
+title: "2022 Vista Global Hackathon - Award Certificate"
+description: "2022 Vista Global Hackathon - Award Certificate"
+date: 2022-08-05 11:00:00 +0200
+timestamp: 1659690000
 pdf:
-  path: assets/pdf/certifications/vista-global-hackathon-certificate-of-participation.pdf
+  path: assets/pdf/certifications/vista-global-hackathon-award-certificate.pdf
 image:
-  path: assets/img/certifications/vista-global-hackathon-certificate-of-participation.webp
-  width: 547
-  height: 424
-  caption: 2022 Vista Global Hackathon - Certificate of Participation
+  path: assets/img/certifications/vista-global-hackathon-award-certificate.webp
+  width: 752
+  height: 661
+  caption: 2022 Vista Global Hackathon - Award Certificate
   object-fit: scale-down
 ---
 
 <br /> 
 
 <p class="lead text-center">
-  I was part of <strong>ApiDOMinator</strong> team, which was representing SmartBear
-  at the 2022 Vista Global Hackathon and <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with 
+  We <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with 
   the following <strong>hack</strong>:
 </p>
 
