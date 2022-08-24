@@ -177,7 +177,7 @@ All the examples mentioned in the article can be found in the following Lerna mo
 <div class="list-group mb-3">
   <a href="https://github.com/char0n/lerna-monorepo-taming" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fab fa-github"></i> lerna-monorepo-taming</h3>
+      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> lerna-monorepo-taming</h3>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       This monorepo implements current practices and conventions used while building monorepos using Lerna.

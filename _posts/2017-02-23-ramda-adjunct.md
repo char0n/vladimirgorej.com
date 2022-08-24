@@ -55,7 +55,7 @@ Hence [Ramda Adjunct](https://github.com/char0n/ramda-adjunct) was born.
 <div class="list-group mb-3">
   <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fab fa-github"></i> ramda-adjunct</h3>
+      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h3>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.

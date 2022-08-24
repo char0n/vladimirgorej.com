@@ -75,7 +75,7 @@ Lens composition from **generic** lenses to **combined** lenses is one step furt
 <div class="list-group mb-3">
   <a href="https://github.com/ramda/ramda" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fab fa-github"></i> ramda</h3>
+      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda</h3>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       &#128015; Practical functional Javascript

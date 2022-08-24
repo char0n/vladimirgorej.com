@@ -67,7 +67,7 @@ against the technical design mentioned earlier with all its requirements. I call
 <div class="list-group mb-3">
   <a href="https://github.com/char0n/swagger-editor-validate" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fab fa-github"></i> swagger-editor-validate</h3>
+      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-editor-validate</h3>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       This GitHub Actions validates OpenAPI (OAS) definition file using Swagger Editor.

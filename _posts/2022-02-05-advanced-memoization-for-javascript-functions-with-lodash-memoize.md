@@ -266,7 +266,7 @@ import memoizeN from '@char0n/memoizeN';
 <div class="list-group mb-3">
   <a href="https://gist.github.com/char0n/2e6c77d38cf00faacceaf37e46b76a32" class="list-group-item list-group-item-action">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fab fa-github"></i> memoizeN</h3>
+      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> memoizeN</h3>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       Advanced memoization for JavaScript functions with lodash.memoize.
