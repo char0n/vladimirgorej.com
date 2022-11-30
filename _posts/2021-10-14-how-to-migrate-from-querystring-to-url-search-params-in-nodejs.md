@@ -222,6 +222,16 @@ parse('?foo=bar'); // returns { '?foo': 'bar' }
 new URLSearchParams('?foo=bar'); // returns URLSearchParams { 'foo' => 'bar' }
 {% endhighlight %}
 
+**Converting URLSearchParams object to Plain JavaScript Object**
+
+*URLSearchParams* object is a class instance. It is not a classical Plain JavaScript Object (POJO).
+To transform URLSearchParam instance into a POJO, use the following recipe.
+
+{% highlight javascript %}
+const params = new URLSearchParams('foo=bar');
+const paramsPOJO = Object.fromEntries(params.entries()); // { 'foo': 'bar' }
+{% endhighlight %}
+
 *Have you found other differences? I'd be happy to add them to this list.*
 
 ### Closing words
