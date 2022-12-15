@@ -8,8 +8,8 @@ pdf:
   path: assets/pdf/certifications/yaml-1-fundamentals.pdf
 image:
   path: assets/img/certifications/yaml-1-fundamentals.webp
-  width: 533
-  height: 415
+  width: 1040
+  height: 712
   caption: "YAML 1 Fundamentals"
   object-fit: cover
 ---
