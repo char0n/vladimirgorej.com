@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: base
 permalink: /
 image:
   path: assets/img/vladimir-gorej.webp
@@ -18,238 +18,297 @@ custom_metas:
     content: char0n
 ---
 
-{%- include card.html -%}
+<main>
+  <div class="container mt-2 mb-2">
+    {%- include card.html -%}
 
-<section class="mb-5">
-  <header class="mb-2 mb-md-3">
-    <div class="row">
-      <div class="col-6">
-        <h2 id="articles" class="h5 text-uppercase">Articles</h2>
-      </div>
-      <div class="col-6 text-end">
-        <a href="{% link pages/blog.html %}">
-          <small>More articles <i class="fa-solid fa-arrow-right"></i></small>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-
-    {% for post in site.posts limit:3 %}
-      <div class="col">
-        <article class="card">
-          <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top card-img-top--scale-down card-img-top--{{ post.image.object-fit }}" alt="{{ post.title }}" />
-          <div class="card-body">
-            <div class="card-title">
-              <h3 class="h5 text-truncate-3">{{ post.title }}</h3>
-            </div>
-            <a href="{{ post.url }}" class="stretched-link btn btn-outline-dark">Read article</a>
+    <section class="mb-5">
+      <header class="mb-2 mb-md-3">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="articles" class="h5 text-uppercase">Articles</h2>
           </div>
-        </article>
-        <script type="application/ld+json">
-          {
-            "@context": "https://schema.org",
-            "@type": "TechArticle",
-            "author": { "@id": "{{ site.url }}" },
-            "publisher": { "@id": "{{ site.url }}" },
-            "image": "{{ post.image.path | absolute_url }}",
-            "headline": "{{ post.title }}",
-            "datePublished": "{{ post.date | date_to_xmlschema }}",
-            "url": "{{ post.url | absolute_url }}"
-          }
-        </script>
-      </div>
-    {% endfor %}
-  </div>
-</section>
-
-<section class="mb-5">
-  <header class="mb-2 mb-md-3">
-    <div class="row">
-      <div class="col-6">
-        <h2 id="certifications" class="h5 text-uppercase">Certifications & Trainings</h2>
-      </div>
-      <div class="col-6 text-end">
-        <a href="{% link pages/certifications.html %}">
-          <small>More certifications <i class="fa-solid fa-arrow-right"></i></small>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
-    {% assign certifications = site.certifications | sort: "timestamp" | reverse %}
-    {% for certification in certifications limit:3 %}
-    <div class="col">
-      <article class="card">
-        <img loading="lazy" src="{{ certification.image.path | relative_url }}" class="card-img-top card-img-top--{{ certification.image.object-fit }}" alt="{{ certification.title }}" />
-        <div class="card-body">
-          <div class="card-title">
-            <h3 class="h5 text-truncate-3">{{ certification.title }}</h3>
+          <div class="col-6 text-end">
+            <a href="{% link pages/blog.html %}">
+              <small>More articles <i class="fa-solid fa-arrow-right"></i></small>
+            </a>
           </div>
-          <a href="{{ certification.url }}" class="stretched-link btn btn-outline-dark">Show certificate</a>
         </div>
-      </article>
-      <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "EducationalOccupationalCredential",
-          "educationalCredentialAwarded": "certificate",
-          "author": { "@id": "{{ site.url }}" },
-          "publisher": { "@id": "{{ site.url }}" },
-          "image": "{{ certification.image.path | absolute_url }}",
-          "headline": "{{ certification.title }}",
-          "datePublished": "{{ certification.date | date_to_xmlschema }}",
-          "url": "{{ certification.url | absolute_url }}"
-        }
-      </script>
-    </div>
-    {% endfor %}
+      </header>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+
+        {% for post in site.posts limit:3 %}
+          <div class="col">
+            <article class="card">
+              <img loading="lazy" src="{{ post.image.path | relative_url }}" class="card-img-top card-img-top--scale-down card-img-top--{{ post.image.object-fit }}" alt="{{ post.title }}" />
+              <div class="card-body">
+                <div class="card-title">
+                  <h3 class="h5 text-truncate-3">{{ post.title }}</h3>
+                </div>
+                <a href="{{ post.url }}" class="stretched-link btn btn-outline-dark">Read article</a>
+              </div>
+            </article>
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "TechArticle",
+                "author": { "@id": "{{ site.url }}" },
+                "publisher": { "@id": "{{ site.url }}" },
+                "image": "{{ post.image.path | absolute_url }}",
+                "headline": "{{ post.title }}",
+                "datePublished": "{{ post.date | date_to_xmlschema }}",
+                "url": "{{ post.url | absolute_url }}"
+              }
+            </script>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="mb-5">
+      <header class="mb-2 mb-md-3">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="certifications" class="h5 text-uppercase">Certifications & Trainings</h2>
+          </div>
+          <div class="col-6 text-end">
+            <a href="{% link pages/certifications.html %}">
+              <small>More certifications <i class="fa-solid fa-arrow-right"></i></small>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+        {% assign certifications = site.certifications | sort: "timestamp" | reverse %}
+        {% for certification in certifications limit:3 %}
+        <div class="col">
+          <article class="card">
+            <img loading="lazy" src="{{ certification.image.path | relative_url }}" class="card-img-top card-img-top--{{ certification.image.object-fit }}" alt="{{ certification.title }}" />
+            <div class="card-body">
+              <div class="card-title">
+                <h3 class="h5 text-truncate-3">{{ certification.title }}</h3>
+              </div>
+              <a href="{{ certification.url }}" class="stretched-link btn btn-outline-dark">Show certificate</a>
+            </div>
+          </article>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "EducationalOccupationalCredential",
+              "educationalCredentialAwarded": "certificate",
+              "author": { "@id": "{{ site.url }}" },
+              "publisher": { "@id": "{{ site.url }}" },
+              "image": "{{ certification.image.path | absolute_url }}",
+              "headline": "{{ certification.title }}",
+              "datePublished": "{{ certification.date | date_to_xmlschema }}",
+              "url": "{{ certification.url | absolute_url }}"
+            }
+          </script>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
   </div>
-</section>
 
-<section class="mb-5">
-  <header class="mb-2 mb-md-3">
-    <div class="row">
-      <div class="col-6">
-        <h2 id="projects" class="h5 text-uppercase">Projects</h2>
-      </div>
-      <div class="col-6 text-end">
-        <a href="https://github.com/{{ site.github_username }}?tab=repositories">
-          <small>More projects <i class="fa-solid fa-arrow-right"></i></small>
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <div class="row mb-4">
-    <div class="col-12 col-md-8">
-      <div class="list-group">
-        <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h3>
+  <div class="bg-dark">
+    <div class="container mt-2 mb-4">
+      <section class="pt-4 pb-4 mb-5">
+        <header class="mb-2 mb-md-3">
+          <div class="row">
+            <div class="col-6">
+              <h2 id="book-reviews" class="h5 text-uppercase text-white">Latest books reviews</h2>
+            </div>
+            <div class="col-6 text-end">
+              <a href="{% link pages/book-reviews.html %}" class="text-white">
+                <small>More reviews <i class="fa-solid fa-arrow-right"></i></small>
+              </a>
+            </div>
           </div>
-          <blockquote class="blockquote fs-6 mb-1">
-            Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.
-          </blockquote>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "author": { "@id": "{{ site.url }}" },
-              "name": "ramda-adjunct",
-              "abstract": "Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.",
-              "codeRepository": "https://github.com/char0n/ramda-adjunct"
-            }
-          </script>
-        </a>
+        </header>
 
-        <a href="https://github.com/char0n/ffmpeg-php" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ffmpeg-php</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+          {% assign book-reviews = site.book-reviews | sort: "timestamp" | reverse %}
+          {% for book-review in book-reviews limit:3 %}
+          <div class="col">
+            <article class="card bg-dark text-white border-dark">
+              <img loading="lazy" src="{{ book-review.book.image.path | relative_url }}" class="card-img-top card-img-top--{{ book-review.book.image.object-fit }}" alt="{{ book-review.book.name }}" />
+              <div class="card-body">
+                <div class="card-title">
+                  <h3 class="h5 text-truncate-3">
+                    <a href="{{ book-review.url }}" class="stretched-link text-white">{{ book-review.book.name }}</a>
+                  </h3>
+                </div>
+                <p class="card-text">
+                  {{ book-review.book.abstract }}
+                </p>
+              </div>
+            </article>
+            <script type="application/ld+json">
+              {
+                "@context": "https://schema.org",
+                "@type": "Book",
+                "author": "{{ book-review.book.author }}",
+                "bookFormat": "{{ book-review.book.bookFormat }}",
+                "datePublished": "{{ book-review.book.datePublished }}",
+                "abstract": "{{ book-review.book.abstract }}",
+                "image": "{{ book-review.book.image.path | absolute_url }}",
+                "inLanguage": "{{ book-review.book.inLanguage }}",
+                "isbn": "{{ book-review.book.isbn }}"
+              }
+            </script>
           </div>
-          <blockquote class="blockquote fs-6 mb-1">
-            FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.
-          </blockquote>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "author": { "@id": "{{ site.url }}" },
-              "name": "ffmpeg-php",
-              "abstract": "FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.",
-              "codeRepository": "https://github.com/char0n/ffmpeg-php"
-            }
-          </script>
-        </a>
-
-        <a href="https://github.com/char0n/json-api-merge" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> json-api-merge</h3>
-          </div>
-          <blockquote class="blockquote fs-6 mb-1">
-            JSON:API specific algorithm for merging included resources into original data.
-          </blockquote>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "author": { "@id": "{{ site.url }}" },
-              "name": "json-api-merge",
-              "abstract": "JSON:API specific algorithm for merging included resources into original data.",
-              "codeRepository": "https://github.com/char0n/json-api-merge"
-            }
-          </script>
-        </a>
-
-        <a href="https://github.com/char0n/http-request-in-editor" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> http-request-in-editor</h3>
-          </div>
-          <blockquote class="blockquote fs-6 mb-1">
-            Reference implementation of HTTP Request in Editor Specification.
-          </blockquote>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "author": { "@id": "{{ site.url }}" },
-              "name": "http-request-in-editor",
-              "abstract": "Reference implementation of HTTP Request in Editor Specification.",
-              "codeRepository": "https://github.com/char0n/http-request-in-editor"
-            }
-          </script>
-        </a>
-
-        <a href="https://github.com/char0n/swagger-adjust" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-adjust</h3>
-          </div>
-          <blockquote class="blockquote fs-6 mb-1">
-            Pluggable framework for creating extendable React+Redux applications.
-          </blockquote>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "author": { "@id": "{{ site.url }}" },
-              "name": "swagger-adjust",
-              "abstract": "Pluggable framework for creating extendable React+Redux applications.",
-              "codeRepository": "https://github.com/char0n/swagger-adjust"
-            }
-          </script>
-        </a>
-
-        <a href="https://github.com/char0n/openapi-runtime-expression" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> openapi-runtime-expression</h3>
-          </div>
-          <blockquote class="blockquote fs-6 mb-1">
-            OpenAPI Runtime Expressions parser and validator.
-          </blockquote>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "SoftwareSourceCode",
-              "author": { "@id": "{{ site.url }}" },
-              "name": "openapi-runtime-expression",
-              "abstract": "OpenAPI Runtime Expressions parser and validator.",
-              "codeRepository": "https://github.com/char0n/openapi-runtime-expression"
-            }
-          </script>
-        </a>
-      </div>
-    </div>
-
-    <div class="col-12 col-md-4 mt-2 mt-md-0">
-      <a href="https://github.com/{{ site.github_username }}">
-        <img loading="lazy" src="https://github-readme-stats.vercel.app/api?username={{ site.github_username }}&amp;show_icons=true&amp;hide_border=true&amp;count_private=true&amp;include_all_commits=true" alt="GitHub stats" class="img-fluid" width="494" height="194" />
-      </a>
-
-      <a href="https://github.com/{{ site.github_username }}">
-        <img loading="lazy" src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ site.github_username }}&amp;show_icons=true&amp;hide_border=true&amp;layout=compact&amp;langs_count=8" alt="GitHub most used languages" class="img-fluid" width="494" height="194" />
-      </a>
+          {% endfor %}
+        </div>
+      </section>
     </div>
   </div>
-</section>
+
+  <div class="container mt-2 mb-2">
+    <section class="mb-5">
+      <header class="mb-2 mb-md-3">
+        <div class="row">
+          <div class="col-6">
+            <h2 id="projects" class="h5 text-uppercase">Projects</h2>
+          </div>
+          <div class="col-6 text-end">
+            <a href="https://github.com/{{ site.github_username }}?tab=repositories">
+              <small>More projects <i class="fa-solid fa-arrow-right"></i></small>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <div class="row mb-4">
+        <div class="col-12 col-md-8">
+          <div class="list-group">
+            <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareSourceCode",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "ramda-adjunct",
+                  "abstract": "Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.",
+                  "codeRepository": "https://github.com/char0n/ramda-adjunct"
+                }
+              </script>
+            </a>
+
+            <a href="https://github.com/char0n/ffmpeg-php" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ffmpeg-php</h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareSourceCode",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "ffmpeg-php",
+                  "abstract": "FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.",
+                  "codeRepository": "https://github.com/char0n/ffmpeg-php"
+                }
+              </script>
+            </a>
+
+            <a href="https://github.com/char0n/json-api-merge" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> json-api-merge</h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                JSON:API specific algorithm for merging included resources into original data.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareSourceCode",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "json-api-merge",
+                  "abstract": "JSON:API specific algorithm for merging included resources into original data.",
+                  "codeRepository": "https://github.com/char0n/json-api-merge"
+                }
+              </script>
+            </a>
+
+            <a href="https://github.com/char0n/http-request-in-editor" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> http-request-in-editor</h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                Reference implementation of HTTP Request in Editor Specification.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareSourceCode",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "http-request-in-editor",
+                  "abstract": "Reference implementation of HTTP Request in Editor Specification.",
+                  "codeRepository": "https://github.com/char0n/http-request-in-editor"
+                }
+              </script>
+            </a>
+
+            <a href="https://github.com/char0n/swagger-adjust" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-adjust</h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                Pluggable framework for creating extendable React+Redux applications.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareSourceCode",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "swagger-adjust",
+                  "abstract": "Pluggable framework for creating extendable React+Redux applications.",
+                  "codeRepository": "https://github.com/char0n/swagger-adjust"
+                }
+              </script>
+            </a>
+
+            <a href="https://github.com/char0n/openapi-runtime-expression" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> openapi-runtime-expression</h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                OpenAPI Runtime Expressions parser and validator.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "SoftwareSourceCode",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "openapi-runtime-expression",
+                  "abstract": "OpenAPI Runtime Expressions parser and validator.",
+                  "codeRepository": "https://github.com/char0n/openapi-runtime-expression"
+                }
+              </script>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4 mt-2 mt-md-0">
+          <a href="https://github.com/{{ site.github_username }}">
+            <img loading="lazy" src="https://github-readme-stats.vercel.app/api?username={{ site.github_username }}&amp;show_icons=true&amp;hide_border=true&amp;count_private=true&amp;include_all_commits=true" alt="GitHub stats" class="img-fluid" width="494" height="194" />
+          </a>
+
+          <a href="https://github.com/{{ site.github_username }}">
+            <img loading="lazy" src="https://github-readme-stats.vercel.app/api/top-langs/?username={{ site.github_username }}&amp;show_icons=true&amp;hide_border=true&amp;layout=compact&amp;langs_count=8" alt="GitHub most used languages" class="img-fluid" width="494" height="194" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

@@ -1,0 +1,72 @@
+---
+layout: default
+title: Book reviews
+permalink: /book-reviews/
+image:
+  path: assets/img/vladimir-gorej.webp
+  width: 319
+  height: 342
+---
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% link pages/homepage.html %}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Book reviews</li>
+  </ol>
+</nav>
+
+{%- include card.html -%}
+
+{% assign book-reviews = site.book-reviews | sort: "timestamp" | reverse %}
+{% for book-review in book-reviews %}
+  {% capture year_of_current_book_review %}{{ book-review.date | date: "%Y" }}{% endcapture %}
+  {% capture year_of_previous_book_review_in_set %}{{ book-reviews[forloop.index].date | date: "%Y" }}{% endcapture %}
+
+  {% if forloop.first %}
+    <section>
+      <h2 class="h5 mt-3 mt-md-0 mb-3 mb-md-4">{{ year_of_current_book_review }}</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+  {% endif %}
+
+  <div class="col">
+    <article class="card">
+      <div class="card-header"><time datetime="{{ book-review.date | date_to_xmlschema }}">{{ book-review.date | date: "%-d %B"}}</time></div>
+      <img loading="lazy" src="{{ book-review.book.image.path | relative_url }}" class="card-img-top card-img-top--scale-down{% if book-review.book.image.object-fit %}card-img-top--scale-down card-img-top--{{ book-review.book.image.object-fit }}{% endif %}" alt="{{ book-review.book.name }}" />
+      <div class="card-body">
+        <div class="card-title">
+          <h3 class="h5 text-truncate-3">{{ book-review.book.name }}</h3>
+        </div>
+        <p class="card-text">
+          {{ book-review.book.abstract }}
+        </p>
+        <a href="{{ book-review.url }}" class="stretched-link btn btn-outline-dark">Show review</a>
+      </div>
+    </article>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "author": "{{ book-review.book.author }}",
+        "bookFormat": "{{ book-review.book.bookFormat }}",
+        "datePublished": "{{ book-review.book.datePublished }}",
+        "abstract": "{{ book-review.book.abstract }}",
+        "image": "{{ book-review.book.image.path | absolute_url }}",
+        "inLanguage": "{{ book-review.book.inLanguage }}",
+        "isbn": "{{ book-review.book.isbn }}"
+      }
+    </script>
+  </div>
+
+  {% if forloop.last %}
+      </div>
+    </section>
+  {% else %}
+    {% if year_of_current_book_review != year_of_previous_book_review_in_set %}
+      </div>
+      </section>
+      <section>
+        <h2 class="h5 mt-3 mt-md-0 mb-3 mb-md-4">{{ year_of_previous_book_review_in_set }}</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 mb-4">
+    {% endif %}
+  {% endif %}
+{% endfor %}
