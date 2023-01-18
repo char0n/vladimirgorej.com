@@ -16,8 +16,8 @@ layout: default
     <div>
       <div class="d-flex justify-content-center">
         <figure class="figure">
-          <img src="{{ page.book.image.path | relative_url }}" width="{{ page.book.image.width }}" height="{{ page.book.image.height }}" class="figure-img rounded mx-auto d-block img-fluid" alt="{{ page.book.name | escape }}" />
-          <figcaption class="figure-caption text-center">{{ page.book.image.caption }}</figcaption>
+          <img src="{{ page.image.path | relative_url }}" width="{{ page.image.width }}" height="{{ page.image.height }}" class="figure-img rounded mx-auto d-block img-fluid" alt="{{ page.book.name | escape }}" />
+          <figcaption class="figure-caption text-center">{{ page.image.caption }}</figcaption>
         </figure>
       </div>
 
@@ -43,7 +43,7 @@ layout: default
         "bookFormat": "{{ page.book.bookFormat }}",
         "datePublished": "{{ page.book.datePublished }}",
         "abstract": "{{ page.book.abstract }}",
-        "image": "{{ page.book.image.path | absolute_url }}",
+        "image": "{{ page.image.path | absolute_url }}",
         "inLanguage": "{{ page.book.inLanguage }}",
         "isbn": "{{ page.book.isbn }}"
       }

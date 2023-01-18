@@ -133,7 +133,7 @@ custom_metas:
           {% for book-review in book-reviews limit:3 %}
           <div class="col">
             <article class="card bg-dark text-white border-dark">
-              <img loading="lazy" src="{{ book-review.book.image.path | relative_url }}" class="card-img-top card-img-top--{{ book-review.book.image.object-fit }}" alt="{{ book-review.book.name }}" />
+              <img loading="lazy" src="{{ book-review.image.path | relative_url }}" class="card-img-top card-img-top--{{ book-review.image.object-fit }}" alt="{{ book-review.book.name }}" />
               <div class="card-body">
                 <div class="card-title">
                   <h3 class="h5 text-truncate-3">
@@ -153,7 +153,7 @@ custom_metas:
                 "bookFormat": "{{ book-review.book.bookFormat }}",
                 "datePublished": "{{ book-review.book.datePublished }}",
                 "abstract": "{{ book-review.book.abstract }}",
-                "image": "{{ book-review.book.image.path | absolute_url }}",
+                "image": "{{ book-review.image.path | absolute_url }}",
                 "inLanguage": "{{ book-review.book.inLanguage }}",
                 "isbn": "{{ book-review.book.isbn }}"
               }
