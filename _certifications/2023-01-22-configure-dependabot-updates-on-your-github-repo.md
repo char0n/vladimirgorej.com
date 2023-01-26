@@ -8,7 +8,7 @@ pdf:
   path: assets/pdf/certifications/configure-dependabot-security-updates-on-your-github-repo.pdf
 image:
   path: assets/img/certifications/configure-dependabot-security-updates-on-your-github-repo.webp
-  width: 562
+  width: 549
   height: 251
   caption: "Configure Dependabot security updates on your GitHub repo"
   object-fit: scale-down
