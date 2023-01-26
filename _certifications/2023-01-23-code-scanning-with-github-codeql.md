@@ -2,8 +2,8 @@
 layout: certification
 title: "Code scanning with GitHub CodeQL"
 description: "Code scanning with GitHub CodeQL"
-date: 2023-01-23 10:00:00 +0200
-timestamp: 1674464400
+date: 2023-01-23 06:00:00 +0200
+timestamp: 1674450000
 pdf:
   path: assets/pdf/certifications/code-scanning-with-github-codeql.pdf
 image:
