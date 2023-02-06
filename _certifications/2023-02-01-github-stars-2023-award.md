@@ -11,7 +11,7 @@ image:
   width: 526
   height: 378
   caption: "GitHub Stars 2023 Award"
-  object-fit: scale-down
+  object-fit: cover
 ---
 
 <br />
