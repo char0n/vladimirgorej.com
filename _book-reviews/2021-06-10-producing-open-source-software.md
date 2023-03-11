@@ -25,7 +25,7 @@ book:
   developers looking to build successful open-source projects.
   The book provides a comprehensive overview of project management best practices,
   from selecting the appropriate license to managing a distributed team of contributors.
-<p>
+</p>
 
 What sets Fogel's writing apart is his emphasis on the social and cultural aspects of open-source development.
 He recognizes that building successful open-source projects is not just about writing code,
