@@ -21,28 +21,24 @@ book:
 ---
 
 <p class="lead">
-  "Producing Open Source Software" by Karl Fogel is an essential guide for
-  developers looking to build successful open-source projects.
-  The book provides a comprehensive overview of project management best practices,
-  from selecting the appropriate license to managing a distributed team of contributors.
+  "Producing Open Source Software" by Karl Fogel is an essential guide for developers looking
+  to build successful Open Source projects. The book provides a comprehensive overview of project
+  management best practices, from selecting the appropriate license to managing a distributed
+  team of contributors.
 </p>
 
-What sets Fogel's writing apart is his emphasis on the social and cultural aspects of open-source development.
-He recognizes that building successful open-source projects is not just about writing code,
-but about building a thriving community of contributors. Fogel offers practical advice on fostering
-collaboration and trust, managing conflict, and creating a welcoming environment for contributors
-of all backgrounds.
+The writer acknowledges that creating prosperous Open Source projects involves more than
+just coding, like creating a prosperous contributor community and provides useful
+suggestions for promoting collaboration and trust, handling conflicts, and fostering
+an inclusive atmosphere for individuals of diverse backgrounds who contribute to the project.
 
-The book also covers the technical aspects of open-source development, such as version control,
+The book also covers the technical aspects of Open Source development, such as version control,
 release management, and software testing. Fogel provides guidance on how to build a sustainable
-development process that can scale with your project's growth.
+development process that can scale with your project’s growth.
 
-One of the book's strengths is the depth and breadth of its coverage.
+One of the book’s strengths is the depth and breadth of its coverage.
 Fogel covers topics ranging from managing documentation to handling security vulnerabilities,
-ensuring that developers have a comprehensive understanding of what it takes to build a
-successful open-source project.
+ensuring that developers have a comprehensive understanding of what it takes to build
+a successful Open Source project.
 
-Overall, "Producing Open Source Software" is an invaluable resource for developers looking
-to create successful open-source projects. The book offers a wealth of practical advice and
-real-world examples that will help developers navigate the complex landscape of open-source
-development and build thriving communities of contributors.
+Overall, “Producing Open Source Software” is an invaluable resource for developers looking to create successful Open Source projects. The book offers a wealth of practical advice and real-world examples that will help developers navigate the complex landscape of Open Source development and build thriving communities of contributors.
