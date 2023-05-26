@@ -8,8 +8,8 @@ pdf:
   path: assets/pdf/certifications/cybersecurity-essentials-lfc108.pdf
 image:
   path: assets/img/certifications/cybersecurity-essentials-lfc108.webp
-  width: 925
-  height: 668
+  width: 992
+  height: 765
   caption: "LFC108"
   object-fit: cover
 ---
