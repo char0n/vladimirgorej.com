@@ -72,6 +72,8 @@ collections:
 exclude:
   - SECURITY.md
   - .idea
+  - .bundle
+  - vendor
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
