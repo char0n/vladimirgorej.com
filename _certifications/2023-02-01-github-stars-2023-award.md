@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "GitHub Stars 2023 Award"
 description: "GitHub Stars 2023 Award"
 date: 2023-02-01 19:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Fundamentals of Open Source IT and Cloud Computing (LFS200)"
 description: "Fundamentals of Open Source IT and Cloud Computing (LFS200)"
 date: 2023-07-06 10:00:00 +0200

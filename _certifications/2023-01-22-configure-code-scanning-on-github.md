@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Configure code scanning on GitHub"
 description: "Configure code scanning on GitHub"
 date: 2023-01-22 12:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Manage sensitive data and security policies within GitHub"
 description: "Manage sensitive data and security policies within GitHub"
 date: 2023-01-23 08:00:00 +0200

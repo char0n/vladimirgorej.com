@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "2022 Vista Global Hackathon - Award Certificate"
 description: "2022 Vista Global Hackathon - Award Certificate"
 date: 2022-08-05 11:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Creating Open Source Projects (LFC208)"
 description: "Creating Open Source Projects (LFC208)"
 date: 2022-03-24 10:00:00 +0200

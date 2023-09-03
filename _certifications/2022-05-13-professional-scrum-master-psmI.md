@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Professional Scrum Master™ I (PSM I)"
 description: "Professional Scrum Master™ I (PSM I)"
 date: 2022-05-13 10:00:00 +0200

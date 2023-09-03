@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Implementing Open Source License Compliance Management (LFC194)"
 description: "Implementing Open Source License Compliance Management (LFC194)"
 date: 2023-05-07 10:00:00 +0200

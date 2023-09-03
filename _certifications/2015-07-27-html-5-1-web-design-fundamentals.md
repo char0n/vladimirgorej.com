@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "HTML5.1x: Web Design Fundamentals (Part 1)"
 description: "HTML5.1x: Web Design Fundamentals (Part 1)"
 date: 2015-07-27 10:00:00 +0200

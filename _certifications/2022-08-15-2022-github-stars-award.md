@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "2022 GitHub Stars award"
 description: "2022 GitHub Stars award - recognition from GitHub Star program for tremendous work in Open Source community"
 date: 2022-08-15 11:00:00 +0200

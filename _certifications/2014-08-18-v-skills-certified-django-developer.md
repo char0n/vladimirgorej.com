@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "V Skills certified Django Developer"
 description: "V Skills certified Django Developer"
 date: 2014-08-18 10:00:00 +0200

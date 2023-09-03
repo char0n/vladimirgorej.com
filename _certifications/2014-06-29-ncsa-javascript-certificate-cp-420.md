@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "NCSA JavaScript certificate (CP-420)"
 description: "NCSA JavaScript certificate (CP-420)"
 date: 2014-06-29 10:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Introduction to GitHub Advanced Security"
 description: "Introduction to GitHub Advanced Security"
 date: 2023-01-21 10:00:00 +0200

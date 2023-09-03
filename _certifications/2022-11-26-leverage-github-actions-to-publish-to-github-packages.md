@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Leverage GitHub Actions to publish to GitHub Packages"
 description: "Leverage GitHub Actions to publish to GitHub Packages"
 date: 2022-11-26 11:00:00 +0200
