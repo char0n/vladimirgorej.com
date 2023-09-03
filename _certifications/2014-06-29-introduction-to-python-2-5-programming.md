@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Introduction to Python 2.5 Programming"
 description: "Introduction to Python 2.5 Programming"
 date: 2014-06-29 10:00:00 +0200

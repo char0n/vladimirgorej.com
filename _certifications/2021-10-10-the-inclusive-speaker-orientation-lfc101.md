@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "The Inclusive Speaker Orientation (LFC101)"
 description: "The Inclusive Speaker Orientation (LFC101)"
 date: 2021-10-10 10:00:00 +0200

@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Antitrust Laws and OSS Project Management and Participation (LFC105)"
 description: "Antitrust Laws and OSS Project Management and Participation (LFC105)"
 date: 2023-05-20 10:00:00 +0200

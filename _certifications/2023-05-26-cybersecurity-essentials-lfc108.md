@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Cybersecurity Essentials (LFC108)"
 description: "Cybersecurity Essentials (LFC108)"
 date: 2023-05-26 10:00:00 +0200

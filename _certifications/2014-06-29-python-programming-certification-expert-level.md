@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Python Programming Certification (Expert Level)"
 description: "Python Programming Certification (Expert Level)"
 date: 2014-06-29 10:00:00 +0200

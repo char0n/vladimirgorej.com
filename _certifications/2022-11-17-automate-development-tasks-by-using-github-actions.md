@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Automate development tasks by using GitHub Actions"
 description: "Automate development tasks by using GitHub Actions"
 date: 2022-11-17 10:00:00 +0200
@@ -14,7 +15,7 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
   Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github.github-actions-automate-tasks.badge?username=char0n">Microsoft Badge verification URL</a> to verify this <strong>Badge</strong>.

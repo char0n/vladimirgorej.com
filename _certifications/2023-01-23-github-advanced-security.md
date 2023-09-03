@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "GitHub Advanced Security Certification"
 description: "GitHub Advanced Security Certification"
 date: 2023-01-23 10:00:00 +0200

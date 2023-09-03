@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Configure Dependabot security updates on your GitHub repo"
 description: "Configure Dependabot security updates on your GitHub repo"
 date: 2023-01-22 10:00:00 +0200

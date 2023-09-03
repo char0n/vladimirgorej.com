@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Secure Software Development Fundamentals"
 description: "Secure Software Development Fundamentals"
 date: 2021-12-21 10:00:00 +0200

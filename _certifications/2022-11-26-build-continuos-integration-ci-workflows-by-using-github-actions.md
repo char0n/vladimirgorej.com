@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Build continuous integration (CI) workflows by using GitHub Actions"
 description: "Build continuous integration (CI) workflows by using GitHub Actions"
 date: 2022-11-26 10:00:00 +0200
@@ -14,7 +15,7 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
   Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github.github-actions-ci.badge?username=char0n">Microsoft Badge verification URL</a> to verify this <strong>Badge</strong>.

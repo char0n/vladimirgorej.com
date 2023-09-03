@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Open Source Compliance Programs (LFC206)"
 description: "Open Source Compliance Programs (LFC206)"
 date: 2022-03-22 10:00:00 +0200

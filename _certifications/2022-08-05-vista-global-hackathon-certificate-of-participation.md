@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "2022 Vista Global Hackathon - Certificate of Participation"
 description: "2022 Vista Global Hackathon - Certificate of Participation"
 date: 2022-08-05 10:00:00 +0200
@@ -14,11 +15,11 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
   I was part of <strong>ApiDOMinator</strong> team, which was representing SmartBear
-  at the 2022 Vista Global Hackathon and <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with 
+  at the 2022 Vista Global Hackathon and <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with
   the following <strong>hack</strong>:
 </p>
 

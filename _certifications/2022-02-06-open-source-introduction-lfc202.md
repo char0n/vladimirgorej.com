@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Open Source Introduction (LFC202)"
 description: "Open Source Introduction (LFC202)"
 date: 2022-02-06 10:00:00 +0200

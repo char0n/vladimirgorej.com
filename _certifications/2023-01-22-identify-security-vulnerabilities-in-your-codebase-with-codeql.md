@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Identify security vulnerabilities in your codebase with CodeQL"
 description: "Identify security vulnerabilities in your codebase with CodeQL"
 date: 2023-01-22 13:00:00 +0200

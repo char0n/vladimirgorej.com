@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Inspiring and Motivating Individuals"
 description: "Inspiring and Motivating Individuals"
 date: 2017-02-27 10:00:00 +0200

@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Inclusive Strategies for Open Source (LFC103)"
 description: "Inclusive Strategies for Open Source (LFC103)"
 date: 2021-11-19 10:00:00 +0200

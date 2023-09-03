@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Collaborating Effectively with Open Source Projects (LFC207)"
 description: "Collaborating Effectively with Open Source Projects (LFC207)"
 date: 2022-03-24 10:00:00 +0200
