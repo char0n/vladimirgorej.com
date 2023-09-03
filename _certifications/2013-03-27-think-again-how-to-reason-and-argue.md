@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Think Again: How to Reason and Argue"
 description: "Think Again: How to Reason and Argue"
 date: 2013-03-27 10:00:00 +0200

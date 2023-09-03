@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Ethics for Open Source Development (LFC104)"
 description: "Ethics for Open Source Development (LFC104)"
 date: 2023-04-27 10:00:00 +0200

@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "2022 Vista Global Hackathon - Award Certificate"
 description: "2022 Vista Global Hackathon - Award Certificate"
 date: 2022-08-05 11:00:00 +0200
@@ -14,10 +15,10 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
-  We <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with 
+  We <strong>won</strong> the <strong>BEST ENGINEERING</strong> category with
   the following <strong>hack</strong>:
 </p>
 

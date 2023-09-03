@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Code scanning with GitHub CodeQL"
 description: "Code scanning with GitHub CodeQL"
 date: 2023-01-23 06:00:00 +0200

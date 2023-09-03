@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Automate your workflow with GitHub Actions"
 description: "Automate your workflow with GitHub Actions"
 date: 2022-11-26 16:00:00 +0200
@@ -14,7 +15,7 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
     Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.automate-workflow-github-actions.trophy?username=char0n">Microsoft Trophy verification URL</a> to verify this <strong>Trophy</strong>.

@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Developing Secure Software (LFD121)"
 description: "Developing Secure Software (LFD121)"
 date: 2023-05-01 10:00:00 +0200

@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Generating a Software Bill of Materials (LFC192)"
 description: "Generating a Software Bill of Materials (LFC192)"
 date: 2022-01-23 10:00:00 +0200

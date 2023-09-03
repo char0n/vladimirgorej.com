@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "2022 GitHub Stars award"
 description: "2022 GitHub Stars award - recognition from GitHub Star program for tremendous work in Open Source community"
 date: 2022-08-15 11:00:00 +0200
@@ -14,7 +15,7 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
   On the <time datetime="2022-08-15">15th of August 2022</time>, I became a <a href="https://stars.github.com/profiles/char0n/">GitHub Star</a>.

@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Create and publish custom GitHub actions"
 description: "Create and publish custom GitHub actions"
 date: 2022-11-26 12:00:00 +0200
@@ -14,7 +15,7 @@ image:
   object-fit: scale-down
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
   Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github.create-custom-github-actions.badge?username=char0n">Microsoft Badge verification URL</a> to verify this <strong>Badge</strong>.

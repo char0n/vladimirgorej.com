@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Open Data Formats: YAML (SC101)"
 description: "This credential demonstrates a user’s foundational knowledge and skills YAML."
 date: 2023-01-09 10:00:00 +0200

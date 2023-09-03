@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Professional Scrum Master™ I (PSM I)"
 description: "Professional Scrum Master™ I (PSM I)"
 date: 2022-05-13 10:00:00 +0200
@@ -14,8 +15,8 @@ image:
   object-fit: cover
 ---
 
-<br /> 
+<br />
 
 <p class="lead text-center">
-  Scrum.org public profile: <a href="https://www.scrum.org/user/1019130">https://www.scrum.org/user/1019130</a> 
+  Scrum.org public profile: <a href="https://www.scrum.org/user/1019130">https://www.scrum.org/user/1019130</a>
 </p>

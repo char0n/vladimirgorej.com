@@ -1,5 +1,6 @@
 ---
 layout: certification
+sitemap: false
 title: "Inclusive Open Source Community Orientation (LFC102)"
 description: "Inclusive Open Source Community Orientation (LFC102)"
 date: 2021-11-14 10:00:00 +0200
