@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Complete Agile Scrum Master Certification Training"
 description: "Complete Agile Scrum Master Certification Training"
 date: 2022-05-07 10:00:00 +0200

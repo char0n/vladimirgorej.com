@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Open Source Licensing Basics for Software Developers (LFC191)"
 description: "Open Source Licensing Basics for Software Developers (LFC191)"
 date: 2021-10-04 10:00:00 +0200

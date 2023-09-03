@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Build and deploy applications to Azure by using GitHub Actions"
 description: "Build and deploy applications to Azure by using GitHub Actions"
 date: 2022-11-26 13:00:00 +0200

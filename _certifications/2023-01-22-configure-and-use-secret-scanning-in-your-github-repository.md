@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Configure and use secret scanning in your GitHub repository"
 description: "Configure and use secret scanning in your GitHub repository"
 date: 2023-01-22 11:00:00 +0200

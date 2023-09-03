@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Automate GitHub by using GitHub Script"
 description: "Automate GitHub by using GitHub Script"
 date: 2022-11-26 15:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Open Source Business Strategy (LFC203)"
 description: "Open Source Business Strategy (LFC203)"
 date: 2022-02-11 10:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Create and publish custom GitHub actions"
 description: "Create and publish custom GitHub actions"
 date: 2022-11-26 12:00:00 +0200

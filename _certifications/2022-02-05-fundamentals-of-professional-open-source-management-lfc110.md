@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Fundamentals of Professional Open Source Management (LFC110)"
 description: "Fundamentals of Professional Open Source Management (LFC110)"
 date: 2022-02-05 10:00:00 +0200

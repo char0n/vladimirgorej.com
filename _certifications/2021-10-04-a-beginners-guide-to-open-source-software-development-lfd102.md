@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "A Beginner's Guide to Open Source Software Development (LFD102)"
 description: "A Beginner's Guide to Open Source Software Development (LFD102)"
 date: 2021-09-27 10:00:00 +0200

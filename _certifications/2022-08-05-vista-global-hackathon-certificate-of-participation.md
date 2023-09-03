@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "2022 Vista Global Hackathon - Certificate of Participation"
 description: "2022 Vista Global Hackathon - Certificate of Participation"
 date: 2022-08-05 10:00:00 +0200

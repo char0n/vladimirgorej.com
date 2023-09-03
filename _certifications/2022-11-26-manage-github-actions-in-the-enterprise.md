@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Manage GitHub Actions in the enterprise"
 description: "Manage GitHub Actions in the enterprise"
 date: 2022-11-26 14:00:00 +0200

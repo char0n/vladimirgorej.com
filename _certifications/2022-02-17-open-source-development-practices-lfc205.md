@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Open Source Development Practices (LFC205)"
 description: "Open Source Development Practices (LFC205)"
 date: 2022-02-17 10:00:00 +0200

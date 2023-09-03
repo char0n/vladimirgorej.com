@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "GitHub Actions Certification"
 description: "GitHub Actions Certification"
 date: 2022-11-28 12:00:00 +0200

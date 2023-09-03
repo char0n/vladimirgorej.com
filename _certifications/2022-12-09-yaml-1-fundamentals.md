@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "YAML 1 Fundamentals"
 description: "YAML 1 Fundamentals"
 date: 2022-12-09 10:00:00 +0200

@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Automate development tasks by using GitHub Actions"
 description: "Automate development tasks by using GitHub Actions"
 date: 2022-11-17 10:00:00 +0200

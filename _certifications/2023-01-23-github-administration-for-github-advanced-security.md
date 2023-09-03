@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "GitHub administration for GitHub Advanced Security"
 description: "GitHub administration for GitHub Advanced Security"
 date: 2023-01-23 07:00:00 +0200

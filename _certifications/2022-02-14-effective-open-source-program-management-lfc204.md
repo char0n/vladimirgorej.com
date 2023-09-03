@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Effective Open Source Program Management (LFC204)"
 description: "Effective Open Source Program Management (LFC204)"
 date: 2022-02-14 10:00:00 +0200

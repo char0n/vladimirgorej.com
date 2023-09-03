@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Introduction to GitHub"
 description: "Introduction to GitHub"
 date: 2022-11-18 10:00:00 +0200

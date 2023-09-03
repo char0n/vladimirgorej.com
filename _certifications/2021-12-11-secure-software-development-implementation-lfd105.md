@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Secure Software Development: Implementation (LFD105x)"
 description: "Secure Software Development: Implementation (LFD105x)"
 date: 2021-12-11 10:00:00 +0200

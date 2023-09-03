@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Automate your workflow with GitHub Actions"
 description: "Automate your workflow with GitHub Actions"
 date: 2022-11-26 16:00:00 +0200

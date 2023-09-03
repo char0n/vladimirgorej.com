@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Secure Software Development: Requirements, Design, and Reuse (LFD104x)"
 description: "Secure Software Development: Requirements, Design, and Reuse (LFD104x)"
 date: 2021-12-07 10:00:00 +0200

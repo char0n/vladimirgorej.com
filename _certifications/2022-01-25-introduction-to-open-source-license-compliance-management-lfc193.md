@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Introduction to Open Source License Compliance Management (LFC193)"
 description: "Introduction to Open Source License Compliance Management (LFC193)"
 date: 2022-01-25 10:00:00 +0200

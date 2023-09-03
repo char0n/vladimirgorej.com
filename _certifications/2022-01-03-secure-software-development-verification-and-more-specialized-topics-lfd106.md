@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Secure Software Development: Verification and More Specialized Topics (LFD106x)"
 description: "Secure Software Development: Verification and More Specialized Topics (LFD106x)"
 date: 2022-01-03 10:00:00 +0200

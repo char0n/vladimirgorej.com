@@ -1,6 +1,7 @@
 ---
 layout: certification
 sitemap: false
+robots: noindex, follow
 title: "Professional Scrum Developer™ I (PSD I)"
 description: "Professional Scrum Developer™ I (PSD I)"
 date: 2022-11-08 10:00:00 +0200
