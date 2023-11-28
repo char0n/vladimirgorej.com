@@ -10,8 +10,8 @@ pdf:
   path: assets/pdf/certifications/manage-software-delivery-by-using-a-release-based-workflow-on-github.pdf
 image:
   path: assets/img/certifications/manage-software-delivery-by-using-a-release-based-workflow-on-github.webp
-  width: 850
-  height: 460
+  width: 883
+  height: 449
   caption: "Manage software delivery by using a release based workflow on GitHub"
   object-fit: scale-down
 ---
