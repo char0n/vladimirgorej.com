@@ -4,8 +4,8 @@ sitemap: false
 robots: noindex, follow
 title: "Introduction to GitHub administration"
 description: "Introduction to GitHub administration"
-date: 2023-08-19 10:00:00 +0200
-timestamp: 1692432000
+date: 2023-08-20 10:00:00 +0200
+timestamp: 1692518400
 pdf:
   path: assets/pdf/certifications/introduction-to-github-administration.pdf
 image:
