@@ -15,3 +15,9 @@ image:
   caption: "Maintain a secure repository by using GitHub best practices"
   object-fit: scale-down
 ---
+
+<br />
+
+<p class="lead text-center">
+    Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github.maintain-secure-repository-github.badge?username=char0n">Microsoft Badge verification URL</a> to verify this <strong>Badge</strong>.
+</p>
