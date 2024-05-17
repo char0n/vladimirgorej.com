@@ -82,10 +82,11 @@ exclude:
   - .idea
   - .bundle
   - vendor
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
+  - LICENSES
+  - NOTICE
+  - .jekyll-cache/
+  - Gemfile
+  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
