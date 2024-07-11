@@ -49,52 +49,6 @@
         </div>
       </div>
     </article>
-
-    <article class="card bg-light border-secondary mt-3 mb-3 p-1">
-      <div class="row g-0">
-        <div class="col-md-2">
-          <img class="card-img img-fluid rounded-circle" src="{% link assets/img/swagger-expert-logo.webp %}" alt="SwaggerExpert" width="319" height="342" />
-        </div>
-        <div class="col-md-10">
-          <div class="card-body">
-            <h2 class="h5 card-title">Founder of SwaggerExpert</h2>
-            <p class="card-text">
-              {{ site.author.first_name }} is a founder of <a href="http://swaggerexpert.com/"><strong>SwaggerExpert</strong></a>.
-              SwaggerExpert is a go-to source for expert guidance, comprehensive solutions for Swagger Open Source tools,
-              and a vibrant community dedicated to developing extensions and enhancing the Swagger ecosystem.
-              With more than four years of experience as a maintainer of Swagger tools, he is dedicated to helping developers and organizations
-              effectively utilize and master Swagger for their API development needs.
-            </p>
-          </div>
-          <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Person",
-              "@id": "{{ site.url }}",
-              "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Prague",
-                "addressRegion": "Prague"
-              },
-              "workLocation": {
-                "@type": "PostalAddress",
-                "addressLocality": "Prague",
-                "addressRegion": "Prague"
-              },
-              "taxID": "05284503",
-              "email": "mailto:{{ site.email }}",
-              "image": "{{ 'assets/img/vladimir-gorej.webp' | absolute_url }}",
-              "jobTitle": "Software Engineer",
-              "name": "{{ site.author.name }}",
-              "alternateName": "char0n",
-              "givenName": "{{ site.author.first_name }}",
-              "familyName": "{{ site.author.last_name }}",
-              "url": "{{ site.url }}"
-            }
-          </script>
-        </div>
-      </div>
-    </article>
   </div>
   <div class="col-0 col-lg-1"></div>
 </div>
