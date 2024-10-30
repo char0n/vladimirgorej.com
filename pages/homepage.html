@@ -183,6 +183,29 @@ custom_metas:
       <div class="row mb-4">
         <div class="col-12 col-md-8">
           <div class="list-group">
+            <a href="https://github.com/swaggerexpert" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1">
+                  <img class="rounded-circle" src="{% link assets/img/swagger-expert-logo.webp %}" alt="SwaggerExpert" width="50" height="50" style="width: 50px!; height: 50px!" />
+                  SwaggerExpert
+                </h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                SwaggerExpert is a community dedicated to developing extensions and libraries enhancing the Swagger ecosystem.
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "SwaggerExpert",
+                  "description": "SwaggerExpert is a community dedicated to developing extensions and libraries enhancing the Swagger ecosystem.",
+                  "logo": "{{ site.url }}{% link assets/img/swagger-expert-logo.webp %}",
+                  "url": "https://github.com/swaggerexpert"
+                }
+              </script>
+            </a>
+
             <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
                 <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h3>
