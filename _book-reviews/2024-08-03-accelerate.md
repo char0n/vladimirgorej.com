@@ -13,7 +13,7 @@ image:
 book:
   name: "Accelerate"
   author: "https://smizell.com/"
-  bookFormat: "http://schema.org/EBook"
+  bookFormat: "https://schema.org/EBook"
   datePublished: "2018-03"
   abstract: "Building and Scaling High Performing Technology Organizations"
   inLanguage: English

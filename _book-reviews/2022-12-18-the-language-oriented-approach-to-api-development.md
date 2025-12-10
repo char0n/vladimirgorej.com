@@ -13,7 +13,7 @@ image:
 book:
   name: "The Language-Oriented Approach to API Development"
   author: "https://smizell.com/"
-  bookFormat: "http://schema.org/EBook"
+  bookFormat: "https://schema.org/EBook"
   datePublished: "2021"
   abstract: "Shifting the focus away from the technical details of API design toward the conversational language."
   inLanguage: English
