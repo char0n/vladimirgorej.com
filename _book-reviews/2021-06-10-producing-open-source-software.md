@@ -13,7 +13,7 @@ image:
 book:
   name: "producing open source software"
   author: "https://www.red-bean.com/kfogel/"
-  bookFormat: "http://schema.org/EBook"
+  bookFormat: "https://schema.org/EBook"
   datePublished: "2020-08-14"
   abstract: "How to Run a Successful Free Software Project."
   inLanguage: English
