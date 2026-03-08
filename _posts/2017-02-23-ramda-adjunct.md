@@ -55,7 +55,7 @@ Hence <a href="https://github.com/char0n/ramda-adjunct" target="_blank" rel="noo
 <div class="list-group mb-3">
   <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h3>
+      <h2 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h2>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       Ramda Adjunct is the most popular and most comprehensive set of functional utilities for use with Ramda, providing a variety of useful, well tested functions with excellent documentation.
@@ -79,23 +79,23 @@ Hence <a href="https://github.com/char0n/ramda-adjunct" target="_blank" rel="noo
 - 100% test coverage
 - impeccable documentation
 
-### Centralization
+## Centralization
 
 All Ramda recipes and aggregate utils not present in Ramda are centralized here. 
 There is no more need for everybody to create their own utils in their own codebases.
 
-### 100% test coverage
+## 100% test coverage
 
 Creating custom aggregate utils or implementing recipes from the Ramda wiki creates the defectiveness problem.
 The problem is caused by the absence of any tests. Ramda Adjunct keeps <a href="https://app.codecov.io/gh/char0n/ramda-adjunct" target="_blank" rel="noopener noreferrer">100% code coverage</a> and mimics the Ramda 
 test patterns.
 
-### Impeccable documentation
+## Impeccable documentation
 
 You cannot call a library great without excellent documentation. Ramda Adjunct generates its <a href="https://char0n.github.io/ramda-adjunct/" target="_blank" rel="noopener noreferrer">documentation</a>
 directly from its codebase and uses patterns found in Ramda and Lodash to document its API.
 
-### What are the future plans?
+## What are the future plans?
 
 My first priority for the near feature is to absorb obsolete and no longer maintained <a href="https://github.com/enten/rcb" target="_blank" rel="noopener noreferrer">Ramda Cookbook implementation</a>
 and implement all `Type` related functions that I'm missing in Ramda. 

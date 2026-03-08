@@ -44,7 +44,7 @@ and values CI/CD provides.
 Some time has passed since then. I did my homework and studied CI/CD topic thoroughly. When <a href="https://github.com/features/actions" target="_blank" rel="noopener noreferrer">GitHub Actions</a> were born
 I immediately became a massive fan. Let's try to automate the workflow described above using GitHub Actions.
 
-### Technical design
+## Technical design
 
 We need to produce a GitHub Action that uses Swagger Editor to validate the OpenAPI definition provided
 as a parameter to that action. Using a Swagger Editor in GitHub Action can be achieved in two ways:
@@ -59,7 +59,7 @@ Why use Swagger Editor and not just JSON Schema validation? Swagger Editor adds 
 Unfortunately, this additional layer is tightly coupled to Swagger Editor code, and the easiest way to use it is to use it via running
 the Swagger Editor in a browser.
 
-### Implementation
+## Implementation
 
 The implementation wasn't that straightforward as I expected, but I still managed to implement this GitHub Action
 against the technical design mentioned earlier with all its requirements. I called it <a href="https://github.com/char0n/swagger-editor-validate" target="_blank" rel="noopener noreferrer">swagger-editor-validate</a>.
@@ -67,7 +67,7 @@ against the technical design mentioned earlier with all its requirements. I call
 <div class="list-group mb-3">
   <a href="https://github.com/char0n/swagger-editor-validate" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-editor-validate</h3>
+      <h2 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-editor-validate</h2>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       This GitHub Actions validates OpenAPI (OAS) definition file using Swagger Editor.
@@ -85,12 +85,12 @@ against the technical design mentioned earlier with all its requirements. I call
   </a>
 </div>
 
-### Usage
+## Usage
 
 There are two significant use-cases of using this GitHub Action, but both of them use the fact that your definition
 file lives in your GitHub repository. You just need to provide a file system path to it.
 
-#### Public use-case
+### Public use-case
 
 If you have access to the internet and don't mind that this GitHub Action sends your OpenAPI definition to
 <a href="https://editor.swagger.io/" target="_blank" rel="noopener noreferrer">https://editor.swagger.io/</a> for validation, then use this workflow.
@@ -111,7 +111,7 @@ jobs:
           definition-file: examples/openapi-2-0.yaml
 {% endhighlight %}
 
-#### Private use-case
+### Private use-case
 
 If you want to maintain complete privacy and your OpenAPI definition may contain sensitive information 
 use the following workflow. The workflow uses a swagger-editor docker image that runs as a service of the workflow.
@@ -159,7 +159,7 @@ This is what you'll see if your OpenAPI definition contains **errors**.
   <figcaption class="figure-caption text-center">Failed validation</figcaption>
 </figure>
 
-### Future
+## Future
 
 During implementations, I identified other features that this action would benefit from.
 To not extend the implementation scope of the first version, I decided not to implement these features but instead document them and implement them later.

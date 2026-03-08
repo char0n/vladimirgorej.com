@@ -31,7 +31,7 @@ In order to fully utilize new error boundaries, I had to rewrite SwaggerUIs <a h
 plugins build on. An additional new plugin called `safe-render` was introduced to allow configurable
 application of error boundaries to SwaggerUI components.
 
-### View plugin
+## View plugin
 
 View plugins **public API didn't change**, I've just added one additional util function called `getDisplayName`
 which is used for accessing React component names.
@@ -64,7 +64,7 @@ tree in React developer tools:
   <figcaption class="figure-caption text-center">After refactor</figcaption>
 </figure>
 
-### Safe-render plugin
+## Safe-render plugin
 
 This plugin is solely responsible for error handling logic in SwaggerUI. Accepts a list of component
 names that should be protected by error boundaries.  
@@ -135,7 +135,7 @@ const swaggerUI = SwaggerUI({
 });
 {% endhighlight %}
 
-##### componentDidCatch
+### componentDidCatch
 
 This static function is invoked after a component has thrown an error.  
 It receives two parameters:
@@ -169,13 +169,13 @@ const BugsnagErrorHandlerPlugin = () => {
 };
 {% endhighlight %}
 
-##### withErrorBoundary
+### withErrorBoundary
 
 This function is HOC (Higher Order Component). It wraps a particular component into the `ErrorBoundary` component.
 It can be overridden via a plugin system to control how components are wrapped by the ErrorBoundary component.
 In 99.9% of situations, you won't need to override this function, but if you do, please read the source code of this function first.
 
-##### Fallback
+### Fallback
 
 The component is displayed when the error boundary catches an error. It can be overridden via a plugin system.
 Its default implementation is trivial:
@@ -213,14 +213,14 @@ const swaggerUI = SwaggerUI({
 });
 {% endhighlight %}
 
-##### ErrorBoundary
+### ErrorBoundary
 
 This is the component that implements React error boundaries. Uses `componentDidCatch` and `Fallback`
 under the hood. In 99.9% of situations, you won't need to override this component, but if you do, 
 please read the source code of this component first.
 
 
-### Change in behavior
+## Change in behavior
 
 In prior releases of SwaggerUI, almost all components have been protected, and when thrown error,
 `Fallback` component was displayed. This changes with SwaggerUI v4.3.0. Only components defined

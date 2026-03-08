@@ -17,7 +17,7 @@ image:
   But doesn't give us any clue how to actually migrate. This article fills this void and provides a migration guide.
 </p>
 
-### querystring
+## querystring
 
 *querystring* API is quite simple and straightforward:
 
@@ -35,7 +35,7 @@ image:
   <dd class="col-sm-9">Performs decoding of URL percent-encoded characters on the given string. Is used by <span class="text-muted">querystring.parse().</span></dd>
 </dl>
 
-##### Parse a URL query string
+### Parse a URL query string
 
 {% highlight javascript %}
 const { parse } = require('querystring');
@@ -49,7 +49,7 @@ parse('foo=bar&abc=xyz&abc=123');
 // }
 {% endhighlight %}
 
-##### Produce a URL query string
+### Produce a URL query string
 
 {% highlight javascript %}
 const { stringify } = require('querystring');
@@ -59,7 +59,7 @@ stringify({ foo: 'bar', baz: ['qux', 'quux'], corge: '' });
 // returns 'foo=bar&baz=qux&baz=quux&corge='
 {% endhighlight %}
 
-##### Perform URL percent-encoding on the given string
+### Perform URL percent-encoding on the given string
 
 {% highlight javascript %}
 const { escape } = require('querystring');
@@ -69,7 +69,7 @@ escape('str1 str2');
 // returns 'str1%20str2'
 {% endhighlight %}
 
-##### Perform decoding of URL percent-encoded characters on the given string
+### Perform decoding of URL percent-encoded characters on the given string
 
 {% highlight javascript %}
 const { unescape } = require('querystring');
@@ -79,7 +79,7 @@ escape('str1%20str2');
 // returns 'str1 str2'
 {% endhighlight %}
 
-### URLSearchParams
+## URLSearchParams
 
 What's the actual difference between `querystring` vs. `URLSearchParams`?
 
@@ -92,7 +92,7 @@ Working with URIs/URLs in JavaScript was always confusing. <a href="https://url.
 standardizes the term URL and provides a standardized way how we work with URLs. *URLSearchParams* is part of this specification.
 Now let's migrate our previous *querystring* examples to *URLSearchParams* API.
 
-##### Parse a URL query string
+### Parse a URL query string
 
 {% highlight javascript %}
 const params = new URLSearchParams('foo=bar&abc=xyz&abc=123');
@@ -102,7 +102,7 @@ params.get('foo'); // 'bar'
 params.getAll('abc') // ['xyz', '123']
 {% endhighlight %}
 
-##### Produce a URL query string
+### Produce a URL query string
 
 {% highlight javascript %}
 new URLSearchParams({ foo: 'bar', baz: ['qux', 'quux'], corge: '' }).toString();
@@ -151,7 +151,7 @@ new URLSearchParams([
 {% endhighlight %}
 
 
-##### Perform URL percent-encoding on the given string
+### Perform URL percent-encoding on the given string
 
 There is no low-level API for encoding simple strings in *URLSearchParams*.
 We have to be a little creative to achieve URL encoding. Below
@@ -187,7 +187,7 @@ and there is nothing you can do about it except to take it.
   </tbody>
 </table>
 
-##### Perform decoding of URL percent-encoded characters on the given string
+### Perform decoding of URL percent-encoded characters on the given string
 
 There is no low-level API for decoding a simple string in *URLSearchParams*.
 Again we have to be creative to achieve URL decoding on the given string. 
@@ -208,7 +208,7 @@ new URLSearchParams(`=${urlPercentEncodedString}`).get('');
 // returns 'str1 str2'
 {% endhighlight %}
 
-### Other differences
+## Other differences
 
 **Handling of question mark character**
 
@@ -234,7 +234,7 @@ const paramsPOJO = Object.fromEntries(params.entries()); // { 'foo': 'bar' }
 
 *Have you found other differences? I'd be happy to add them to this list.*
 
-### Closing words
+## Closing words
 
 *querystring* is a legacy Node.js API that shouldn't be used anymore. New code should only
 use *URLSearchParams*, which is part of **WHATWG URL specification**. Old code using *querystring*

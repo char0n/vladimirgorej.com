@@ -43,24 +43,24 @@ He then chooses <a href="https://json-schema.org/" target="_blank" rel="noopener
 which measures schema complexity. Schema entropy is part of overall API entropy and
 is a sum of the following qualitative factors:
 
-#### Semantic-schema entanglement
+## Semantic-schema entanglement
 
 Semantic-schema entanglement happens when the semantics and schema are so
 closely intertwined that a change in one requires a change in the other.
 This explanation is abstract, but he explains clearly what semantic-schema entanglement
 is by comparing how we work with HTML vs. JSON.
 
-#### Schema variation
+## Schema variation
 
 Schema variation is the total number of valid JSON structures for a schema.
 Stephen shows us how many schema variations correlate to a higher schema entropy.
 He then explains how schema variations are calculated.
 
-#### Schema depth and width
+## Schema depth and width
 
 Stephen explains that the depth concept is related to the schema nesting and that the schema is wider, the more properties it has.
 
-#### Reference entanglement
+## Reference entanglement
 Schemas can be defined in one place and referenced in another document,
 and references can be inbound (references to this schema) and outbound (references which this schema references).
 Stephen further explains how a change in one schema can change every schema where

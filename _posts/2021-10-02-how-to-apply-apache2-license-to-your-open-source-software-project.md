@@ -19,7 +19,7 @@ As I've matured, my understanding of Open Source licensing has grown as well, an
 project now, I just use <strong>Apache 2.0 license</strong>. I want to point out that I am not a lawyer, and I am certainly not your lawyer.
 My legal opinions are based on research and lengthy conversations with legal departments of companies that I worked for.
 
-### Why Apache 2.0 license?
+## Why Apache 2.0 license?
 
 There are various reasons why I prefer Apache 2.0 license over the others (specifically the 3-Clause BSD License).
 This <a href="https://www.whitesourcesoftware.com/resources/blog/top-10-apache-license-questions-answered/#7_What_is_the_difference_between_Apache_License_20_and_BSD" target="_blank" rel="noopener noreferrer">WhiteSource article</a>
@@ -252,7 +252,7 @@ The justified version is the one you get by fetching `https://www.apache.org/lic
 The license has 201 lines of text and is composed of the header (lines 1-3),
 the terms and conditions (lines 5-176) and the appendix (lines 178-201).
 
-### License
+## License
 
 To apply the license to your software project, create a `LICENSE` file in the source tree's top level.
 Now copy the full Apache 2.0 License text from <a href="https://www.apache.org/licenses/LICENSE-2.0.txt" target="_blank" rel="noopener noreferrer">https://www.apache.org/licenses/LICENSE-2.0.txt</a> into a `LICENSE` file.
@@ -298,7 +298,7 @@ contains the name of the license, either "Apache 2.0 License" or its <a href="ht
 Ideally, (but not required) canonical URL where the copy of the license can be obtained should be mentioned as well: `https://www.apache.org/licenses/LICENSE-2.0.txt`.
 This is just a legal opinion of one big tech company. Don't take this legal opinion as implied truth.
 
-### Copyright notice
+## Copyright notice
 
 In the previous section, we've stipulated that the Apache 2.0 License text doesn't actually have a place where to
 put an explicit copyright notice. Since 1989, <a href="https://www.wipo.int/treaties/en/ip/berne/" target="_blank" rel="noopener noreferrer">Berne Convention</a> established that the copyright is automatic,
@@ -352,7 +352,7 @@ Ramda Adjunct
 Copyright 2017, Vladimír Gorej
 {% endhighlight %}
 
-### Closing words
+## Closing words
 
 Choose the appropriate Open Source license for the needs of your project.
 If you're deciding between BSD, MIT, and Apache 2.0, go for Apache 2.0 License. The license

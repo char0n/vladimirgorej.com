@@ -49,7 +49,7 @@ when I decoupled its DI-container for the first time as I needed it for a small 
 with external extensibility requirements. Unfortunately, I never finished the article and 
 never published the decoupled SwaggerUI DI-container as an OpenSource.
 
-### Swagger Adjust
+## Swagger Adjust
 
 But it's all changing now. Let me introduce <a href="https://github.com/char0n/swagger-adjust" target="_blank" rel="noopener noreferrer">Swagger Adjust</a>  - a plugin-able framework for
 building extensible React+Redux applications. This framework was born by decoupling ideas of 
@@ -281,7 +281,7 @@ other plugins can easily enhance it. This also works in reverse – when buildin
 to be "protected" from enhancements, instead use classical static ES6 imports, which prohibits anybody
 from enhancing your plugins.
 
-### Advanced usage patterns
+## Advanced usage patterns
 
 During writing Swagger Adjust and using it on different projects, I've identified
 multiple advanced usage patterns that need to be mentioned.  These advanced usage patterns include:
@@ -295,7 +295,7 @@ multiple advanced usage patterns that need to be mentioned.  These advanced usag
 
 Swagger Adjust consumers need to understand these usage patterns properly as they set conventions on how Swagger Adjust was designed to be used.
 
-### Word on conventions
+## Word on conventions
 
 Conventions are essential when producing any code. When utilized properly, it makes code 
 produced by different people look like it was produced by a single person.
@@ -306,12 +306,12 @@ Swagger Adjust adopts all these conventions and adds a couple of its own:
 - use following convention for action type: “namespace/action”
 - use <a href="https://github.com/char0n/swagger-adjust/blob/main/docs/usage/api.md#createasyncthunk" target="_blank" rel="noopener noreferrer">createAsyncThunk</a> to create async actions or handle side effects
 - structure Files as Feature Folders as shown in this article
-- name your selectors in the following naming scheme: select<Name>
+- name your selectors in the following naming scheme: `select<Name>`
 - create memoized selectors using <a href="https://github.com/char0n/swagger-adjust/blob/main/docs/usage/api.md#createselector" target="_blank" rel="noopener noreferrer">createSelector</a> utility
 
 Consult <a href="https://redux.js.org/style-guide/style-guide" target="_blank" rel="noopener noreferrer">Redux Style Guide</a> for additional conventions.
 
-### Closing words
+## Closing words
 
 Swagger Adjust it's an ideal framework for creating User Interfaces (UI) with external extensibility
 requirement. It should work pretty well for creating renderers for different specifications like OpenApi,
@@ -324,7 +324,7 @@ You can find all code demonstrated in this article in the <a href="https://githu
 <div class="list-group mb-3">
   <a href="https://github.com/char0n/swagger-adjust" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
-      <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-adjust</h3>
+      <h2 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-adjust</h2>
     </div>
     <blockquote class="blockquote fs-6 mb-1">
       Pluggable framework for creating extendable React+Redux applications.
