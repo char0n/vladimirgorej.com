@@ -31,7 +31,7 @@ image:
     </tr>
     <tr>
       <td><strong>Certificate Link</strong></td>
-      <td><a href="https://verify.skilljar.com/c/as7x5oj8avi4">Verify Certificate</a></td>
+      <td><a href="https://verify.skilljar.com/c/as7x5oj8avi4" target="_blank" rel="noopener noreferrer">Verify Certificate</a></td>
     </tr>
     <tr>
       <td><strong>Completion Date</strong></td>

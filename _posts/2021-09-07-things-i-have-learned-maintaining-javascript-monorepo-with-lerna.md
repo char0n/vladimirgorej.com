@@ -11,11 +11,11 @@ image:
 ---
 
 <p class="lead">
-  This is the second part of the article series dealing with <i>monorepo</i> management using <a href="https://github.com/lerna/lerna">Lerna</a>.
-  <a href="https://www.linkedin.com/pulse/things-i-wish-had-known-when-started-javascript-monorepo-gorej/">The first part</a> dealt
-  with <i>monorepo</i> management in depth using Lerna and <a href="https://docs.npmjs.com/cli/v7/configuring-npm/pacage-json#local-paths">npm local paths</a>
+  This is the second part of the article series dealing with <i>monorepo</i> management using <a href="https://github.com/lerna/lerna" target="_blank" rel="noopener noreferrer">Lerna</a>.
+  <a href="https://www.linkedin.com/pulse/things-i-wish-had-known-when-started-javascript-monorepo-gorej/" target="_blank" rel="noopener noreferrer">The first part</a> dealt
+  with <i>monorepo</i> management in depth using Lerna and <a href="https://docs.npmjs.com/cli/v7/configuring-npm/pacage-json#local-paths" target="_blank" rel="noopener noreferrer">npm local paths</a>
   long before npm@7 workspaces were introduced. This article will try to describe <i>monorepo</i> management practices
-  in the world of <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces">npm@7</a> workspaces. Nevertheless, I highly recommend you read the first part
+  in the world of <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces" target="_blank" rel="noopener noreferrer">npm@7</a> workspaces. Nevertheless, I highly recommend you read the first part
   of this series to be familiar with how things used to be.
 </p>
 
@@ -34,7 +34,7 @@ In the following texts, I'm assuming you have your *monorepo* setup as described
 ## Dependency management
 
 Dependency managed has been simplified significantly with npm workspaces. npm workspaces require npm@7.
-This version of npm uses the [new format](https://github.blog/2021-02-02-npm-7-is-now-generally-available/#changes-to-the-lockfile) of a `package-lock.json` file.
+This version of npm uses the <a href="https://github.blog/2021-02-02-npm-7-is-now-generally-available/#changes-to-the-lockfile" target="_blank" rel="noopener noreferrer">new format</a> of a `package-lock.json` file.
 You'll need to convert your `package-lock.json` file to the new format for workspaces to work correctly.
 
 ### A word on expressing dependencies between packages
@@ -163,7 +163,7 @@ Or installed as a specific development dependency of a particular *monorepo* pac
 
 ### A word on npm binaries
 
-Before npm workspaces, to run a binary from one of the *monorepo* packages, we had to use the [link-parent-bin](https://www.npmjs.com/package/link-parent-bin)
+Before npm workspaces, to run a binary from one of the *monorepo* packages, we had to use the <a href="https://www.npmjs.com/package/link-parent-bin" target="_blank" rel="noopener noreferrer">link-parent-bin</a>
 npm package to link top-level npm binaries to all *monorepo* packages. This is no longer required as npm supports this natively.
 
 ## Closing words
@@ -175,7 +175,7 @@ change detection, releases, and running npm scripts in the proper order (given t
 All the examples mentioned in the article can be found in the following Lerna monorepo repository I've setup-ed for you. Clone it, install it, play with it and have a lot of fun with it!
 
 <div class="list-group mb-3">
-  <a href="https://github.com/char0n/lerna-monorepo-taming" class="list-group-item list-group-item-action">
+  <a href="https://github.com/char0n/lerna-monorepo-taming" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
       <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> lerna-monorepo-taming</h3>
     </div>
@@ -199,5 +199,5 @@ All the examples mentioned in the article can be found in the following Lerna mo
 
 **Maintaining Lerna monorepo series:**
 
-* Part 1: [Things I wish I had known when I started JavaScript monorepo with Lerna](https://www.linkedin.com/pulse/things-i-wish-had-known-when-started-javascript-monorepo-gorej/)
+* Part 1: <a href="https://www.linkedin.com/pulse/things-i-wish-had-known-when-started-javascript-monorepo-gorej/" target="_blank" rel="noopener noreferrer">Things I wish I had known when I started JavaScript monorepo with Lerna</a>
 * Part 2: Things I have learned while maintaining JavaScript monorepo with Lerna

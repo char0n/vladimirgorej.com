@@ -14,7 +14,7 @@ image:
 <p class="lead">
   Error handling is an essential aspect of today's modern Single Page Applications.
   Error handling refers to the anticipation, detection, and resolution of different kinds of errors.
-  As of version <a href="https://www.npmjs.com/package/swagger-ui/v/4.3.0">v4.3.0</a>, <a href="https://github.com/swagger-api/swagger-ui">SwaggerUIs</a> error handling capabilities have considerably improved
+  As of version <a href="https://www.npmjs.com/package/swagger-ui/v/4.3.0" target="_blank" rel="noopener noreferrer">v4.3.0</a>, <a href="https://github.com/swagger-api/swagger-ui" target="_blank" rel="noopener noreferrer">SwaggerUIs</a> error handling capabilities have considerably improved
   and allowed SwaggerUI integrators to easily integrate their custom errors handlers. 
 </p>
 
@@ -24,10 +24,10 @@ Along with displaying the Fallback component, `console.error` was used to displa
 This solution required wrapping every function component into class component to make sure that
 the component has the `render` method.
 
-React 16 introduces a new concept of an [error boundary](https://reactjs.org/docs/error-boundaries.html).
+React 16 introduces a new concept of an <a href="https://reactjs.org/docs/error-boundaries.html" target="_blank" rel="noopener noreferrer">error boundary</a>.
 It's no longer necessary to create a custom solution for catching errors in React apps, as we have a standardized way of doing it.
 
-In order to fully utilize new error boundaries, I had to rewrite SwaggerUIs [view plugin](https://github.com/swagger-api/swagger-ui/tree/master/src/core/plugins/view), which all other 
+In order to fully utilize new error boundaries, I had to rewrite SwaggerUIs <a href="https://github.com/swagger-api/swagger-ui/tree/master/src/core/plugins/view" target="_blank" rel="noopener noreferrer">view plugin</a>, which all other 
 plugins build on. An additional new plugin called `safe-render` was introduced to allow configurable
 application of error boundaries to SwaggerUI components.
 
@@ -84,7 +84,7 @@ Its public API looks like this:
 }
 {% endhighlight %}
 
-safe-render plugin is automatically utilized by [base](https://github.com/swagger-api/swagger-ui/blob/78f62c300a6d137e65fd027d850981b010009970/src/core/presets/base.js) and [standalone](https://github.com/swagger-api/swagger-ui/tree/78f62c300a6d137e65fd027d850981b010009970/src/standalone) SwaggerUI presets and
+safe-render plugin is automatically utilized by <a href="https://github.com/swagger-api/swagger-ui/blob/78f62c300a6d137e65fd027d850981b010009970/src/core/presets/base.js" target="_blank" rel="noopener noreferrer">base</a> and <a href="https://github.com/swagger-api/swagger-ui/tree/78f62c300a6d137e65fd027d850981b010009970/src/standalone" target="_blank" rel="noopener noreferrer">standalone</a> SwaggerUI presets and
 should always be used as the last plugin, after all the components are already known to the SwaggerUI.
 The plugin defines a default list of components that should be protected by error boundaries:
 
@@ -141,9 +141,9 @@ This static function is invoked after a component has thrown an error.
 It receives two parameters:
 
 1. `error` - The error that was thrown.
-2. `info` - An object with a componentStack key containing [information about which component threw the error](https://reactjs.org/docs/error-boundaries.html#component-stack-traces).
+2. `info` - An object with a componentStack key containing <a href="https://reactjs.org/docs/error-boundaries.html#component-stack-traces" target="_blank" rel="noopener noreferrer">information about which component threw the error</a>.
 
-It has precisely the same signature as error boundaries [componentDidCatch lifecycle method](https://reactjs.org/docs/react-component.html#componentdidcatch),
+It has precisely the same signature as error boundaries <a href="https://reactjs.org/docs/react-component.html#componentdidcatch" target="_blank" rel="noopener noreferrer">componentDidCatch lifecycle method</a>,
 except it's a static function and not a class method.
 
 Default implement of componentDidCatch uses `console.error` to display the received error:
@@ -152,7 +152,7 @@ Default implement of componentDidCatch uses `console.error` to display the recei
 export const componentDidCatch = console.error;
 {% endhighlight %}
 
-To utilize your own error handling logic (e.g. [bugsnag](https://www.bugsnag.com/)), create new SwaggerUI plugin that overrides componentDidCatch:
+To utilize your own error handling logic (e.g. <a href="https://www.bugsnag.com/" target="_blank" rel="noopener noreferrer">bugsnag</a>), create new SwaggerUI plugin that overrides componentDidCatch:
 
 {% highlight js linenos %}
 const BugsnagErrorHandlerPlugin = () => {
@@ -228,5 +228,5 @@ by the `safe-render` plugin are now protected and display fallback. If a small c
 SwaggerUI React component tree fails to render and throws an error, the error bubbles up to the closest
 error boundary, and that error boundary displays the `Fallback` component and invokes `componentDidCatch`.
 
-If you're interested in more technical details, here is the [PR](https://github.com/swagger-api/swagger-ui/pull/7761/files)
+If you're interested in more technical details, here is the <a href="https://github.com/swagger-api/swagger-ui/pull/7761/files" target="_blank" rel="noopener noreferrer">PR</a>
 that introduced the new error handling into SwaggerUI.

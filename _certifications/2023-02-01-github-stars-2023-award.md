@@ -19,6 +19,6 @@ image:
 <br />
 
 <p class="lead text-center">
-  On the <time datetime="2023-02-01">1st of February 2023</time>, I was recognized as <a href="https://stars.github.com/profiles/char0n/">GitHub Star</a> for 2023.
+  On the <time datetime="2023-02-01">1st of February 2023</time>, I was recognized as <a href="https://stars.github.com/profiles/char0n/" target="_blank" rel="noopener noreferrer">GitHub Star</a> for 2023.
 </p>
 

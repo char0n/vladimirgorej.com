@@ -25,15 +25,15 @@ book:
   The Language-Oriented Approach to API Development is the second book of his
   I will be reviewing (the first is called <a href="{% link _book-reviews/2023-01-12-api-by-design.md %}">API By Design</a>). I was privileged to be able
   to read the draft of this book before it was published. I'm also honored that
-  I was mentioned in the book's <a href="https://smizell.com/language-oriented-approach/acknowledgments.html">Acknowledgments</a> section and indirectly contributed
+  I was mentioned in the book's <a href="https://smizell.com/language-oriented-approach/acknowledgments.html" target="_blank" rel="noopener noreferrer">Acknowledgments</a> section and indirectly contributed
   to Stephen's thought process.
 </p>
 
 It all started when I got Stephen's email saying he was working on a book on a
-language-oriented approach to API development. He mentioned that my work on [ApiDOM](https://github.com/swagger-api/apidom)
-and [SwaggerEditor@5](https://github.com/swagger-api/swagger-editor/tree/next) might help him.
+language-oriented approach to API development. He mentioned that my work on <a href="https://github.com/swagger-api/apidom" target="_blank" rel="noopener noreferrer">ApiDOM</a>
+and <a href="https://github.com/swagger-api/swagger-editor/tree/next" target="_blank" rel="noopener noreferrer">SwaggerEditor@5</a> might help him.
 He introduced me to the term **Language Workbenches** and provided a link
-to [Martin Fowler's article explaining Language Workbenches](https://github.com/swagger-api/swagger-editor/tree/next).
+to <a href="https://github.com/swagger-api/swagger-editor/tree/next" target="_blank" rel="noopener noreferrer">Martin Fowler's article explaining Language Workbenches</a>.
 Long story short, Language Workbenches are tools for Domain Specific Languages. He also attached
 the draft of his *The Language-Oriented Approach to API Development* book to the same email.
 
@@ -62,16 +62,16 @@ Still, the author is very objective about all the tradeoffs. One tradeoff that s
 is the creation of a workflow that is counter to the industry - organizations build their tools
 rather than purchase turnkey software.
 
-Examples are worth gold, so the author dedicates a whole next chapter to the [real-world DSL
-that he invented](https://github.com/smizell/language-oriented-example) and uses this DSL
+Examples are worth gold, so the author dedicates a whole next chapter to the <a href="https://github.com/smizell/language-oriented-example" target="_blank" rel="noopener noreferrer">real-world DSL
+that he invented</a> and uses this DSL
 to build an API to keep track of automobiles. Stephen demonstrates how writing nine lines in
 the DSL generates 43 lines of OpenAPI definition with embedded rules for his associated API governance model.
 
-I took it upon myself to add support for Stephens DSL to [SwaggerEditor@5](https://github.com/swagger-api/swagger-editor/tree/next) via a plugin.
-You can see the result on this [URL](https://swagger-editor-dsl.surge.sh/). As you write the DSL, it is translated in real-time
+I took it upon myself to add support for Stephens DSL to <a href="https://github.com/swagger-api/swagger-editor/tree/next" target="_blank" rel="noopener noreferrer">SwaggerEditor@5</a> via a plugin.
+You can see the result on this <a href="https://swagger-editor-dsl.surge.sh/" target="_blank" rel="noopener noreferrer">URL</a>. As you write the DSL, it is translated in real-time
 by a generator component to the OpenAPI definition and translated OpenAPI renderers
 in the right pane via SwaggerUI. You can find a code of the plugin that adds support for this
-tailored DSL into SwaggerEditor@5 on [GitHub](https://github.com/swagger-api/swagger-editor/commit/8b9b8f48a3d1174b2c8e67e4b57b3504dc23b91f).
+tailored DSL into SwaggerEditor@5 on <a href="https://github.com/swagger-api/swagger-editor/commit/8b9b8f48a3d1174b2c8e67e4b57b3504dc23b91f" target="_blank" rel="noopener noreferrer">GitHub</a>.
 
 How to get started with a language-oriented approach, and when do you use it?
 Stephen deals with those questions in the three following chapters.
@@ -79,9 +79,9 @@ Read these chapters carefully when considering adopting a language-oriented appr
 your organization.
 
 At the end of the book, the author provides several case studies and examples of
-language-oriented approaches. Examples include (among others) Amazons [Smithy](https://smithy.io/2.0/index.html),
-MicroSofts [TypeSpec](https://microsoft.github.io/typespec/) + [Cadl](https://github.com/microsoft/cadl),
-and Mike Amundsens [ALPS](http://alps.io/). This range of tailored DSLs shows that the
+language-oriented approaches. Examples include (among others) Amazons <a href="https://smithy.io/2.0/index.html" target="_blank" rel="noopener noreferrer">Smithy</a>,
+MicroSofts <a href="https://microsoft.github.io/typespec/" target="_blank" rel="noopener noreferrer">TypeSpec</a> + <a href="https://github.com/microsoft/cadl" target="_blank" rel="noopener noreferrer">Cadl</a>,
+and Mike Amundsens <a href="http://alps.io/" target="_blank" rel="noopener noreferrer">ALPS</a>. This range of tailored DSLs shows that the
 language-oriented approach is a hot topic, given that significant market players already
 provide tailored DSL and tooling around it to solve the challenges Stephen talks about in his book.
 
@@ -89,5 +89,5 @@ I recommend reading this book to all people involved in any stage of the API des
 approach process who feel set up against a cascade of challenges where a solution to one
 problem leads to more.
 
-You can read this book free of charge on [Stephens's website](https://smizell.com/language-oriented-approach/).
+You can read this book free of charge on <a href="https://smizell.com/language-oriented-approach/" target="_blank" rel="noopener noreferrer">Stephens's website</a>.
 You can also easily print it into PDF and read it in your favorite reader.

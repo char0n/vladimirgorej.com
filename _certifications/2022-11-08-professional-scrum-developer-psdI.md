@@ -19,5 +19,5 @@ image:
 <br />
 
 <p class="lead text-center">
-  Scrum.org public profile: <a href="https://www.scrum.org/user/1019130">https://www.scrum.org/user/1019130</a>
+  Scrum.org public profile: <a href="https://www.scrum.org/user/1019130" target="_blank" rel="noopener noreferrer">https://www.scrum.org/user/1019130</a>
 </p>

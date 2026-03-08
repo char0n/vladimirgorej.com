@@ -20,9 +20,9 @@ image:
   <footer class="blockquote-footer"><cite title="Wikipedia on Memoization">Wikipedia on Memoization</cite></footer>
 </blockquote>
 
-[Lodash](https://lodash.com/) is a modern JavaScript utility library delivering modularity, performance & extras.
+<a href="https://lodash.com/" target="_blank" rel="noopener noreferrer">Lodash</a> is a modern JavaScript utility library delivering modularity, performance & extras.
 It's a ubiquitous library, and your project probably uses it, even if you're not aware of it.
-Lodash contains an implementation of memoization in the form of [memoize](https://lodash.com/docs/4.17.15#memoize) function. 
+Lodash contains an implementation of memoization in the form of <a href="https://lodash.com/docs/4.17.15#memoize" target="_blank" rel="noopener noreferrer">memoize</a> function. 
 
 By default, memoize function only uses the first argument provided to the memoized function as the cache key. 
 Here is the simplest possible example of memoization:
@@ -38,7 +38,7 @@ console.dir(funcM('John')); // => 'My name is John' (cache hit)
 console.dir(funcM.cache.size); // => 1
 {% endhighlight %}
 
-It's important to realize that the cache key of the memoized function is determined using [SameValueZero](https://tc39.es/ecma262/multipage/abstract-operations.html#sec-samevaluezero) comparison:
+It's important to realize that the cache key of the memoized function is determined using <a href="https://tc39.es/ecma262/multipage/abstract-operations.html#sec-samevaluezero" target="_blank" rel="noopener noreferrer">SameValueZero</a> comparison:
 
 {% highlight javascript linenos %}
 const { memoize } = require('lodash');
@@ -239,7 +239,7 @@ console.dir(funcM(obj1, obj2, obj3)); // => {c: 3} // cache hit
 console.dir(funcM.cache.size); // => 1
 {% endhighlight %}
 
-I've extracted `memoizeN` into [GitHub Gist](https://gist.github.com/char0n/2e6c77d38cf00faacceaf37e46b76a32) installable via npm. 
+I've extracted `memoizeN` into <a href="https://gist.github.com/char0n/2e6c77d38cf00faacceaf37e46b76a32" target="_blank" rel="noopener noreferrer">GitHub Gist</a> installable via npm. 
 If you prefer to use `memoizeN` as npm package,
 here is how to achieve that:
 
@@ -264,7 +264,7 @@ import memoizeN from '@char0n/memoizeN';
 {% endhighlight %}
 
 <div class="list-group mb-3">
-  <a href="https://gist.github.com/char0n/2e6c77d38cf00faacceaf37e46b76a32" class="list-group-item list-group-item-action">
+  <a href="https://gist.github.com/char0n/2e6c77d38cf00faacceaf37e46b76a32" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
       <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> memoizeN</h3>
     </div>
@@ -285,11 +285,11 @@ import memoizeN from '@char0n/memoizeN';
 </div>
 
 If you need even more advanced functionality like LRU cache, TTL, reference counting, and others,
-I suggest you look at [memoizee](https://github.com/medikoo/memoizee). memizee is probably the most
+I suggest you look at <a href="https://github.com/medikoo/memoizee" target="_blank" rel="noopener noreferrer">memoizee</a>. memizee is probably the most
 feature-rich implementation of memoization for JavaScript.
 
 ---
 
 <div class="alert alert-info" role="alert">
-  All code snippets in this article are licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 license</a> using the following copyright notice: <strong>Copyright 2022 Vladimír Gorej</strong>.
+  All code snippets in this article are licensed under <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener noreferrer">Apache 2.0 license</a> using the following copyright notice: <strong>Copyright 2022 Vladimír Gorej</strong>.
 </div>

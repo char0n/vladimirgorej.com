@@ -19,5 +19,5 @@ image:
 <br />
 
 <p class="lead text-center">
-    Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github-administration-products.trophy?username=char0n">Microsoft Trophy verification URL</a> to verify this <strong>Trophy</strong>.
+    Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github-administration-products.trophy?username=char0n" target="_blank" rel="noopener noreferrer">Microsoft Trophy verification URL</a> to verify this <strong>Trophy</strong>.
 </p>

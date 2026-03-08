@@ -12,8 +12,8 @@ image:
 ---
 
 <p class="lead">
-  Node.js marked the <a href="https://nodejs.org/docs/latest-v16.x/api/querystring.html">querystring</a> as legacy API in version 14.x, 
-  and recommends using <a href="https://nodejs.org/docs/latest-v16.x/api/url.html#url_class_urlsearchparams">URLSearchParams</a>. 
+  Node.js marked the <a href="https://nodejs.org/docs/latest-v16.x/api/querystring.html" target="_blank" rel="noopener noreferrer">querystring</a> as legacy API in version 14.x,
+  and recommends using <a href="https://nodejs.org/docs/latest-v16.x/api/url.html#url_class_urlsearchparams" target="_blank" rel="noopener noreferrer">URLSearchParams</a>. 
   But doesn't give us any clue how to actually migrate. This article fills this void and provides a migration guide.
 </p>
 
@@ -88,7 +88,7 @@ What's the actual difference between `querystring` vs. `URLSearchParams`?
   <footer class="blockquote-footer"><cite title="Node.js 14.x documentation">Node.js 14.x documentation</cite></footer>
 </blockquote>
 
-Working with URIs/URLs in JavaScript was always confusing. [WHATWG URL specification](https://url.spec.whatwg.org/) finally
+Working with URIs/URLs in JavaScript was always confusing. <a href="https://url.spec.whatwg.org/" target="_blank" rel="noopener noreferrer">WHATWG URL specification</a> finally
 standardizes the term URL and provides a standardized way how we work with URLs. *URLSearchParams* is part of this specification.
 Now let's migrate our previous *querystring* examples to *URLSearchParams* API.
 

@@ -19,7 +19,7 @@ image:
 Functional point-free programming is all about composition. When I'm building an application nowadays,
 I use composition from top to bottom. I compose functions to create modules, modules to compose features, 
 and features to compose applications. For composing functions themselves, I use functional libraries.
-Namely, my two most favorite [lodash](https://lodash.com/) and [Ramda](https://ramdajs.com/).
+Namely, my two most favorite <a href="https://lodash.com/" target="_blank" rel="noopener noreferrer">lodash</a> and <a href="https://ramdajs.com/" target="_blank" rel="noopener noreferrer">Ramda</a>.
 
 While using these functional libraries, I found out that in every new project I was working on, 
 I tend to create the same set of aggregate functions that I missed either from lodash or Ramda.
@@ -50,10 +50,10 @@ some did not have any documentation, some were buggy, and some were focused on P
 Of course, I could use a combination of multiple libraries, but again, I will not build software on 
 libraries without any test coverage.
 
-Hence [Ramda Adjunct](https://github.com/char0n/ramda-adjunct) was born.
+Hence <a href="https://github.com/char0n/ramda-adjunct" target="_blank" rel="noopener noreferrer">Ramda Adjunct</a> was born.
 
 <div class="list-group mb-3">
-  <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action">
+  <a href="https://github.com/char0n/ramda-adjunct" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
       <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda-adjunct</h3>
     </div>
@@ -87,18 +87,18 @@ There is no more need for everybody to create their own utils in their own codeb
 ### 100% test coverage
 
 Creating custom aggregate utils or implementing recipes from the Ramda wiki creates the defectiveness problem.
-The problem is caused by the absence of any tests. Ramda Adjunct keeps [100% code coverage](https://app.codecov.io/gh/char0n/ramda-adjunct) and mimics the Ramda 
+The problem is caused by the absence of any tests. Ramda Adjunct keeps <a href="https://app.codecov.io/gh/char0n/ramda-adjunct" target="_blank" rel="noopener noreferrer">100% code coverage</a> and mimics the Ramda 
 test patterns.
 
 ### Impeccable documentation
 
-You cannot call a library great without excellent documentation. Ramda Adjunct generates its [documentation](https://char0n.github.io/ramda-adjunct/)
+You cannot call a library great without excellent documentation. Ramda Adjunct generates its <a href="https://char0n.github.io/ramda-adjunct/" target="_blank" rel="noopener noreferrer">documentation</a>
 directly from its codebase and uses patterns found in Ramda and Lodash to document its API.
 
 ### What are the future plans?
 
-My first priority for the near feature is to absorb obsolete and no longer maintained [Ramda Cookbook implementation](https://github.com/enten/rcb)
+My first priority for the near feature is to absorb obsolete and no longer maintained <a href="https://github.com/enten/rcb" target="_blank" rel="noopener noreferrer">Ramda Cookbook implementation</a>
 and implement all `Type` related functions that I'm missing in Ramda. 
 After that, I would like to continue absorbing other `dead` libraries.
 Ramda Adjunct repo is ready to receive pull requests. If you have some recipes you would like to share with the community,
-please issue a pull request or [create an issue on GitHub](https://github.com/char0n/ramda-adjunct/issues/new/choose).
+please issue a pull request or <a href="https://github.com/char0n/ramda-adjunct/issues/new/choose" target="_blank" rel="noopener noreferrer">create an issue on GitHub</a>.

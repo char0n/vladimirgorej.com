@@ -25,7 +25,7 @@ book:
   Stephen had already left when I joined the Apiary company, but his ideas and code were everpresent.
   His brilliant ideas are time-proven, and even today, I'm building tools related to APIs on his thoughts
   or libraries. We met again briefly at SmartBear company, where we collaborated on another API-related
-  tool called <a href="https://github.com/swagger-api/apidom/">ApiDOM</a>.
+  tool called <a href="https://github.com/swagger-api/apidom/" target="_blank" rel="noopener noreferrer">ApiDOM</a>.
 </p>
 
 At the beginning of his book, Stephen introduces the topic of API complexity,
@@ -39,7 +39,7 @@ He invents the term **API entropy** and uses it as a measurement of the complexi
 If API entropy is left unchecked, it spreads to other parts of the system, eventually
 leading to **chaos** and affecting future decisions.
 
-He then chooses [JSON Schema](https://json-schema.org/) (schema for short) to introduce the term **Schema entropy**,
+He then chooses <a href="https://json-schema.org/" target="_blank" rel="noopener noreferrer">JSON Schema</a> (schema for short) to introduce the term **Schema entropy**,
 which measures schema complexity. Schema entropy is part of overall API entropy and
 is a sum of the following qualitative factors:
 
@@ -79,6 +79,6 @@ He also briefly discusses API coupling and its two characteristics - **surface a
 At the end of the book, Stephen wrote a real-world case study of GitHub API, where he examined most of the concepts introduced by this book.
 
 API by Design book gave me a mechanism to calculate API entropy and recipes on how to manage it.
-It also inspired me to create a tool called ApiDOM Entropy which will eventually land in [ApiDOM monorepo](https://github.com/swagger-api/apidom/).
+It also inspired me to create a tool called ApiDOM Entropy which will eventually land in <a href="https://github.com/swagger-api/apidom/" target="_blank" rel="noopener noreferrer">ApiDOM monorepo</a>.
 
-This book is **worth every cent**, it costs <strong><var><abbr title="USD">$</abbr>15</var></strong>, and you can buy it [here](https://smizell.com/books/api-by-design/).
+This book is **worth every cent**, it costs <strong><var><abbr title="USD">$</abbr>15</var></strong>, and you can buy it <a href="https://smizell.com/books/api-by-design/" target="_blank" rel="noopener noreferrer">here</a>.

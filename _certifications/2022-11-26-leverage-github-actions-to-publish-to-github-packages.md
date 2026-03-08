@@ -19,5 +19,5 @@ image:
 <br />
 
 <p class="lead text-center">
-  Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github.github-actions-packages.badge?username=char0n">Microsoft Badge verification URL</a> to verify this <strong>Badge</strong>.
+  Visit <a href="https://learn.microsoft.com/en-us/training/achievements/learn.github.github-actions-packages.badge?username=char0n" target="_blank" rel="noopener noreferrer">Microsoft Badge verification URL</a> to verify this <strong>Badge</strong>.
 </p>

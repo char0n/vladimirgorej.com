@@ -22,7 +22,7 @@ My legal opinions are based on research and lengthy conversations with legal dep
 ### Why Apache 2.0 license?
 
 There are various reasons why I prefer Apache 2.0 license over the others (specifically the 3-Clause BSD License).
-This [WhiteSource article](https://www.whitesourcesoftware.com/resources/blog/top-10-apache-license-questions-answered/#7_What_is_the_difference_between_Apache_License_20_and_BSD)
+This <a href="https://www.whitesourcesoftware.com/resources/blog/top-10-apache-license-questions-answered/#7_What_is_the_difference_between_Apache_License_20_and_BSD" target="_blank" rel="noopener noreferrer">WhiteSource article</a>
 covers the differences nicely, but for completeness, let me mentioned them here explicitly as well:
 
 <dl class="row">
@@ -255,7 +255,7 @@ the terms and conditions (lines 5-176) and the appendix (lines 178-201).
 ### License
 
 To apply the license to your software project, create a `LICENSE` file in the source tree's top level.
-Now copy the full Apache 2.0 License text from [https://www.apache.org/licenses/LICENSE-2.0.txt](https://www.apache.org/licenses/LICENSE-2.0.txt) into a `LICENSE` file.
+Now copy the full Apache 2.0 License text from <a href="https://www.apache.org/licenses/LICENSE-2.0.txt" target="_blank" rel="noopener noreferrer">https://www.apache.org/licenses/LICENSE-2.0.txt</a> into a `LICENSE` file.
 Notice that the `LICENSE` file doesn't have any extension, but you can optionally name the file `LICENSE.txt` as well.
 
 **Do not modify** the license text. If you used a 3-Clause BSD License in the past,
@@ -294,14 +294,14 @@ The company had established an Open Source office with a Legal Department dealin
 This Open Source office stipulated that for an Open Source project to be licensed under Apache 2.0 License, it is not required
 to have an explicit Apache 2.0 License text as part of the project. 
 It is absolutely sufficient if the Open Source project README file
-contains the name of the license, either "Apache 2.0 License" or its [SPDX identifier](https://spdx.org/licenses/Apache-2.0.html).
+contains the name of the license, either "Apache 2.0 License" or its <a href="https://spdx.org/licenses/Apache-2.0.html" target="_blank" rel="noopener noreferrer">SPDX identifier</a>.
 Ideally, (but not required) canonical URL where the copy of the license can be obtained should be mentioned as well: `https://www.apache.org/licenses/LICENSE-2.0.txt`.
 This is just a legal opinion of one big tech company. Don't take this legal opinion as implied truth.
 
 ### Copyright notice
 
 In the previous section, we've stipulated that the Apache 2.0 License text doesn't actually have a place where to
-put an explicit copyright notice. Since 1989, [Berne Convention](https://www.wipo.int/treaties/en/ip/berne/) established that the copyright is automatic,
+put an explicit copyright notice. Since 1989, <a href="https://www.wipo.int/treaties/en/ip/berne/" target="_blank" rel="noopener noreferrer">Berne Convention</a> established that the copyright is automatic,
 and the use of copyright notices to claim the copyright has become optional.
 
 This is how an **explicit copyright notice** looks like:
@@ -364,5 +364,5 @@ two things makes the application of the Apache 2.0 License as explicit and clear
 Sounds pretty easy, right?
 
 Another good source of information about applying Apache 2.0 License to a software project
-can be official ["How to"](https://infra.apache.org/licensing-howto.html) from Apache Software Foundation
+can be official <a href="https://infra.apache.org/licensing-howto.html" target="_blank" rel="noopener noreferrer">"How to"</a> from Apache Software Foundation
 directed to Apache Committers.

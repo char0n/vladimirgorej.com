@@ -24,7 +24,7 @@ image:
 </p>
 
 <div class="list-group">
-  <a href="https://github.com/swagger-api/apidom-lsp-vscode" class="list-group-item list-group-item-action">
+  <a href="https://github.com/swagger-api/apidom-lsp-vscode" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
       <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ApiDOM LSP VS Code</h3>
     </div>

@@ -35,7 +35,7 @@ image:
     </tr>
     <tr>
       <td><strong>Course Completed</strong></td>
-      <td><a href="https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/">Agent Skills with Anthropic</a></td>
+      <td><a href="https://www.deeplearning.ai/short-courses/agent-skills-with-anthropic/" target="_blank" rel="noopener noreferrer">Agent Skills with Anthropic</a></td>
     </tr>
     <tr>
       <td><strong>Offered By</strong></td>

@@ -19,6 +19,6 @@ image:
 <br />
 
 <p class="lead text-center">
-  On the <time datetime="2022-08-15">15th of August 2022</time>, I became a <a href="https://stars.github.com/profiles/char0n/">GitHub Star</a>.
+  On the <time datetime="2022-08-15">15th of August 2022</time>, I became a <a href="https://stars.github.com/profiles/char0n/" target="_blank" rel="noopener noreferrer">GitHub Star</a>.
 </p>
 

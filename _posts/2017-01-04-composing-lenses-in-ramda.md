@@ -16,7 +16,7 @@ image:
   We'll look into the basic rules of lens composition.
 </p>
 
-If you are a fan of point-free functional programming in Javascript, you will inevitably become a fan of <a href="https://ramdajs.com/">Ramda</a>.
+If you are a fan of point-free functional programming in Javascript, you will inevitably become a fan of <a href="https://ramdajs.com/" target="_blank" rel="noopener noreferrer">Ramda</a>.
 Ramda is a functional library with an emphasis on immutability and side-effect-free functions.
 
 Ramda contains the implementation of one of my favorite functional concepts - **functional lenses**.
@@ -68,12 +68,12 @@ console.assert(view(telnetServiceEnabledLens, services) === false);
 
 The key here is to always use **lensPath** instead of lensProp. 
 If you use lensProp, you may end up in *TypeError*.
-Use compose function from Ramda and compose the lenses from left to right ([why?](http://www.reddit.com/r/haskell/comments/23x3f3/lenses_dont_compose_backwards/)).
+Use compose function from Ramda and compose the lenses from left to right (<a href="http://www.reddit.com/r/haskell/comments/23x3f3/lenses_dont_compose_backwards/" target="_blank" rel="noopener noreferrer">why?</a>).
 
 Lens composition from **generic** lenses to **combined** lenses is one step further in using the functional lenses. So don't waste your time and try it in your next project.
 
 <div class="list-group mb-3">
-  <a href="https://github.com/ramda/ramda" class="list-group-item list-group-item-action">
+  <a href="https://github.com/ramda/ramda" class="list-group-item list-group-item-action" target="_blank" rel="noopener noreferrer">
     <div class="d-flex w-100 justify-content-between">
       <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ramda</h3>
     </div>
@@ -95,8 +95,8 @@ Lens composition from **generic** lenses to **combined** lenses is one step furt
 
 **Functional Lenses in JavaScript series:**
 
-- Part 1: [Functional lenses in JavaScript](https://www.linkedin.com/pulse/functional-lenses-javascript-vladim%C3%ADr-gorej/)
-- Part 2: [Functional lenses in JavaScript - Isos](https://www.linkedin.com/pulse/functional-lenses-javascript-isos-vladim%C3%ADr-gorej/)
-- Part 3: [Functional lenses in JavaScript - Traversables](https://www.linkedin.com/pulse/functional-lenses-javascript-traversables-vladim%C3%ADr-gorej/)
+- Part 1: <a href="https://www.linkedin.com/pulse/functional-lenses-javascript-vladim%C3%ADr-gorej/" target="_blank" rel="noopener noreferrer">Functional lenses in JavaScript</a>
+- Part 2: <a href="https://www.linkedin.com/pulse/functional-lenses-javascript-isos-vladim%C3%ADr-gorej/" target="_blank" rel="noopener noreferrer">Functional lenses in JavaScript - Isos</a>
+- Part 3: <a href="https://www.linkedin.com/pulse/functional-lenses-javascript-traversables-vladim%C3%ADr-gorej/" target="_blank" rel="noopener noreferrer">Functional lenses in JavaScript - Traversables</a>
 - Part 4: Functional lenses in JavaScript - Folds (unpublished)
 - Bonus material: Composing lenses in Ramda
