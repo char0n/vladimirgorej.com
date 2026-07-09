@@ -231,8 +231,9 @@ comparison layer.
 
 I didn't bury this. It lives as a documented limitation,
 [issue #3](https://github.com/swaggerexpert/arazzo-criterion/issues/3), with the reasoning spelled out.
-If a future version of the Arazzo spec adds a way to "escape" these symbols, the limitation lifts. Until
-then, being honest about it *is* the feature.
+If a future version of the Arazzo spec adds a way to "escape" these symbols, the limitation lifts, so I've
+[asked it to](https://github.com/OAI/Arazzo-Specification/issues/518). Until then, being honest about it
+*is* the feature.
 
 ## Comparisons play by Arazzo's rules
 
@@ -272,7 +273,9 @@ And that word "truthy" hides a real gap. The spec never defines whether an empty
 answer falls to the host language, and languages disagree: `[]` is truthy in JavaScript but falsy in
 Python (`bool([])` is `False`). This library runs on JavaScript, so `[]` passes; a Python runner could
 fail the very same condition. It's the ambiguous `=` all over again, just quieter: where the spec stays
-silent, two conformant runners can still diverge.
+silent, two conformant runners can still diverge. I've since opened
+[an Arazzo spec issue](https://github.com/OAI/Arazzo-Specification/issues/517) to pin these truthiness
+rules down.
 
 ## Why this matters beyond Arazzo
 
@@ -437,8 +440,9 @@ ends, and trusts the answer. One case stays out of reach: a name that contains a
 the spec gives no way to tell apart from the operator. No tool can evaluate that one safely, so rather than
 guess, mine refuses it and says why. That is the condition in the title.
 
-And it doesn't end here. The spec never gave `simple` a formal grammar, so I'm taking this work back to
-the Arazzo community: the grammar, the design, and the open question in
-[issue #3](https://github.com/swaggerexpert/arazzo-criterion/issues/3). We'll talk it through there, and
-some of it may become part of a future version of the spec. That is already how the earlier
-runtime-expression fixes reached Arazzo 1.1.0, and it is where a definition meant to be shared belongs.
+And it doesn't end here. `simple` still has no formal grammar in the spec, and its evaluation rules don't
+say how a bare value like an empty array should be treated. So I've taken both questions back to the Arazzo
+specification: one issue to [define the evaluation semantics](https://github.com/OAI/Arazzo-Specification/issues/517),
+and one to [define a normative grammar and settle the operand boundary](https://github.com/OAI/Arazzo-Specification/issues/518).
+Some of it may land in a future version of the spec. That is already how the earlier runtime-expression
+fixes reached Arazzo 1.1.0, and it is where a definition meant to be shared belongs.
