@@ -1,0 +1,84 @@
+/* post: from-packets-to-pixels-how-the-internet-actually-works */
+.article-toc {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: .5rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.article-toc__title {
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #5c636a; /* darker than $gray-600 to clear 4.5:1 on the #f8f9fa panel */
+  margin-bottom: .75rem;
+}
+.article-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+@media (max-width: 575px) {
+  .article-toc ol { columns: 1; }
+}
+.article-toc li { margin-bottom: .35rem; break-inside: avoid; }
+.article-toc a { text-decoration: none; color: #0a58ca; } /* $blue-600: 4.5:1 on the panel */
+.article-toc a:hover { text-decoration: underline; }
+
+details.article-exercise {
+  border: 1px solid #dee2e6;
+  border-radius: .5rem;
+  background: #f8f9fa;
+  padding: .6rem 1rem;
+  margin: 1.5rem 0;
+}
+details.article-exercise > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #343a40;
+  list-style: none;
+}
+details.article-exercise > summary::-webkit-details-marker { display: none; }
+details.article-exercise > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  margin-right: .5rem;
+  color: #fd7e14;
+  transition: transform .15s ease;
+}
+details.article-exercise[open] > summary::before { transform: rotate(90deg); }
+details.article-exercise[open] > summary { margin-bottom: 1rem; }
+details.article-exercise .highlight { margin-bottom: 0; }
+details.article-exercise > *:last-child { margin-bottom: .4rem; }
+
+details.article-exercise details.article-answer {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  margin: .5rem 0;
+}
+details.article-answer > summary {
+  cursor: pointer;
+  list-style: none;
+  font-weight: 400;
+  color: #343a40;
+}
+details.article-answer > summary::-webkit-details-marker { display: none; }
+details.article-answer > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  margin-right: .5rem;
+  color: #5c636a;
+  transition: transform .15s ease;
+}
+details.article-answer[open] > summary::before { transform: rotate(90deg); }
+details.article-answer > p { margin: .4rem 0 .6rem 1.15rem; }
+
+abbr[title] {
+  text-decoration: underline dotted;
+  text-underline-offset: 2px;
+  cursor: help;
+}
+
+h2.article-section { margin-top: 3rem; scroll-margin-top: 1rem; }

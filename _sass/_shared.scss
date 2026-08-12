@@ -1,0 +1,69 @@
+/* breadcrumbs */
+:root {
+    --bs-breadcrumb-divider: '>'
+}
+
+/* cookie consent */
+#cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: 100%; background: #222; color: rgba(255,255,255,0.8);}
+#cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+@media (max-width: 767px) {
+    #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+    #cookie-notice a {position: relative; bottom: 4px;}
+}
+/* end cookie consent */
+
+ul.social-buttons {
+    display: inline-block;
+}
+
+ul.social-buttons li a {
+    text-align: center;
+    font-size: 15px;
+    line-height: 30px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #000;
+    background-color: #fff;
+    border-radius: 100%;
+    outline: 0;
+}
+
+.card-img-top {
+    height: 170px;
+    border-radius: 0;
+}
+
+.card-img-top--scale-down {
+    object-fit: scale-down;
+}
+
+.card-img-top--cover {
+    object-fit: cover;
+}
+
+.card-title h3 {
+    min-height: 72px;
+    max-height: 72px;
+    height: 72px;
+}
+
+.text-truncate-3 {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.github-fork-ribbon:before {
+    background-color: rgb(33,37,41);
+}
+
+.page-404 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

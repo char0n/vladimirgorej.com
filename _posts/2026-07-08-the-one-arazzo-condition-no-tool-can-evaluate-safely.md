@@ -304,33 +304,6 @@ original formalization: an [ABNF](https://www.rfc-editor.org/rfc/rfc5234) gramma
 notation the internet's specs are written in, that any implementation in any language can follow to the
 same result.
 
-<style>
-  details.abnf-grammar {
-    border: 1px solid #dee2e6;
-    border-radius: .5rem;
-    background: #f8f9fa;
-    padding: .6rem 1rem;
-    margin: 1.5rem 0 2rem;
-  }
-  details.abnf-grammar > summary {
-    cursor: pointer;
-    font-weight: 600;
-    color: #343a40;
-    list-style: none;
-  }
-  details.abnf-grammar > summary::-webkit-details-marker { display: none; }
-  details.abnf-grammar > summary::before {
-    content: "\25B8";
-    display: inline-block;
-    margin-right: .5rem;
-    color: #fd7e14;
-    transition: transform .15s ease;
-  }
-  details.abnf-grammar[open] > summary::before { transform: rotate(90deg); }
-  details.abnf-grammar[open] > summary { margin-bottom: 1rem; }
-  details.abnf-grammar .highlight { margin-bottom: 0; }
-</style>
-
 <details class="abnf-grammar" markdown="1">
 <summary>Show the full ABNF grammar</summary>
 

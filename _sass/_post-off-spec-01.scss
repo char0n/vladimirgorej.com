@@ -1,0 +1,52 @@
+/* post: off-spec-01-openapi-agents-and-what-specs-are-actually-for */
+.interview-toc {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: .5rem;
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0 2.5rem;
+}
+.interview-toc__title {
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  color: #6c757d;
+  margin-bottom: .75rem;
+}
+.interview-toc ol {
+  margin: 0;
+  padding-left: 1.25rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+@media (max-width: 575px) {
+  .interview-toc ol { columns: 1; }
+}
+.interview-toc li { margin-bottom: .35rem; break-inside: avoid; }
+.interview-toc a { text-decoration: none; }
+.interview-toc a:hover { text-decoration: underline; }
+
+.interview-q {
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  scroll-margin-top: 1rem;
+}
+.interview-q__num {
+  color: #fd7e14;
+  font-weight: 700;
+  margin-right: .15rem;
+}
+
+.interview-pullquote {
+  margin: 1.75rem 0;
+  padding: .25rem 0 .25rem 1.25rem;
+  border-left: 4px solid #fd7e14;
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #495057;
+}
+
+.interview-lightning { margin: 1rem 0 0; }
+.interview-lightning dt { font-weight: 600; color: #212529; }
+.interview-lightning dd { margin-bottom: 1rem; }

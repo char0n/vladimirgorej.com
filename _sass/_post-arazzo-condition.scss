@@ -1,0 +1,25 @@
+/* post: the-one-arazzo-condition-no-tool-can-evaluate-safely */
+details.abnf-grammar {
+  border: 1px solid #dee2e6;
+  border-radius: .5rem;
+  background: #f8f9fa;
+  padding: .6rem 1rem;
+  margin: 1.5rem 0 2rem;
+}
+details.abnf-grammar > summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #343a40;
+  list-style: none;
+}
+details.abnf-grammar > summary::-webkit-details-marker { display: none; }
+details.abnf-grammar > summary::before {
+  content: "\25B8";
+  display: inline-block;
+  margin-right: .5rem;
+  color: #fd7e14;
+  transition: transform .15s ease;
+}
+details.abnf-grammar[open] > summary::before { transform: rotate(90deg); }
+details.abnf-grammar[open] > summary { margin-bottom: 1rem; }
+details.abnf-grammar .highlight { margin-bottom: 0; }
