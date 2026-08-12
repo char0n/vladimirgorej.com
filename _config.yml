@@ -20,11 +20,11 @@
 
 title: Vladimír Gorej's Site
 email: vladimir.gorej@gmail.com
-tagline: Vladimír Gorej is a Prague-based software engineer.
+tagline: Vladimír Gorej is a Prague-based Senior Full-Stack Engineer.
 description: >- # this means to ignore newlines until "keywords:"
-  Vladimír Gorej is a Prague-based software engineer.
-  Passionate with software/code quality, Functional and Reactive programming.
-keywords: Vladimír, Gorej, personal, site, blog
+  Vladimír Gorej is a Prague-based Senior Full-Stack Engineer building
+  open-source tooling for OpenAPI, AsyncAPI, Arazzo, and JSON Schema.
+keywords: Vladimír, Gorej, char0n, personal, site, blog, OpenAPI, AsyncAPI, Arazzo, JSON Schema, API tooling
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vladimirgorej.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: vladimirgorej

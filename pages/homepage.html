@@ -191,12 +191,12 @@ custom_metas:
                 </h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                <p class="mb-1"><strong>Messy API specs? Ship APIs with confidence.</strong></p>
-                <p class="mb-2"><small class="text-muted">In the age of AI, clean API specs matter more than ever.</small></p>
+                <p class="mb-1"><strong>One consistent toolchain for API specifications.</strong></p>
+                <p class="mb-2"><small class="text-muted">Parse, validate, and transform specs with the same logic in the editor, in CI/CD, and in automation.</small></p>
                 <ul class="list-unstyled mb-0">
-                  <li>&#10003; Supports OpenAPI 2, OpenAPI 3.0, OpenAPI 3.1, AsyncAPI 2.x, Arazzo 1.x, and JSON Schema</li>
-                  <li>&#10003; Provides parsers, semantic data models, and building blocks for your own tooling</li>
-                  <li>&#10003; Powers intelligent editing with a Language Service and ready-to-use VS Code extension</li>
+                  <li>&#10003; Supports OpenAPI 2 & 3.x, AsyncAPI 2.x, Arazzo 1.x, JSON Schema, and Overlay</li>
+                  <li>&#10003; ApiDOM parsers and semantic data models, a Language Service with 12+ LSP features, a CLI, a browser-based editor, and a VS Code extension</li>
+                  <li>&#10003; Local-first by default: runs offline, no accounts, no telemetry, open source under Apache-2.0</li>
                 </ul>
               </blockquote>
               <script type="application/ld+json">
@@ -212,6 +212,35 @@ custom_metas:
               </script>
             </a>
 
+            <a href="https://github.com/usearazzo" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+              <div class="d-flex w-100 justify-content-between">
+                <h3 class="h5 mb-1">
+                  <img class="rounded-circle" src="{% link assets/img/usearazzo-logo.webp %}" alt="UseArazzo" width="50" height="50" style="width: 50px!; height: 50px!" />
+                  UseArazzo - Tooling for Arazzo API workflows
+                </h3>
+              </div>
+              <blockquote class="blockquote fs-6 mb-1">
+                <p class="mb-1"><strong>The foundational operating system for Arazzo API workflows.</strong></p>
+                <p class="mb-2"><small class="text-muted">A JavaScript/TypeScript toolkit for Arazzo, the OpenAPI Initiative specification for multi-step API workflows.</small></p>
+                <ul class="list-unstyled mb-0">
+                  <li>&#10003; Parses, resolves, and validates Arazzo Documents against the specification</li>
+                  <li>&#10003; Runs workflows against live APIs with a step-by-step trace in run order</li>
+                  <li>&#10003; Open source under Apache-2.0</li>
+                </ul>
+              </blockquote>
+              <script type="application/ld+json">
+                {
+                  "@context": "https://schema.org",
+                  "@type": "Organization",
+                  "author": { "@id": "{{ site.url }}" },
+                  "name": "UseArazzo",
+                  "description": "UseArazzo is a JavaScript/TypeScript toolkit for Arazzo, the OpenAPI Initiative specification for multi-step API workflows.",
+                  "logo": "{{ site.url }}{% link assets/img/usearazzo-logo.webp %}",
+                  "url": "https://github.com/usearazzo"
+                }
+              </script>
+            </a>
+
             <a href="https://github.com/swaggerexpert" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
                 <h3 class="h5 mb-1">
@@ -220,7 +249,8 @@ custom_metas:
                 </h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                SwaggerExpert is a community dedicated to developing extensions and libraries enhancing the Swagger ecosystem.
+                SwaggerExpert is a community dedicated to extensions and libraries enhancing the Swagger/OpenAPI ecosystem:
+                OpenAPI path and server URL templating parsers, the swagger-editor-validate GitHub Action, an RFC 6265 compliant cookie parser, and more.
               </blockquote>
               <script type="application/ld+json">
                 {
@@ -228,7 +258,7 @@ custom_metas:
                   "@type": "Organization",
                   "author": { "@id": "{{ site.url }}" },
                   "name": "SwaggerExpert",
-                  "description": "SwaggerExpert is a community dedicated to developing extensions and libraries enhancing the Swagger ecosystem.",
+                  "description": "SwaggerExpert is a community dedicated to extensions and libraries enhancing the Swagger/OpenAPI ecosystem.",
                   "logo": "{{ site.url }}{% link assets/img/swagger-expert-logo.webp %}",
                   "url": "https://github.com/swaggerexpert"
                 }
@@ -254,100 +284,101 @@ custom_metas:
               </script>
             </a>
 
-            <a href="https://github.com/char0n/ffmpeg-php" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+            <a href="https://github.com/swaggerexpert/jsonpath" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
-                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ffmpeg-php</h3>
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> jsonpath</h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.
+                RFC 9535 JSONPath parser, validator and evaluator.
               </blockquote>
               <script type="application/ld+json">
                 {
                   "@context": "https://schema.org",
                   "@type": "SoftwareSourceCode",
                   "author": { "@id": "{{ site.url }}" },
-                  "name": "ffmpeg-php",
-                  "abstract": "FFmpegPHP is a pure OO PHP port of ffmpeg-php library that was written in C. It adds an easy to use, object-oriented API for accessing and retrieving information from video and audio files.",
-                  "codeRepository": "https://github.com/char0n/ffmpeg-php"
+                  "name": "jsonpath",
+                  "abstract": "RFC 9535 JSONPath parser, validator and evaluator.",
+                  "codeRepository": "https://github.com/swaggerexpert/jsonpath"
                 }
               </script>
             </a>
 
-            <a href="https://github.com/char0n/json-api-merge" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+            <a href="https://github.com/swaggerexpert/json-pointer" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
-                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> json-api-merge</h3>
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> json-pointer</h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                JSON:API specific algorithm for merging included resources into original data.
+                RFC 6901 implementation of JSON Pointer.
               </blockquote>
               <script type="application/ld+json">
                 {
                   "@context": "https://schema.org",
                   "@type": "SoftwareSourceCode",
                   "author": { "@id": "{{ site.url }}" },
-                  "name": "json-api-merge",
-                  "abstract": "JSON:API specific algorithm for merging included resources into original data.",
-                  "codeRepository": "https://github.com/char0n/json-api-merge"
+                  "name": "json-pointer",
+                  "abstract": "RFC 6901 implementation of JSON Pointer.",
+                  "codeRepository": "https://github.com/swaggerexpert/json-pointer"
                 }
               </script>
             </a>
 
-            <a href="https://github.com/char0n/apidom-validate/" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+            <a href="https://github.com/swaggerexpert/openapi-path-templating" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
-                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> ApiDOM Validator GitHub Action</h3>
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> openapi-path-templating</h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                This GitHub Actions validates OpenAPI 3.x.y / AsyncAPI 2.x definition file using ApiDOM Language Service. Validation rules are exactly the same as the one that SwaggerEditor@5 uses.
+                OpenAPI Path Templating parser, validator and resolver, downloaded more than 1 million times a week on npm.
               </blockquote>
               <script type="application/ld+json">
                 {
                   "@context": "https://schema.org",
                   "@type": "SoftwareSourceCode",
                   "author": { "@id": "{{ site.url }}" },
-                  "name": "http-request-in-editor",
-                  "abstract": "Reference implementation of HTTP Request in Editor Specification.",
-                  "codeRepository": "https://github.com/char0n/http-request-in-editor"
+                  "name": "openapi-path-templating",
+                  "abstract": "OpenAPI Path Templating parser, validator and resolver.",
+                  "codeRepository": "https://github.com/swaggerexpert/openapi-path-templating"
                 }
               </script>
             </a>
 
-            <a href="https://github.com/char0n/swagger-adjust" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+            <a href="https://github.com/swaggerexpert/arazzo-runtime-expression" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
-                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> swagger-adjust</h3>
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> arazzo-runtime-expression</h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                Pluggable framework for creating extendable React+Redux applications.
+                Arazzo Runtime Expressions parser, validator and extractor.
               </blockquote>
               <script type="application/ld+json">
                 {
                   "@context": "https://schema.org",
                   "@type": "SoftwareSourceCode",
                   "author": { "@id": "{{ site.url }}" },
-                  "name": "swagger-adjust",
-                  "abstract": "Pluggable framework for creating extendable React+Redux applications.",
-                  "codeRepository": "https://github.com/char0n/swagger-adjust"
+                  "name": "arazzo-runtime-expression",
+                  "abstract": "Arazzo Runtime Expressions parser, validator and extractor.",
+                  "codeRepository": "https://github.com/swaggerexpert/arazzo-runtime-expression"
                 }
               </script>
             </a>
 
-            <a href="https://github.com/char0n/openapi-runtime-expression" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
+            <a href="https://github.com/swaggerexpert/arazzo-criterion" target="_blank" rel="noopener noreferrer" class="list-group-item list-group-item-action">
               <div class="d-flex w-100 justify-content-between">
-                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> openapi-runtime-expression</h3>
+                <h3 class="h5 mb-1"><i class="fa-brands fa-github"></i> arazzo-criterion</h3>
               </div>
               <blockquote class="blockquote fs-6 mb-1">
-                OpenAPI Runtime Expressions parser and validator.
+                Arazzo Criterion Object parser, validator and evaluator.
               </blockquote>
               <script type="application/ld+json">
                 {
                   "@context": "https://schema.org",
                   "@type": "SoftwareSourceCode",
                   "author": { "@id": "{{ site.url }}" },
-                  "name": "openapi-runtime-expression",
-                  "abstract": "OpenAPI Runtime Expressions parser and validator.",
-                  "codeRepository": "https://github.com/char0n/openapi-runtime-expression"
+                  "name": "arazzo-criterion",
+                  "abstract": "Arazzo Criterion Object parser, validator and evaluator.",
+                  "codeRepository": "https://github.com/swaggerexpert/arazzo-criterion"
                 }
               </script>
             </a>
+
           </div>
         </div>
 

@@ -10,14 +10,16 @@
           <div class="card-body">
             <h2 class="h5 card-title">{{ site.author.name }}, <small>a.k.a. <abbr title="Nickname">char0n</abbr></small></h2>
             <p class="card-text">
-              {{ site.author.name }} is a Prague-based <strong>Software Engineer</strong> passionate about software and code quality.
+              {{ site.author.name }} is a Prague-based <strong>Senior Full-Stack Engineer</strong> with 17+ years of experience,
+              the last seven specialized in developer tooling for the API specification ecosystem: <strong>OpenAPI</strong>, <strong>AsyncAPI</strong>, <strong>Arazzo</strong>, and <strong>JSON Schema</strong>.
               Over the years, he has worked as Technical Team Lead at Oracle, Principal Software Engineer at Apiary, and Senior Open Source Engineer at SmartBear,
-              along with other senior engineering and leadership roles at Ubiquiti Networks and SecurityScorecard.
-              Active in the Open Source community for more than fifteen years, he now applies this experience as a Senior Software Engineer (AI) at Jentic.
-              Vladimír holds all Open Source Best Practices certifications awarded by The Linux Foundation. His contributions have been recognized
-              as an alumni member of the <a href="https://stars.github.com/alumni/#:~:text=char0n" target="_blank" rel="noopener noreferrer">GitHub Stars program</a> and through his five years as a maintainer of <a href="https://swagger.io/" rel="nofollow noopener noreferrer" target="_blank">Swagger tools</a>.
-              He also plays a pivotal role in shaping the future of asynchronous APIs as a <a href="https://github.com/asyncapi/spec" target="_blank" rel="noopener noreferrer">maintainer of the AsyncAPI specification</a>.
-              His favorite programming languages include <strong>JavaScript</strong>, <strong>TypeScript</strong>, <strong>Python</strong>, and <strong>Elixir</strong>.
+              along with other senior engineering and leadership roles at Ubiquiti Networks, SecurityScorecard, and Jentic.
+              Today he is building <a href="https://speclynx.com" target="_blank" rel="noopener noreferrer">SpecLynx</a>, the open, local-first toolchain for API specifications that he co-founded.
+              Active in the Open Source community for more than fifteen years, he is a <a href="https://github.com/asyncapi/spec" target="_blank" rel="noopener noreferrer">maintainer of the AsyncAPI specification</a>,
+              spent five years as a maintainer of <a href="https://swagger.io/" rel="nofollow noopener noreferrer" target="_blank">Swagger tools</a>,
+              and is an alumni member of the <a href="https://stars.github.com/alumni/#:~:text=char0n" target="_blank" rel="noopener noreferrer">GitHub Stars program</a>.
+              He holds all Open Source Best Practices certifications awarded by The Linux Foundation, and believes an API spec is only worth as much
+              as the tooling around it: his work is about making APIs usable by developers and AI agents alike.
             </p>
           </div>
           <script type="application/ld+json">
@@ -38,7 +40,13 @@
               "taxID": "05284503",
               "email": "mailto:{{ site.email }}",
               "image": "{{ 'assets/img/vladimir-gorej.webp' | absolute_url }}",
-              "jobTitle": "Software Engineer",
+              "jobTitle": "Senior Full-Stack Engineer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "SpecLynx",
+                "url": "https://speclynx.com"
+              },
+              "knowsAbout": ["OpenAPI", "AsyncAPI", "Arazzo", "JSON Schema", "API tooling", "TypeScript", "Node.js", "Python", "React"],
               "name": "{{ site.author.name }}",
               "alternateName": "char0n",
               "givenName": "{{ site.author.first_name }}",
