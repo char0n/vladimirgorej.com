@@ -20,8 +20,8 @@ image:
 
 ## What is currying?
 
-To borrow a phrase from Vasily Vasinov's article: "Currying is the process of decomposing a function of multiple arguments into a chained sequence of functions of one argument."
-There are various implementations of currying, but I prefer the ones from lodash or ramda. I use them alternately, and they seem to have an identical implementation. Let's see some code now.
+To borrow a phrase from <a href="http://www.vasinov.com/blog/on-currying-and-partial-function-application/" target="_blank" rel="noopener noreferrer">Vasily Vasinov's article</a>: "Currying is the process of decomposing a function of multiple arguments into a chained sequence of functions of one argument."
+There are various implementations of currying, but I prefer the ones from <a href="http://lodash.com/" target="_blank" rel="noopener noreferrer">lodash</a> or <a href="http://ramdajs.com/" target="_blank" rel="noopener noreferrer">ramda</a>. I use them alternately, and they seem to have an identical implementation. Let's see some code now.
 
 {% highlight javascript linenos %}
 const { curry } = require('lodash/fp');
@@ -58,15 +58,15 @@ server.route({
 });
 {% endhighlight %}
 
-What is happening here? We have a route definition for a hapi.js API resource that returns a product by its ID.
+What is happening here? We have a route definition for a <a href="http://hapijs.com/" target="_blank" rel="noopener noreferrer">hapi.js</a> API resource that returns a product by its ID.
 We defined a curried function, `updateProductLastView`, and then we use it in the route definition. Notice how we call the function with only
 one parameter, and then let the promise apply the second parameter (the product object returned from the database) by calling the function
 returned by `updateProductLastView(Date.now())`.
 
 ## What are the limits?
 
-About a month ago, I hit a use case involving default function params where applying the currying concept was a no-go. Then I stumbled upon
-Vasily Vasinov's article about currying and partial application in Scala. While reading it, I realized that Vasily introduces a Scala concept
+About a month ago, I hit a use case involving <a href="http://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Default_parameters" target="_blank" rel="noopener noreferrer">default function params</a> where applying the currying concept was a no-go. Then I stumbled upon
+<a href="http://www.vasinov.com/blog/on-currying-and-partial-function-application/" target="_blank" rel="noopener noreferrer">Vasily Vasinov's article</a> about currying and partial application in Scala. While reading it, I realized that Vasily introduces a Scala concept
 called implicits to deal with default params in curried functions. I immediately had a eureka moment and started experimenting in JavaScript.
 
 {% highlight javascript linenos %}
@@ -108,7 +108,7 @@ fn3.length; //=> 0
 
 ## The solution #1
 
-Ok, so currying and default params just don't play along. We don't have implicits in JavaScript like Scala does. So what do we do?
+OK, so currying and default params just don't play along. We don't have implicits in JavaScript like Scala does. So what do we do?
 Let's get back to basics and write this function without default params.
 
 {% highlight javascript linenos %}
@@ -147,7 +147,7 @@ Then, you don't need to pay attention to how you define your functions or whethe
 
 ## Update (18.03.2017)
 
-It seems there is a more elegant solution to this problem, conceived by Kyle Simpson. Using the FPO library, your code can look like this:
+It seems there is a more elegant solution to this problem, conceived by Kyle Simpson. Using the <a href="http://github.com/getify/fpo" target="_blank" rel="noopener noreferrer">FPO</a> library, your code can look like this:
 
 {% highlight javascript linenos %}
 function foo(x, y = 2, z) {
