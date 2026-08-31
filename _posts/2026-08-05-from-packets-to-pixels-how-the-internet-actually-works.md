@@ -3,12 +3,17 @@ layout: post
 title: "From packets to pixels: how the internet actually works"
 description: "Everything that happens between typing a URL and seeing a page: packets, IP, TCP, ports, HTTP, HTTPS, domain names, hosting, DNS, and the browser rendering pipeline. One article, end to end, with hands-on exercises that need nothing but a terminal and a browser."
 date: 2026-08-05 10:00:00 +0200
+series: from-packets-to-pixels
+series_part: 1
+series_title: "How the internet actually works"
 image:
   path: assets/img/blog/from-packets-to-pixels.webp
   width: 1280
   height: 520
   caption: The path from a keystroke to a rendered page
 ---
+
+{% include series-packets-to-pixels.html %}
 
 <p class="lead">
   I have spent my whole career close to the web's machinery: five years maintaining Swagger tools, these days
@@ -1097,6 +1102,8 @@ every request automatically, which is what lets the server recognize your sessio
 
 Next time a page loads in 300 ms, you'll know exactly how much machinery just cooperated to make that happen,
 and next time something breaks, you'll know which layer to interrogate first.
+
+{% include series-packets-to-pixels.html %}
 
 *[OS]: operating system
 *[ISP]: Internet Service Provider

@@ -1,0 +1,47 @@
+{%- comment -%}
+  Submits Kit (ConvertKit) subscription forms in place via fetch, so the visitor
+  stays on the page. Falls back to a regular POST to Kit when JavaScript is off.
+{%- endcomment -%}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('form.js-kit-form').forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var button = form.querySelector('button[type="submit"]');
+        var success = form.parentElement.querySelector('.js-kit-success');
+        var error = form.parentElement.querySelector('.js-kit-error');
+        error.hidden = true;
+        button.disabled = true;
+        fetch(form.action, {
+          method: 'POST',
+          headers: { 'Accept': 'application/json' },
+          body: new FormData(form)
+        }).then(function (response) {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
+        }).then(function () {
+          form.hidden = true;
+          success.hidden = false;
+        }).catch(function () {
+          button.disabled = false;
+          error.hidden = false;
+        });
+      });
+    });
+
+    var modalElement = document.getElementById('seriesSubscribeModal');
+    if (modalElement) {
+      var dismissedKey = 'series-subscribe-dismissed';
+      var dismissed = false;
+      try { dismissed = !!localStorage.getItem(dismissedKey); } catch (e) {}
+      if (!dismissed && modalElement.getAttribute('data-auto-open') !== 'false') {
+        setTimeout(function () {
+          bootstrap.Modal.getOrCreateInstance(modalElement).show();
+        }, 8000);
+      }
+      modalElement.addEventListener('hidden.bs.modal', function () {
+        try { localStorage.setItem(dismissedKey, '1'); } catch (e) {}
+      });
+    }
+  });
+</script>

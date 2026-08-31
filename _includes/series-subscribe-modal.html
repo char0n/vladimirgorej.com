@@ -1,0 +1,36 @@
+{%- comment -%}
+  Subscribe modal for the "From packets to pixels" series. Include once per page;
+  open it from any element with data-bs-toggle="modal" data-bs-target="#seriesSubscribeModal".
+  Auto-opens after a few seconds unless previously dismissed; pass auto_open=false to disable.
+{%- endcomment -%}
+<div class="modal fade" id="seriesSubscribeModal" tabindex="-1" aria-labelledby="seriesSubscribeModalLabel" aria-hidden="true"
+     {%- if include.auto_open == false %} data-auto-open="false"{% endif %}>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content series-subscribe-modal">
+      <div class="modal-header border-0 pb-0">
+        <h2 class="modal-title h5" id="seriesSubscribeModalLabel">Get new parts as they ship</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-muted">
+          One email per new part of <em>From packets to pixels</em>. No noise, unsubscribe anytime.
+        </p>
+        <form class="js-kit-form" action="https://app.kit.com/forms/9826339/subscriptions" method="post">
+          <label for="series-modal-email" class="visually-hidden">Email address</label>
+          <div class="d-flex gap-2">
+            <input type="email" name="email_address" id="series-modal-email" class="form-control" placeholder="you@example.com" required />
+            <button type="submit" class="btn text-white series-hub__subscribe-btn">Subscribe</button>
+          </div>
+          <small class="text-muted d-block mt-2">You'll get a confirmation email first.</small>
+        </form>
+        <div class="js-kit-success alert alert-success mb-0" hidden>
+          <strong>Almost there!</strong> Check your inbox and confirm your subscription.
+        </div>
+        <div class="js-kit-error alert alert-danger mb-0 mt-2" hidden>
+          Something went wrong. Please try again in a moment.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% include series-subscribe-js.html %}

@@ -1,0 +1,19 @@
+{%- comment -%}
+  Series block for "From packets to pixels" articles, used at the top and bottom of each part.
+  Reads page.series_part for the part number.
+{%- endcomment -%}
+<aside class="series-cta">
+  <div class="series-cta__kicker">From packets to pixels &middot; Part {{ page.series_part }}</div>
+  <p class="series-cta__text">
+    This article is part of a hands-on series that rebuilds the web from first principles:
+    the network first, then HTML, CSS, and JavaScript.
+  </p>
+  <div class="d-flex flex-wrap gap-2">
+    <a class="btn text-white series-cta__btn" href="{% link pages/from-packets-to-pixels.html %}">
+      All parts <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    <button type="button" class="btn series-cta__subscribe-btn" data-bs-toggle="modal" data-bs-target="#seriesSubscribeModal">
+      <i class="fa-solid fa-envelope"></i> Get new parts by email
+    </button>
+  </div>
+</aside>

@@ -31,6 +31,10 @@ layout: default
       {{ content }}
     </div>
 
+    {%- if page.series == "from-packets-to-pixels" -%}
+      {%- include series-subscribe-modal.html -%}
+    {%- endif -%}
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",

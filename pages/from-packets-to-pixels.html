@@ -1,0 +1,129 @@
+---
+layout: default
+title: "From packets to pixels"
+description: "A series that rebuilds the web from first principles: the network, HTML, CSS, and JavaScript. Each part walks one layer end to end, with hands-on exercises that need nothing but a terminal and a browser."
+permalink: /from-packets-to-pixels/
+image:
+  path: assets/img/series/from-packets-to-pixels.webp
+  width: 1280
+  height: 520
+upcoming:
+  - part: 2
+    topic: HTML
+    title: "HTML: the structure beneath every page"
+    description: "Documents, semantics, and why the structure of a page matters more than how it looks."
+    status: "Coming next"
+  - part: 3
+    topic: CSS
+    title: "CSS: how the browser decides what every pixel looks like"
+    description: "The cascade, layout, and the path from a stylesheet to a painted screen."
+    status: "Planned"
+  - part: 4
+    topic: JavaScript
+    title: "JavaScript: what runs when a page comes alive"
+    description: "The language of the browser, the event loop, and what actually executes behind every interaction."
+    status: "Planned"
+---
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="{% link pages/homepage.html %}">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">From packets to pixels</li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-0 col-lg-1"></div>
+  <div class="col-12 col-lg-10">
+
+    <header class="series-hub__hero">
+      <img src="{% link assets/img/series/from-packets-to-pixels-hub.webp %}" width="1280" height="520"
+           class="series-hub__hero-img img-fluid w-100" alt="Packets assembling into a rendered page" />
+      <div class="series-hub__kicker">An article series by Vladimír Gorej</div>
+      <h1>From packets to pixels</h1>
+      <p class="lead">
+        The web, rebuilt from first principles. Most engineers inherit their mental model of the stack beneath
+        their code; this series verifies it instead, one layer at a time: the network and protocols first, then
+        HTML, CSS, and JavaScript. Every part ends its sections with hands-on exercises that need nothing more
+        than a terminal and a browser, because verifying something yourself is the difference between knowing
+        it and having heard it.
+      </p>
+    </header>
+
+    {%- assign parts = site.posts | where: "series", "from-packets-to-pixels" | sort: "series_part" -%}
+
+    <section class="series-hub__section">
+      <div class="series-hub__kicker">The parts</div>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        {%- for part in parts %}
+        <div class="col">
+          <article class="card h-100 series-hub__card">
+            <div class="card-header">
+              <span class="series-hub__part-no">Part {{ part.series_part }}</span>
+              <time datetime="{{ part.date | date_to_xmlschema }}">{{ part.date | date: "%-d %B %Y" }}</time>
+            </div>
+            <img loading="lazy" src="{{ part.image.path | relative_url }}" class="series-hub__card-img" alt="{{ part.title | escape }}" />
+            <div class="card-body">
+              <h2 class="h5 card-title">{{ part.series_title | default: part.title }}</h2>
+              <p class="card-text series-hub__card-text">{{ part.description | truncate: 160 }}</p>
+              <a href="{{ part.url | relative_url }}" class="stretched-link btn btn-outline-dark">Read article</a>
+            </div>
+          </article>
+        </div>
+        {%- endfor %}
+        {%- for part in page.upcoming %}
+        <div class="col">
+          <article class="card h-100 series-hub__card series-hub__card--upcoming">
+            <div class="card-header">
+              <span class="series-hub__part-no">Part {{ part.part }}</span>
+              <span>{{ part.status }}</span>
+            </div>
+            <div class="series-hub__card-placeholder" aria-hidden="true">
+              <span class="series-hub__card-placeholder-no">{{ part.part | prepend: "0" }}</span>
+              <span class="series-hub__card-placeholder-topic">{{ part.topic }}</span>
+            </div>
+            <div class="card-body">
+              <h2 class="h5 card-title">{{ part.title }}</h2>
+              <p class="card-text series-hub__card-text">{{ part.description }}</p>
+            </div>
+          </article>
+        </div>
+        {%- endfor %}
+      </div>
+      <p class="text-muted mt-3 mb-0"><small>Order and scope of upcoming parts may shift as they get written.</small></p>
+    </section>
+
+    <section class="series-hub__section series-hub__subscribe text-center">
+      <div class="series-hub__kicker">Stay in the loop</div>
+      <h2 class="h4">Get new parts as they ship</h2>
+      <p class="mx-auto series-hub__subscribe-text">
+        New parts land on this page first. Leave your email and you'll get each one the day it ships.
+      </p>
+      <button type="button" class="btn text-white series-hub__subscribe-btn" data-bs-toggle="modal" data-bs-target="#seriesSubscribeModal">
+        <i class="fa-solid fa-envelope"></i> Get new parts by email
+      </button>
+      <small class="text-muted d-block mt-2">You'll get a confirmation email first. Unsubscribe anytime.</small>
+      <p class="mt-3 mb-0">
+        <small>
+          Prefer RSS? <a class="ms-2" href="{{ '/feed.xml' | relative_url }}"><i class="fa-solid fa-rss"></i> Subscribe to the feed</a>
+        </small>
+      </p>
+    </section>
+
+    {%- include series-subscribe-modal.html -%}
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Series",
+        "name": "From packets to pixels",
+        "description": {{ page.description | jsonify }},
+        "author": { "@id": "{{ site.url }}" },
+        "url": "{{ page.url | absolute_url }}",
+        "image": "{{ page.image.path | absolute_url }}"
+      }
+    </script>
+
+  </div>
+  <div class="col-0 col-lg-1"></div>
+</div>

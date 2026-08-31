@@ -26,6 +26,39 @@ custom_metas:
       <header class="mb-2 mb-md-3">
         <div class="row">
           <div class="col-6">
+            <h2 id="series" class="h5 text-uppercase">Featured series</h2>
+          </div>
+          <div class="col-6 text-end">
+            <button type="button" class="btn btn-link p-0 align-baseline d-none d-md-inline me-3"
+                    data-bs-toggle="modal" data-bs-target="#seriesSubscribeModal">
+              <small><i class="fa-solid fa-envelope"></i> Get new parts by email</small>
+            </button>
+            <a href="{% link pages/from-packets-to-pixels.html %}">
+              <small>All parts <i class="fa-solid fa-arrow-right"></i></small>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <a href="{% link pages/from-packets-to-pixels.html %}">
+        <img loading="lazy" src="{% link assets/img/series/from-packets-to-pixels.webp %}"
+             alt="From packets to pixels: a hands-on series in four parts"
+             class="img-fluid rounded w-100" width="1280" height="520" />
+      </a>
+      <p class="mt-2 mb-0 d-md-none">
+        <button type="button" class="btn btn-link p-0 align-baseline"
+                data-bs-toggle="modal" data-bs-target="#seriesSubscribeModal">
+          <i class="fa-solid fa-envelope"></i> Get new parts by email
+        </button>
+      </p>
+
+      {%- include series-subscribe-modal.html auto_open=false -%}
+    </section>
+
+    <section class="mb-5">
+      <header class="mb-2 mb-md-3">
+        <div class="row">
+          <div class="col-6">
             <h2 id="articles" class="h5 text-uppercase">Articles</h2>
           </div>
           <div class="col-6 text-end">
