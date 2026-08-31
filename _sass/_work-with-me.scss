@@ -1,0 +1,368 @@
+/* work-with-me page (ported from the "Work with me" deck) */
+$wwm-teal: #0e7a6e;
+$wwm-teal-dark: #0a5f56;
+$wwm-ink: #212529;
+$wwm-muted: #495057;
+$wwm-paper: #f7f7f0;
+$wwm-border: #e3e3d8;
+$wwm-mono: var(--bs-font-monospace);
+
+/* header CTA link */
+.wwm-nav-link {
+  font-family: $wwm-mono;
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  white-space: nowrap;
+  color: #ffffff;
+  text-decoration: none;
+
+  .wwm__status-dot { margin-right: .4em; }
+
+  &:hover, &:focus { color: #ffffff; }
+  &:hover .wwm-nav-link__label, &:focus .wwm-nav-link__label { text-decoration: underline; }
+}
+
+/* homepage bio card CTA link */
+.wwm-cta-link {
+  font-family: $wwm-mono;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  white-space: nowrap;
+  color: #343a40;
+  text-decoration: none;
+
+  .wwm__status-dot { margin-right: .4em; }
+
+  &:hover, &:focus { color: $wwm-teal; }
+  &:hover .wwm-cta-link__label, &:focus .wwm-cta-link__label { text-decoration: underline; }
+}
+
+.wwm__status {
+  font-family: $wwm-mono;
+  font-size: .85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: $wwm-teal;
+  white-space: nowrap;
+}
+.wwm__status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  margin-right: .25em;
+}
+.wwm-nav-link .wwm__status-dot { vertical-align: baseline; }
+
+/* hero */
+.wwm__hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 2rem;
+  align-items: start;
+  background: $wwm-paper;
+  border: 1px solid $wwm-border;
+  border-radius: .75rem;
+  padding: 2rem 2rem 1.5rem;
+  margin-top: 1rem;
+}
+.wwm__badge {
+  display: inline-block;
+  font-family: $wwm-mono;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .18em;
+  color: #ffffff;
+  background: $wwm-teal;
+  padding: .45em .9em;
+  margin-bottom: 1.25rem;
+}
+.wwm__hero-title {
+  font-weight: 800;
+  font-size: calc(1.6rem + 1.8vw);
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+}
+.wwm__hero-accent { color: $wwm-teal; }
+.wwm__hero-stack {
+  font-size: 1.1rem;
+  margin-bottom: .35rem;
+}
+.wwm__hero-depth { color: $wwm-teal; }
+.wwm__hero-photo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 1px $wwm-border;
+}
+.wwm__hero-meta {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .35rem 1.25rem;
+  border-top: 2px solid $wwm-ink;
+  padding-top: 1rem;
+}
+.wwm__hero-name { font-weight: 700; font-size: 1.15rem; }
+.wwm__hero-location {
+  font-family: $wwm-mono;
+  font-size: .85rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: $wwm-muted;
+}
+.wwm__hero-meta .wwm__status { margin-left: auto; }
+@media (max-width: 575.98px) {
+  .wwm__hero { grid-template-columns: 1fr; padding: 1.5rem 1.25rem 1.25rem; }
+  .wwm__hero-photo { order: -1; width: 96px; height: 96px; }
+  .wwm__hero-meta .wwm__status { margin-left: 0; }
+}
+
+/* sections */
+.wwm__section {
+  margin: 5rem 0;
+  scroll-margin-top: 1.5rem;
+}
+.wwm__section ~ .wwm__section {
+  border-top: 1px solid $wwm-border;
+  padding-top: 4rem;
+}
+
+/* quick-nav sidebar */
+.wwm__toc {
+  position: sticky;
+  top: 2rem;
+  margin-top: 4rem;
+  border-left: 1px solid $wwm-border;
+}
+.wwm__toc-link {
+  font-family: $wwm-mono;
+  font-size: .75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  white-space: nowrap;
+  color: $wwm-muted;
+  padding: .35rem 1rem;
+  border-left: 2px solid transparent;
+  margin-left: -1px;
+
+  &:hover, &:focus { color: $wwm-teal; }
+
+  &.active {
+    color: $wwm-teal;
+    border-left-color: $wwm-teal;
+  }
+}
+.wwm__kicker {
+  font-family: $wwm-mono;
+  font-size: .85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+  color: $wwm-teal;
+  margin-bottom: 1rem;
+}
+.wwm__heading {
+  font-weight: 800;
+  font-size: calc(1.35rem + .9vw);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+.wwm__heading--sub { font-size: calc(1.1rem + .4vw); margin: 1.5rem 0 1.25rem; }
+
+/* who you're talking to */
+.wwm__list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.75rem;
+
+  li {
+    padding-left: 1.6rem;
+    position: relative;
+    margin-bottom: .85rem;
+    color: $wwm-muted;
+
+    strong { color: $wwm-ink; }
+
+    &::before {
+      content: ">";
+      position: absolute;
+      left: 0;
+      font-family: $wwm-mono;
+      font-weight: 700;
+      color: $wwm-teal;
+    }
+  }
+}
+.wwm__pull {
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-left: 4px solid $wwm-teal;
+  padding-left: 1.1rem;
+  margin-bottom: 0;
+}
+.wwm__pull-link {
+  font-family: $wwm-mono;
+  font-size: 1rem;
+  color: $wwm-teal;
+
+  &:hover { color: $wwm-teal-dark; }
+}
+
+/* problems */
+.wwm__problems {
+  display: grid;
+  gap: 1rem;
+}
+.wwm__problem {
+  background: $wwm-paper;
+  border: 1px solid $wwm-border;
+  border-radius: .25rem;
+  padding: 1.1rem 1.4rem;
+  color: $wwm-muted;
+
+  strong { color: $wwm-ink; }
+}
+.wwm__problem-mark {
+  font-family: $wwm-mono;
+  font-weight: 700;
+  color: $wwm-teal;
+  margin-right: .5rem;
+}
+
+/* engagements */
+.wwm__engagements {
+  list-style: none;
+  counter-reset: wwm-engagement;
+  padding-left: 0;
+  margin-bottom: 1.75rem;
+
+  li {
+    counter-increment: wwm-engagement;
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 1.5rem;
+
+    &::before {
+      content: "0" counter(wwm-engagement);
+      position: absolute;
+      left: 0;
+      top: .15rem;
+      font-family: $wwm-mono;
+      font-weight: 700;
+      color: $wwm-teal;
+    }
+
+    p { color: $wwm-muted; margin-bottom: 0; }
+  }
+}
+.wwm__engagement-title { font-size: 1.15rem; font-weight: 700; margin-bottom: .3rem; }
+
+/* buying decision */
+.wwm__vs-label {
+  font-family: $wwm-mono;
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: $wwm-ink;
+  margin-bottom: .4rem;
+
+  span { color: $wwm-muted; font-weight: 400; }
+}
+.wwm__vs p { color: $wwm-muted; margin-bottom: 1.5rem; }
+.wwm__vs p:last-of-type { margin-bottom: 1.75rem; }
+.wwm__vs-answer { color: $wwm-teal; }
+
+/* proof */
+.wwm__stat {
+  font-weight: 800;
+  font-size: calc(2.5rem + 2.5vw);
+  line-height: 1;
+  color: $wwm-teal;
+}
+.wwm__stat-caption { font-size: 1.15rem; color: $wwm-muted; margin-bottom: .5rem; }
+
+/* definition tables (proof libraries, terms, contact) */
+.wwm__terms {
+  display: grid;
+  grid-template-columns: minmax(8rem, auto) 1fr;
+  gap: .9rem 1.5rem;
+  margin-bottom: 1.75rem;
+
+  dt {
+    font-family: $wwm-mono;
+    font-weight: 700;
+    color: $wwm-ink;
+  }
+  dd { margin-bottom: 0; color: $wwm-muted; }
+  dd strong { color: $wwm-ink; }
+  dd a { color: $wwm-teal; }
+  dd a:hover { color: $wwm-teal-dark; }
+}
+.wwm__terms--ruled, .wwm__terms--contact {
+  dt {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .9rem;
+    color: $wwm-teal;
+    padding-top: .15rem;
+  }
+}
+.wwm__terms--ruled {
+  gap: 0 1.5rem;
+
+  dt, dd { padding: .9rem 0; border-bottom: 1px solid $wwm-border; }
+  dt { padding-top: 1.05rem; }
+}
+.wwm__terms--contact dd { font-weight: 700; }
+@media (max-width: 575.98px) {
+  .wwm__terms { grid-template-columns: 1fr; gap: .25rem; }
+  .wwm__terms dd { margin-bottom: .9rem; }
+  .wwm__terms--ruled dt { border-bottom: 0; padding-bottom: 0; }
+  .wwm__terms--ruled dd { padding-top: .25rem; margin-bottom: 0; }
+}
+
+/* testimonial quotes */
+.wwm__quote {
+  background: #e9f0ee;
+  border-left: 4px solid $wwm-teal;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 0;
+
+  blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-bottom: .6rem;
+  }
+  figcaption {
+    font-family: $wwm-mono;
+    font-size: .85rem;
+    color: $wwm-muted;
+
+    strong { color: $wwm-ink; }
+  }
+}
+
+/* cta */
+.wwm__cta-lead {
+  font-size: 1.15rem;
+  color: $wwm-muted;
+  margin-bottom: 1.75rem;
+
+  strong { color: $wwm-ink; }
+}
