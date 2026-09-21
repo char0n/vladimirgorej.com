@@ -429,7 +429,7 @@ fixes reached Arazzo 1.1.0, and it is where a definition meant to be shared belo
 ## Update (21.09.2026)
 
 An earlier version of this article said that `$response.body#/a=b == 1` works, because the JSON Pointer
-form "has its own clear fences". That was wrong, and the library never behaved that way: `test()` returns
-`false` for it. A JSON Pointer has no terminator, so the pointer form is exactly as ambiguous as the query
+form "has its own clear fences". That was wrong. No published version of the library accepts it: `test()` returns
+`false`. A JSON Pointer has no terminator, so the pointer form is exactly as ambiguous as the query
 parameter form. I've corrected the code sample, the table, and the text around them, and pointed to a
 `jsonpath` criterion as the real way out.
