@@ -200,20 +200,26 @@ Two things fall out of this:
 ## The one case that stays broken (on purpose)
 
 In this `simple` grammar, because I stop the runtime-expression operand at the comparison symbols, that
-unfenced operand can never *contain* those symbols. That's the flip side of making the common case work:
+operand can never *contain* those symbols. That's the flip side of making the common case work:
 
 {% highlight javascript %}
 import { test } from '@swaggerexpert/arazzo-criterion';
 
 test('$statusCode == 200');        // true:  reads exactly as intended
 test('$request.query.a=b == 1');   // false: the '=' in the name can't be told apart
-test('$response.body#/a=b == 1');  // true:  this style has its own clear fences
+test('$response.body#/a=b == 1');  // false: a pointer can't fence the '=' either
 {% endhighlight %}
 
 That middle line is the unavoidable casualty from earlier, and it fails *cleanly*. It doesn't silently
-guess wrong, which is the important part. The last line works because the `#/…` pointer form gives the
-operand a clear internal structure of its own: the `=` sits *inside* the pointer, so it never touches the
-comparison layer.
+guess wrong, which is the important part.
+
+The last line is the one that looks like a way out. It is tempting to think the `#/…` pointer form acts as
+a fence, with the `=` sitting safely *inside* the pointer. It doesn't. A JSON Pointer has no closing
+delimiter, and its tokens may contain `=` and even spaces. So the whole string `$response.body#/a=b == 1`
+is also one valid runtime expression, with the pointer `/a=b == 1`. Same two readings, same refusal.
+
+If you really need to reach a key like that, leave the `simple` type behind and use a `jsonpath` criterion.
+JSONPath quotes its member names, so `$.pets[?@['a=b'] == 1]` means exactly one thing.
 
 <div class="table-responsive">
   <table class="table">
@@ -224,7 +230,7 @@ comparison layer.
       <tr><td><code>$statusCode == 200</code></td><td>compare the status code to 200</td><td>works</td></tr>
       <tr><td><code>$request.query.limit == 10</code></td><td>compare query param <code>limit</code> to 10</td><td>works</td></tr>
       <tr><td><code>$request.query.a=b == 1</code></td><td>ambiguous: is <code>=</code> in the name, or the operator?</td><td>refused: ambiguous</td></tr>
-      <tr><td><code>$response.body#/a=b == 1</code></td><td>fenced pointer, the <code>=</code> lives inside it</td><td>works</td></tr>
+      <tr><td><code>$response.body#/a=b == 1</code></td><td>no fence either: a pointer token may contain <code>=</code> and spaces</td><td>refused: ambiguous</td></tr>
     </tbody>
   </table>
 </div>
@@ -361,7 +367,7 @@ Three things in there tie straight back to the story:
 - **The bounded token.** `runtime-expression-operand = "$" 1*operand-char` is the "grab the whole `$…`
   chunk" step. Look closely at `operand-char`: it is deliberately every character *except* whitespace and
   the operator symbols `! & ( ) < = > { | }`. That one exclusion is what makes a runtime expression stop
-  at the comparison, and it is the very same reason this unfenced runtime-expression operand can't
+  at the comparison, and it is the very same reason a runtime-expression operand can't
   *contain* those symbols. Both faces of the problem, one line of grammar.
 - **Runtime expressions aren't defined here.** Notice the grammar never says what a valid runtime
   expression actually *is*. It only captures the `$…` token, then delegates the real check to
@@ -403,7 +409,7 @@ expression languages around OpenAPI and Arazzo:
 
 * <a href="https://github.com/swaggerexpert/arazzo-runtime-expression" target="_blank" rel="noopener noreferrer">arazzo-runtime-expression</a> (the runtime-expression parser this library asks)
 * <a href="https://github.com/swaggerexpert/openapi-runtime-expression" target="_blank" rel="noopener noreferrer">openapi-runtime-expression</a> (its OpenAPI sibling)
-* <a href="https://github.com/swaggerexpert/jsonpath" target="_blank" rel="noopener noreferrer">jsonpath</a> and <a href="https://github.com/swaggerexpert/json-pointer" target="_blank" rel="noopener noreferrer">json-pointer</a> (the pointer syntaxes that give an escape hatch)
+* <a href="https://github.com/swaggerexpert/jsonpath" target="_blank" rel="noopener noreferrer">jsonpath</a> (the query syntax that gives an escape hatch) and <a href="https://github.com/swaggerexpert/json-pointer" target="_blank" rel="noopener noreferrer">json-pointer</a>
 
 ## Closing words
 
@@ -419,3 +425,11 @@ specification: one issue to [define the evaluation semantics](https://github.com
 and one to [define a normative grammar and settle the operand boundary](https://github.com/OAI/Arazzo-Specification/issues/518).
 Some of it may land in a future version of the spec. That is already how the earlier runtime-expression
 fixes reached Arazzo 1.1.0, and it is where a definition meant to be shared belongs.
+
+## Update (21.09.2026)
+
+An earlier version of this article said that `$response.body#/a=b == 1` works, because the JSON Pointer
+form "has its own clear fences". That was wrong, and the library never behaved that way: `test()` returns
+`false` for it. A JSON Pointer has no terminator, so the pointer form is exactly as ambiguous as the query
+parameter form. I've corrected the code sample, the table, and the text around them, and pointed to a
+`jsonpath` criterion as the real way out.
